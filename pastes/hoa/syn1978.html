@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Display</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative; /* Make the body a positioning context */
+        }
+        .container {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 80%; /* Adjust width as needed */
+            max-width: 1000px; /* Maximum width */
+            height: 80%; /* Adjust height as needed */
+            max-height: 600px; /* Maximum height */
+            overflow: auto; /* Enable scrolling if content exceeds box dimensions */
+            animation: fadeIn 1s ease-in-out; /* Fade in animation */
+        }
+        .container pre {
+            margin: 0;
+            white-space: pre-wrap; /* Preserve formatting and wrap long lines */
+            padding: 10px; /* Padding inside the box */
+            font-size: 14px; /* Adjust font size as needed */
+            line-height: 1.5; /* Adjust line height for readability */
+            animation: slideIn 1s ease-in-out; /* Slide in animation */
+        }
+        .title {
+            position: absolute;
+            top: 20px; /* Adjust vertical position as needed */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%);
+            z-index: 1; /* Ensure it's above the GIF background */
+            color: #ffffff;
+            font-size: 24px; /* Adjust font size as needed */
+        }
+        .gif-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0; /* Behind everything */
+            opacity: 0.5; /* Adjust opacity as needed */
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h5 class="title" style="font-size: 24px; margin: 0px 20px 0px 2px; padding-top: 0px; display: inline-block;color: #bb71e4; font-weight: bold;background-image: url('https://cdn.discordapp.com/attachments/1260612112577859625/1261840231254982677/purple.gif?ex=66946bca&is=66931a4a&hm=2084f4628c5dec6cf0756144ab8a53df845b60c25868daa9511c392b55619f3b&');">
+        Timothy Williams [ syn1978 ]
+    </h5>
+    <div class="container">
+        <pre>
+My Discord Server : <a href="https://discord.gg/VaC2h2zmYj" target="_blank">https://discord.gg/VaC2h2zmYj</a>
+
+ ────────────────────────────────────────────────────────────────────────
+▓│                ...::[ SCROLL DOWN TO VIEW PASTE ]::...               │▓
+▓│──────────────────────────────────────────────────────────────────────│▓
+──────┘      ░░       ("Scroll down to view paste"):      ░░     └──────
+│                   Contact Info Is On My Profile                      │
+└──────────────────────────────────────────────────────────────────────┘
+
+
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣶⠶⠿⠷⣶⣄⠀⠀⠀⠀⠀⠀⠀⣠⡶⠿⠛⠷⢶⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢀⣴⡿⠛⠉⠀⠀⠀⠀⠀⠹⣧⠀⠀⠀⠀⠀⣼⠏⠀⠀⠀⠀⠀⠈⠙⢿⣦⡀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣠⡿⠋⠀⢀⣠⠞⠋⠀⠀⠀⢠⡿⠀⠀⠀⠀⠀⢻⡆⠀⠀⠀⠈⠻⣦⡀⠀⠘⢿⣆⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣰⡟⠁⠀⢠⡿⠁⠀⠀⠀⠀⣠⣿⠃⠀⠀⠀⠀⠀⠘⣿⣦⠀⠀⠀⠀⠈⢻⣄⠀⠀⠻⣧⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣴⠏⠀⠀⢠⡟⠀⣠⠀⠀⠀⣼⠟⠁⠀⠀⠀⠀⠀⠀⠀⠈⠻⣷⡀⠀⠀⣄⠀⢻⣆⠀⠀⠹⣧⠀⠀⠀⠀
+⠀⠀⠀⣰⠏⠀⠀⢰⣿⣇⣰⠋⠀⠀⠀⢿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡾⠁⠀⠀⠘⣧⣼⣿⣆⠀⠀⠹⣧⠀⠀⠀
+⠀⠀⢰⡏⠀⠀⢰⣿⣿⣿⡇⢠⡟⠀⠀⠀⣹⡇⠀⠀⠀⠀⠀⠀⠀⠸⣏⡀⠀⠀⠸⡆⢸⣿⣿⣿⣇⠀⠀⠹⣇⠀⠀
+⠀⢠⡟⠀⠀⢰⡾⠈⣿⣿⣧⣿⢀⡶⠀⣼⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣷⡀⢶⡀⢿⣼⣿⣿⠙⢿⡆⠀⠀⢻⡆⠀
+⠀⣾⠁⠀⢠⣼⠃⠀⣸⢏⣿⣧⣼⠃⣼⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣧⠈⣧⣼⣿⡿⣏⠀⠘⣧⡄⠀⠈⣷⠀
+⢰⡏⠀⠀⢸⡟⠀⢠⡟⠘⠿⢻⣿⣷⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⡿⠟⠃⢹⡄⠀⢹⡇⠀⠀⢹⡇
+⢸⡇⠀⠀⣸⡇⠀⣾⠁⢀⡏⠈⢻⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣏⠀⢸⡄⠈⣷⡀⢸⣧⠀⠀⠸⡇
+⢸⠀⠀⢀⡟⠻⣾⣿⡀⣸⠃⢠⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣆⠈⣧⠀⣿⣷⡟⢻⡀⠀⠀⡇
+⢸⠃⠀⢸⣇⣾⢹⡟⣿⣿⣤⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣤⣿⣿⢹⣇⣿⣼⡏⠀⠀⡇
+⢸⠀⠀⢸⣿⠏⣽⢸⣿⣿⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⣿⣿⣇⣿⠽⣿⣧⠀⠀⡇
+⢸⡆⠀⣼⠁⠀⡏⠘⢿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡿⠃⢸⠀⠈⣷⠀⢰⡇
+⠸⣷⠀⢻⠀⢰⡇⠀⢸⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣇⣀⢸⡇⠀⡟⠀⣾⠇
+⠀⢿⡄⢸⠀⣼⡧⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣟⣸⣧⡀⡇⢠⣿⠀
+⠀⠸⣇⢸⣾⣿⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⣿⣿⡇⣸⠇⠀
+⠀⠀⢻⣼⣿⠿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠷⢾⢧⡿⠀⠀
+⠀⠀⠈⢿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡿⠁⠀⠀
+
+
+ ~ Made By owner of #coresec lust ~
+
+Reason For Dox was trying to Extort Minors 
+and sending nudes to a girl who is underage and requesting images 
+of her             
+                                                                                                                                
+
+> Name : Timothy William Lukes 
+> Age : 34 
+> Email : isimpforrosie@gmail.com
+> Discord Tag : syn#1978
+> DOB : 1/05/1989
+> Telephone : (856) 285-5091, +16096754817
+> Height : 6,1 ft 
+> Address : 316 East Hight st clayton NJ , 08312-1618
+
+         Possible Address of Relative
+> Address : 16 ADAMS DR, MILLVILE, NJ08332-4455, USA
+
+Admitting Grooming [ https://imgur.com/a/EIl8tDV ]
+Link Of ID [ https://imgur.com/a/mUdOd6D ]
+Link Of CC [ https://imgur.com/a/ez0feKQ ]
+Covid Docs [ https://imgur.com/a/CrdFGt9 ]
+
+        - Possible Family Members -
+
+> Name : Carole P Lukes
+> Age : 67
+> DOB : 02/24/1955
+> Address :  4640 melrose st Philadelphia PA 19137
+> Height : 5,8 ft
+
+Link of ID [ https://imgur.com/a/zjITnzG ]
+
+========================================
+               PASSWORDS
+========================================
+
+
+Domain: https://robinhood.com/login
+User: timlukes@yahoo.com
+Pass: 3363
+
+Domain: https://www.soundtrap.com/
+User: timlukes@yahoo.com
+Pass: Landon19
+
+Domain: https://accounts.google.com/signin/v2/challenge/password/empty
+User: 8562855091
+Pass: Landon19
+
+Domain: https://accounts.google.com/signin/v2/challenge/password/empty
+User: lukestimmy@gmail.com
+Pass: Landon@19
+
+Domain: https://www.homedepot.com/auth/view/signin
+User: 873719
+Pass: Landon19
+
+
+Domain: https://www.amazon.com/ap/signin
+User: timlukes@yahoo.com
+Pass: Landon#19
+
+Domain: https://api.id.me/en/session
+User: timlukes@yahoo.com
+Pass: Landon#19
+
+             Full PC INFO
+
+========================================
+                HARDWARE 
+========================================
+CPU: Intel(R) Celeron(R) N4020 CPU @ 1.10GHz
+GPU: Intel(R) UHD Graphics 600
+RAM: 3 GB
+Disk Size: 57 GB
+PC Manufacturer: AMI
+Model Name: HP Laptop 14-dq0xxx
+Screen Info:
+Resolution: 1366x768
+Refresh Rate: 60Hz
+System Slots:
+CurrentUsage  Description  SlotDesignation  Status  
+4             System Slot  J7H1             OK      
+3             System Slot  J8H1             OK
+========================================
+                   OS
+========================================
+Username: timlu
+PC Name: LAPTOP-JLVFV2EJ
+Build Name: Windows 10.0.19044
+Edition: Windows 10 Home
+Windows Key: M6NDM-3HYKM-93838-Y463P-YKM6M
+HWID: 31444335-3533-5437-5031-315435334435
+Antivirus: Windows Defender
+========================================
+                  PATHS
+========================================
+ALLUSERSPROFILE = C:\ProgramData
+APPDATA = C:\Users\timlu\AppData\Roaming
+CommonProgramFiles = C:\Program Files\Common Files
+CommonProgramFiles(x86) = C:\Program Files (x86)\Common Files
+CommonProgramW6432 = C:\Program Files\Common Files
+COMPUTERNAME = LAPTOP-JLVFV2EJ
+ComSpec = C:\windows\system32\cmd.exe
+DriverData = C:\Windows\System32\Drivers\DriverData
+HOMEDRIVE = C:
+HOMEPATH = \Users\timlu
+LOCALAPPDATA = C:\Users\timlu\AppData\Local
+LOGONSERVER = \\LAPTOP-JLVFV2EJ
+NUMBER_OF_PROCESSORS = 2
+OneDrive = C:\Users\timlu\OneDrive
+OneDriveConsumer = C:\Users\timlu\OneDrive
+OnlineServices = Online Services
+OS = Windows_NT
+Path = C:\Users\timlu\AppData\Local\Temp\_MEI36402\pywin32_system32;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\timlu\AppData\Local\Microsoft\WindowsApps
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+platformcode = KV
+PROCESSOR_ARCHITECTURE = AMD64
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 122 Stepping 8, GenuineIntel
+PROCESSOR_LEVEL = 6
+PROCESSOR_REVISION = 7a08
+ProgramData = C:\ProgramData
+ProgramFiles = C:\Program Files
+ProgramFiles(x86) = C:\Program Files (x86)
+ProgramW6432 = C:\Program Files
+PROMPT = $P$G
+PSModulePath = C:\Program Files\WindowsPowerShell\Modules;C:\windows\system32\WindowsPowerShell\v1.0\Modules
+PUBLIC = C:\Users\Public
+RegionCode = NA
+SystemDrive = C:
+SystemRoot = C:\windows
+TEMP = C:\Users\timlu\AppData\Local\Temp
+TMP = C:\Users\timlu\AppData\Local\Temp
+USERDOMAIN = LAPTOP-JLVFV2EJ
+USERDOMAIN_ROAMINGPROFILE = LAPTOP-JLVFV2EJ
+USERNAME = timlu
+USERPROFILE = C:\Users\timlu
+windir = C:\windows
+ZES_ENABLE_SYSMAN = 1
+__COMPAT_LAYER = Installer
+========================================
+             INSTALLED APPS
+========================================
+Microsoft Edge Update                                             
+Microsoft Edge WebView2 Runtime                                   
+ProtonVPN                                                         
+qBittorrent                                                       
+x42-autotune                                                      
+Microsoft Windows Desktop Runtime - 6.0.12 (x64)                  
+Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.30.30704
+ProtonVPNTap                                                      
+Python Launcher                                                   
+ProtonVPN                                                         
+ProtonVPNTun
+
+
+.m.                                   ,_
+' ;M;                                ,;m `
+  ;M;.           ,      ,           ;SMM;
+ ;;Mm;         ,;  ____  ;,         ;SMM;
+;;;MM;        ; (.MMMMMM.) ;       ,SSMM;;
+,;;;mMp'        l  ';mmmm;/  j       SSSMM;;
+.;;;;;MM;         .\,.mmSSSm,,/,      ,SSSMM;;;
+;;;;;;mMM;        .;MMmSSSSSSSmMm;     ;MSSMM;;;;
+;;;;;;mMSM;     ,_ ;MMmS;;;;;;mmmM;  -,;MMMMMMm;;;;
+;;;;;;;MMSMM;     \"*;M;( ( '') );m;*"/ ;MMMMMM;;;;;,
+.;;;;;;mMMSMM;      \(@;! _     _ !;@)/ ;MMMMMMMM;;;;;,
+;;;;;;;MMSSSM;       ;,;.*o*> <*o*.;m; ;MMMMMMMMM;;;;;;,
+.;;;;;;;MMSSSMM;     ;Mm;           ;M;,MMMMMMMMMMm;;;;;;.
+;;;;;;;mmMSSSMMMM,   ;Mm;,   '-    ,;M;MMMMMMMSMMMMm;;;;;;;
+;;;;;;;MMMSSSMMMMMMMm;Mm;;,  ___  ,;SmM;MMMMMMSSMMMM;;;;;;;;
+;;'";;;MMMSSSSMMMMMM;MMmS;;,  "  ,;SmMM;MMMMMMSSMMMM;;;;;;;;.
+!   ;;;MMMSSSSSMMMMM;MMMmSS;;._.;;SSmMM;MMMMMMSSMMMM;;;;;;;;;
+;;;;*MSSSSSSMMMP;Mm*"'q;'   `;p*"*M;MMMMMSSSSMMM;;;;;;;;;
+';;;  ;SS*SSM*M;M;'     `-.        ;;MMMMSSSSSMM;;;;;;;;;,
+;;;. ;P  `q; qMM.                 ';MMMMSSSSSMp' ';;;;;;;
+;;;; ',    ; .mm!     \.   `.   /  ;MMM' `qSS'    ';;;;;;
+';;;       ' mmS';     ;     ,  `. ;'M'   `S       ';;;;;
+`;;.        mS;;`;    ;     ;    ;M,!     '  luk   ';;;;
+';;       .mS;;, ;   '. o  ;   oMM;                ;;;;
+';;      MMmS;; `,   ;._.' -_.'MM;                 ;;;
+`;;     MMmS;;; ;   ;      ;  MM;                 ;;;
+  `'.   'MMmS;; `;) ',    .' ,M;'                 ;;;
+     \    '' ''; ;   ;    ;  ;'                   ;;
+      ;        ; `,  ;    ;  ;                   ;;
+               |. ;  ; (. ;  ;      _.-.         ;;
+  .-----..__  /   ;  ;   ;' ;\  _.-" .- `.      ;;
+;' ___      `*;   `; ';  ;  ; ;'  .-'    :      ;
+;     """*-.   `.  ;  ;  ;  ; ' ,'      /       |
+',          `-_    (.--',`--'..'      .'        ',
+  `-_          `*-._'.\\\;||\\)     ,'
+     `"*-._        "*`-ll_ll'l    ,'
+        ,==;*-._           "-.  .'
+     _-'    "*-=`*;-._        ;'
+   ."            ;'  ;"*-.    `
+   ;   ____      ;//'     "-   `,
+   `+   .-/                 ".\\;
+     `*" /
+Dont End up like this nigga
+┌——————————————————————————————————————————————————————————————————————┐
+|                              End Of Dox                              |
+└——————————————————————————————————————————————————————————————————————┘
+
+        </pre>
+    </div>
+</body>
+</html>

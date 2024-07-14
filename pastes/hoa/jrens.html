@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Display</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative; /* Make the body a positioning context */
+        }
+        .container {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 80%; /* Adjust width as needed */
+            max-width: 1000px; /* Maximum width */
+            height: 80%; /* Adjust height as needed */
+            max-height: 600px; /* Maximum height */
+            overflow: auto; /* Enable scrolling if content exceeds box dimensions */
+            animation: fadeIn 1s ease-in-out; /* Fade in animation */
+        }
+        .container pre {
+            margin: 0;
+            white-space: pre-wrap; /* Preserve formatting and wrap long lines */
+            padding: 10px; /* Padding inside the box */
+            font-size: 14px; /* Adjust font size as needed */
+            line-height: 1.5; /* Adjust line height for readability */
+            animation: slideIn 1s ease-in-out; /* Slide in animation */
+        }
+        .title {
+            position: absolute;
+            top: 20px; /* Adjust vertical position as needed */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%);
+            z-index: 1; /* Ensure it's above the GIF background */
+            color: #ffffff;
+            font-size: 24px; /* Adjust font size as needed */
+        }
+        .gif-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0; /* Behind everything */
+            opacity: 0.5; /* Adjust opacity as needed */
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h5 class="title" style="font-size: 24px; margin: 0px 20px 0px 2px; padding-top: 0px; display: inline-block;color: #bb71e4; font-weight: bold;background-image: url('https://cdn.discordapp.com/attachments/1260612112577859625/1261840231254982677/purple.gif?ex=66946bca&is=66931a4a&hm=2084f4628c5dec6cf0756144ab8a53df845b60c25868daa9511c392b55619f3b&');">
+        Jason Renzlow
+    </h5>
+    <div class="container">
+        <pre>
+My Discord Server : <a href="https://discord.gg/VaC2h2zmYj" target="_blank">https://discord.gg/VaC2h2zmYj</a>
+
+ ────────────────────────────────────────────────────────────────────────
+▓│                ...::[ SCROLL DOWN TO VIEW PASTE ]::...               │▓
+▓│──────────────────────────────────────────────────────────────────────│▓
+──────┘      ░░       ("Scroll down to view paste"):      ░░     └──────
+│                   Contact Info Is On My Profile                      │
+└──────────────────────────────────────────────────────────────────────┘
+
+
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣶⠶⠿⠷⣶⣄⠀⠀⠀⠀⠀⠀⠀⣠⡶⠿⠛⠷⢶⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢀⣴⡿⠛⠉⠀⠀⠀⠀⠀⠹⣧⠀⠀⠀⠀⠀⣼⠏⠀⠀⠀⠀⠀⠈⠙⢿⣦⡀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣠⡿⠋⠀⢀⣠⠞⠋⠀⠀⠀⢠⡿⠀⠀⠀⠀⠀⢻⡆⠀⠀⠀⠈⠻⣦⡀⠀⠘⢿⣆⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣰⡟⠁⠀⢠⡿⠁⠀⠀⠀⠀⣠⣿⠃⠀⠀⠀⠀⠀⠘⣿⣦⠀⠀⠀⠀⠈⢻⣄⠀⠀⠻⣧⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣴⠏⠀⠀⢠⡟⠀⣠⠀⠀⠀⣼⠟⠁⠀⠀⠀⠀⠀⠀⠀⠈⠻⣷⡀⠀⠀⣄⠀⢻⣆⠀⠀⠹⣧⠀⠀⠀⠀
+⠀⠀⠀⣰⠏⠀⠀⢰⣿⣇⣰⠋⠀⠀⠀⢿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡾⠁⠀⠀⠘⣧⣼⣿⣆⠀⠀⠹⣧⠀⠀⠀
+⠀⠀⢰⡏⠀⠀⢰⣿⣿⣿⡇⢠⡟⠀⠀⠀⣹⡇⠀⠀⠀⠀⠀⠀⠀⠸⣏⡀⠀⠀⠸⡆⢸⣿⣿⣿⣇⠀⠀⠹⣇⠀⠀
+⠀⢠⡟⠀⠀⢰⡾⠈⣿⣿⣧⣿⢀⡶⠀⣼⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣷⡀⢶⡀⢿⣼⣿⣿⠙⢿⡆⠀⠀⢻⡆⠀
+⠀⣾⠁⠀⢠⣼⠃⠀⣸⢏⣿⣧⣼⠃⣼⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣧⠈⣧⣼⣿⡿⣏⠀⠘⣧⡄⠀⠈⣷⠀
+⢰⡏⠀⠀⢸⡟⠀⢠⡟⠘⠿⢻⣿⣷⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⡿⠟⠃⢹⡄⠀⢹⡇⠀⠀⢹⡇
+⢸⡇⠀⠀⣸⡇⠀⣾⠁⢀⡏⠈⢻⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣏⠀⢸⡄⠈⣷⡀⢸⣧⠀⠀⠸⡇
+⢸⠀⠀⢀⡟⠻⣾⣿⡀⣸⠃⢠⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣆⠈⣧⠀⣿⣷⡟⢻⡀⠀⠀⡇
+⢸⠃⠀⢸⣇⣾⢹⡟⣿⣿⣤⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣤⣿⣿⢹⣇⣿⣼⡏⠀⠀⡇
+⢸⠀⠀⢸⣿⠏⣽⢸⣿⣿⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⣿⣿⣇⣿⠽⣿⣧⠀⠀⡇
+⢸⡆⠀⣼⠁⠀⡏⠘⢿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡿⠃⢸⠀⠈⣷⠀⢰⡇
+⠸⣷⠀⢻⠀⢰⡇⠀⢸⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣇⣀⢸⡇⠀⡟⠀⣾⠇
+⠀⢿⡄⢸⠀⣼⡧⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣟⣸⣧⡀⡇⢠⣿⠀
+⠀⠸⣇⢸⣾⣿⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⣿⣿⡇⣸⠇⠀
+⠀⠀⢻⣼⣿⠿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠷⢾⢧⡿⠀⠀
+⠀⠀⠈⢿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡿⠁
+
+ ~ Made By owner of #coresec lust ~
+
+—————————————————————————————————————————————————————————————————————————
+Jason Renslow is a know Pedo inside of the egirl paradise discord server
+we was looking for him for a very long time and we finally found him
+we was reached out to by one of the victims that will not be named in 
+the dox below
+—————————————————————————————————————————————————————————————————————————
+
+————————————————————————————————— General Info —————————————————————————————————
+➤ Name | Jason Renslow                                                 
+➤ Age  | 40                                                            
+➤ Discord | renzlow#7385                                               
+➤ DOB  | 1983 2nd July                                                 
+➤ Email| jason@jasonrenslow.com                                        
+➤ Martial Status | Single
+
+—————————————————————————————————————————————————————————————————————————————————
+
+
+——————————————————————— Location Information —————————————————————————————————
+                                                                     
+➤ Address | 277 Friary Way Campbell, CA, 95008 [ old address ]                         
+➤ Phone Numbers | (408) 268-8406) | (408) 332-1465
+
+➤ Former Inside Sales Representative at Gluster
+➤ Former Video Conferencing Technician at google
+➤ Former Sales Operations at Baynote
+➤ Date Started / Date Finished [ January 2011 - 2012 ]
+
+➤ Lives in San Jose, California                                           
+———————————————————————————————————————————————————————————————————————————————
+
+————————————————————————————————— Socials —————————————————————————————————
+➤ https://twitter.com/renzlow                                           
+➤ https://www.facebook.com/jrenslowphotography                          
+➤ https://www.facebook.com/jason.renslow/                               
+➤ https://www.facebook.com/people/Kim-Jo-Renslow/100007228635646/       
+———————————————————————————————————————————————————————————————————————————
+                                                     
+
+——————————————————————————————————————— Family ————————————————————————————————————————————
+➤ Mummmy's Name | Kim Jo Renslow                                                           
+➤ Age           | 63 (Born Jun 1959)                                                       
+➤ Phone         | (408) 332-1465 - Wireless                                                
+➤ Address       | Address: 303 Friar Way Campbell, CA 95008                                
+➤ Emails        | krenslow@netscape.net                                                    
+➤ Employment    | Special Education Paraeducator at Santa Clara Unified School District    
+➤ Education     | Branham High School                                                      
+➤ Address       | 1570 Branham Ln, San Jose, CA 95118, United States                                
+➤ Phone         | +1 408-626-3407                                                                   
+➤ District      | Campbell Union High School District                                               
+➤ Social        | https://www.facebook.com/profile.php?id=100007228635646
+———————————————————————————————————————————————————————————————————————————————————————————
+
+———————————————————————————————————————————————————————————————————————————————————————————
+➤ Name | Nadine Michelle Huey
+➤ Age  | 40 - 50
+Couldnt find Anything else and i was to lazy to add so heres her facebook
+[ https://www.facebook.com/nadine.huey.9/about_overview ]
+————————————————————————————————————————— End —————————————————————————————————————————————
+
+
+——————————————————————————————————————— Images —————————————————————————————————————————————
+
+
+                                        Selfies
+—————————————————————————————————————————————————————————————————————————————————————————————
+➤ https://cdn.discordapp.com/attachments/1061276110647730237/1063399365529583666/IMG_4489.png
+➤ https://cdn.discordapp.com/attachments/1063377793695625226/1063402318588031036/image.png   
+—————————————————————————————————————————————————————————————————————————————————————————————
+
+
+                                    Old picture of him
+——————————————————————————————————————————————————————————————————————————————————————————————
+➤ https://cdn.discordapp.com/attachments/1063377793695625226/1063401764231057458/image.png 
+➤ https://cdn.discordapp.com/attachments/1063377793695625226/1063402318588031036/image.png 
+——————————————————————————————————————————————————————————————————————————————————————————————                                 
+                                    Victim Acusation
+——————————————————————————————————————————————————————————————————————————————————————————————
+https://cdn.discordapp.com/attachments/1063362951706312724/1063373652550234152/image.png   
+——————————————————————————————————————————————————————————————————————————————————————————————
+
+
+.m.                                   ,_
+' ;M;                                ,;m `
+  ;M;.           ,      ,           ;SMM;
+ ;;Mm;         ,;  ____  ;,         ;SMM;
+;;;MM;        ; (.MMMMMM.) ;       ,SSMM;;
+,;;;mMp'        l  ';mmmm;/  j       SSSMM;;
+.;;;;;MM;         .\,.mmSSSm,,/,      ,SSSMM;;;
+;;;;;;mMM;        .;MMmSSSSSSSmMm;     ;MSSMM;;;;
+;;;;;;mMSM;     ,_ ;MMmS;;;;;;mmmM;  -,;MMMMMMm;;;;
+;;;;;;;MMSMM;     \"*;M;( ( '') );m;*"/ ;MMMMMM;;;;;,
+.;;;;;;mMMSMM;      \(@;! _     _ !;@)/ ;MMMMMMMM;;;;;,
+;;;;;;;MMSSSM;       ;,;.*o*> <*o*.;m; ;MMMMMMMMM;;;;;;,
+.;;;;;;;MMSSSMM;     ;Mm;           ;M;,MMMMMMMMMMm;;;;;;.
+;;;;;;;mmMSSSMMMM,   ;Mm;,   '-    ,;M;MMMMMMMSMMMMm;;;;;;;
+;;;;;;;MMMSSSMMMMMMMm;Mm;;,  ___  ,;SmM;MMMMMMSSMMMM;;;;;;;;
+;;'";;;MMMSSSSMMMMMM;MMmS;;,  "  ,;SmMM;MMMMMMSSMMMM;;;;;;;;.
+!   ;;;MMMSSSSSMMMMM;MMMmSS;;._.;;SSmMM;MMMMMMSSMMMM;;;;;;;;;
+;;;;*MSSSSSSMMMP;Mm*"'q;'   `;p*"*M;MMMMMSSSSMMM;;;;;;;;;
+';;;  ;SS*SSM*M;M;'     `-.        ;;MMMMSSSSSMM;;;;;;;;;,
+;;;. ;P  `q; qMM.                 ';MMMMSSSSSMp' ';;;;;;;
+;;;; ',    ; .mm!     \.   `.   /  ;MMM' `qSS'    ';;;;;;
+';;;       ' mmS';     ;     ,  `. ;'M'   `S       ';;;;;
+`;;.        mS;;`;    ;     ;    ;M,!     '  luk   ';;;;
+';;       .mS;;, ;   '. o  ;   oMM;                ;;;;
+';;      MMmS;; `,   ;._.' -_.'MM;                 ;;;
+`;;     MMmS;;; ;   ;      ;  MM;                 ;;;
+  `'.   'MMmS;; `;) ',    .' ,M;'                 ;;;
+     \    '' ''; ;   ;    ;  ;'                   ;;
+      ;        ; `,  ;    ;  ;                   ;;
+               |. ;  ; (. ;  ;      _.-.         ;;
+  .-----..__  /   ;  ;   ;' ;\  _.-" .- `.      ;;
+;' ___      `*;   `; ';  ;  ; ;'  .-'    :      ;
+;     """*-.   `.  ;  ;  ;  ; ' ,'      /       |
+',          `-_    (.--',`--'..'      .'        ',
+  `-_          `*-._'.\\\;||\\)     ,'
+     `"*-._        "*`-ll_ll'l    ,'
+        ,==;*-._           "-.  .'
+     _-'    "*-=`*;-._        ;'
+   ."            ;'  ;"*-.    `
+   ;   ____      ;//'     "-   `,
+   `+   .-/                 ".\\;
+     `*" /
+Dont End up like this nigga
+┌——————————————————————————————————————————————————————————————————————┐
+|                              End Of Dox                              |
+└——————————————————————————————————————————————————————————————————————┘
+
+        </pre>
+    </div>
+</body>
+</html>
