@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Display</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative; /* Make the body a positioning context */
+        }
+        .container {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 80%; /* Adjust width as needed */
+            max-width: 1000px; /* Maximum width */
+            height: 80%; /* Adjust height as needed */
+            max-height: 600px; /* Maximum height */
+            overflow: auto; /* Enable scrolling if content exceeds box dimensions */
+            animation: fadeIn 1s ease-in-out; /* Fade in animation */
+        }
+        .container pre {
+            margin: 0;
+            white-space: pre-wrap; /* Preserve formatting and wrap long lines */
+            padding: 10px; /* Padding inside the box */
+            font-size: 14px; /* Adjust font size as needed */
+            line-height: 1.5; /* Adjust line height for readability */
+            animation: slideIn 1s ease-in-out; /* Slide in animation */
+        }
+        .title {
+            position: absolute;
+            top: 20px; /* Adjust vertical position as needed */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%);
+            z-index: 1; /* Ensure it's above the GIF background */
+            color: #ffffff;
+            font-size: 24px; /* Adjust font size as needed */
+        }
+        .gif-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0; /* Behind everything */
+            opacity: 0.5; /* Adjust opacity as needed */
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h5 class="title" style="font-size: 24px; margin: 0px 20px 0px 2px; padding-top: 0px; display: inline-block;color: #9c9a00; font-weight: bold;background-image: url('https://cdn.discordapp.com/attachments/1260612112577859625/1261893052511817738/gold.gif?ex=66949cfc&is=66934b7c&hm=011edf9dcabf9d7acdf089452fb06745d05f7004c6d9e13b47631ed2ca0cdb3a&');">
+        10 Steam Accounts
+    </h5>
+    <div class="container">
+        <pre>
+My Discord Server : <a href="https://discord.gg/QQf46gwkHA" target="_blank">https://discord.gg/QQf46gwkHA</a>
+
+ ────────────────────────────────────────────────────────────────────────
+▓│                ...::[ SCROLL DOWN TO VIEW Accounts ]::...            │▓
+▓│──────────────────────────────────────────────────────────────────────│▓
+──────┘      ░░          DO NOT CHANGE ANY INFO            ░░     └──────
+│                          ON THESE ACCOUNTS                           │
+└──────────────────────────────────────────────────────────────────────┘
+
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣶⠶⠿⠷⣶⣄⠀⠀⠀⠀⠀⠀⠀⣠⡶⠿⠛⠷⢶⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢀⣴⡿⠛⠉⠀⠀⠀⠀⠀⠹⣧⠀⠀⠀⠀⠀⣼⠏⠀⠀⠀⠀⠀⠈⠙⢿⣦⡀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣠⡿⠋⠀⢀⣠⠞⠋⠀⠀⠀⢠⡿⠀⠀⠀⠀⠀⢻⡆⠀⠀⠀⠈⠻⣦⡀⠀⠘⢿⣆⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣰⡟⠁⠀⢠⡿⠁⠀⠀⠀⠀⣠⣿⠃⠀⠀⠀⠀⠀⠘⣿⣦⠀⠀⠀⠀⠈⢻⣄⠀⠀⠻⣧⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣴⠏⠀⠀⢠⡟⠀⣠⠀⠀⠀⣼⠟⠁⠀⠀⠀⠀⠀⠀⠀⠈⠻⣷⡀⠀⠀⣄⠀⢻⣆⠀⠀⠹⣧⠀⠀⠀⠀
+⠀⠀⠀⣰⠏⠀⠀⢰⣿⣇⣰⠋⠀⠀⠀⢿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡾⠁⠀⠀⠘⣧⣼⣿⣆⠀⠀⠹⣧⠀⠀⠀
+⠀⠀⢰⡏⠀⠀⢰⣿⣿⣿⡇⢠⡟⠀⠀⠀⣹⡇⠀⠀⠀⠀⠀⠀⠀⠸⣏⡀⠀⠀⠸⡆⢸⣿⣿⣿⣇⠀⠀⠹⣇⠀⠀
+⠀⢠⡟⠀⠀⢰⡾⠈⣿⣿⣧⣿⢀⡶⠀⣼⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣷⡀⢶⡀⢿⣼⣿⣿⠙⢿⡆⠀⠀⢻⡆⠀
+⠀⣾⠁⠀⢠⣼⠃⠀⣸⢏⣿⣧⣼⠃⣼⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣧⠈⣧⣼⣿⡿⣏⠀⠘⣧⡄⠀⠈⣷⠀
+⢰⡏⠀⠀⢸⡟⠀⢠⡟⠘⠿⢻⣿⣷⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⡿⠟⠃⢹⡄⠀⢹⡇⠀⠀⢹⡇
+⢸⡇⠀⠀⣸⡇⠀⣾⠁⢀⡏⠈⢻⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣏⠀⢸⡄⠈⣷⡀⢸⣧⠀⠀⠸⡇
+⢸⠀⠀⢀⡟⠻⣾⣿⡀⣸⠃⢠⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣆⠈⣧⠀⣿⣷⡟⢻⡀⠀⠀⡇
+⢸⠃⠀⢸⣇⣾⢹⡟⣿⣿⣤⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣤⣿⣿⢹⣇⣿⣼⡏⠀⠀⡇
+⢸⠀⠀⢸⣿⠏⣽⢸⣿⣿⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⣿⣿⣇⣿⠽⣿⣧⠀⠀⡇
+⢸⡆⠀⣼⠁⠀⡏⠘⢿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡿⠃⢸⠀⠈⣷⠀⢰⡇
+⠸⣷⠀⢻⠀⢰⡇⠀⢸⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣇⣀⢸⡇⠀⡟⠀⣾⠇
+⠀⢿⡄⢸⠀⣼⡧⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣟⣸⣧⡀⡇⢠⣿⠀
+⠀⠸⣇⢸⣾⣿⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⣿⣿⡇⣸⠇⠀
+⠀⠀⢻⣼⣿⠿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠷⢾⢧⡿⠀⠀
+⠀⠀⠈⢿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡿⠁
+~ Cracked By Lust ~
+─────────────────────────────────READ ME───────────────────────────────
+PLEASE MAKE SURE YOU DO NOT CHNAGE THE PASSWORD OR ANY INFORMATION ON
+THESE ACCOUNTS AS IT WILL RESULT IN THE ACCOUNT BEING BANNED S-BANNED 
+OR EVEN IP BANNED DO NOT BE A FUCKING RETARD AND RUIN IT FOR EVERYONE
+else
+
+───────────────────────────────────────────────────────────────────────
+
+NOTE : ALL THESE ACCOUNTS HAVE BEEN THROUGH A CHECKER
+
+Accounts Listed Below
+
+───────────────────────────────────────────────────────────────────────
+[
+  {
+    "username": "mbt6toyeo",
+    "password": "mbt6toyeo"
+  },
+  {
+    "username": "mggtr",
+    "password": "civic1471887"
+  },
+  {
+    "username": "olegcontrol111",
+    "password": "Gazmanovjj532ff4zz"
+  },
+  {
+    "username": "olei113",
+    "password": "70Games.net209"
+  },
+  {
+    "username": "ooxe50058",
+    "password": "MQPEdShd7"
+  },
+  {
+    "username": "otems398",
+    "password": "zhm54416VI"
+  },
+  {
+    "username": "overwroughtlowyak41",
+    "password": "Tallhand41P9C8129"
+  },
+  {
+    "username": "pgypu178",
+    "password": "QISHU888"
+  },
+  {
+    "username": "plouto_",
+    "password": "dongsung04"
+  },
+  {
+    "username": "pogogamer2021",
+    "password": "70Games.net155"
+  },
+  {
+    "username": "pvlzo40953",
+    "password": "uw9hckic"
+  },
+  {
+    "username": "qiongmin1",
+    "password": "70Games.net229"
+  },
+  {
+    "username": "sabina_aisi",
+    "password": "Uj8Yhgt5"
+  }
+]
+───────────────────────────────────────────────────────────────────────
+        </pre>
+    </div>
+</body>
+</html>
