@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Accounts</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column; /* Align items vertically */
+        }
+        .container {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 80%;
+            max-width: 1000px;
+            animation: fadeIn 1s ease-in-out, slideInFromTop 1s ease-in-out;
+        }
+        .member-list {
+            background-color: #2a2a2a;
+            border: 1px solid #444;
+            border-radius: 10px;
+            padding: 20px;
+            width: 100%; /* Full width */
+            text-align: left;
+            margin-top: 20px;
+            overflow: hidden; /* Hide overflow */
+            box-sizing: border-box; /* Ensure padding is included in width */
+            animation: fadeIn 1.5s ease-in-out, slideInFromBottom 1.5s ease-in-out;
+        }
+        .member-list .member {
+            background-color: #3a3a3a;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+            animation: fadeIn 2s ease-in-out, slideInFromLeft 2s ease-in-out;
+        }
+        .member-list .member .member-name {
+            color: #ff0000;
+            font-weight: bold;
+            display: block; /* Ensure block display */
+            animation: fadeIn 2.5s ease-in-out;
+        }
+        .member-list .member .member-id {
+            color: #ffffff;
+            font-size: 12px;
+            margin-top: 5px;
+            display: block; /* Ensure block display */
+            animation: fadeIn 3s ease-in-out;
+        }
+        .member-list .member .member-role {
+            color: #c5b312;
+            font-style: italic;
+            display: block; /* Ensure block display */
+            animation: fadeIn 2.8s ease-in-out;
+        }
+        .title {
+            font-size: 24px;
+            color: #bb71e4;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideInFromTop {
+            from { transform: translateY(-20px); }
+            to { transform: translateY(0); }
+        }
+        @keyframes slideInFromBottom {
+            from { transform: translateY(20px); }
+            to { transform: translateY(0); }
+        }
+        @keyframes slideInFromLeft {
+            from { transform: translateX(-20px); }
+            to { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="ascii-logo">
+        <pre>
+           
+         ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣶⠶⠿⠷⣶⣄⠀⠀⠀⠀⠀⠀⠀⣠⡶⠿⠛⠷⢶⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+         ⠀⠀⠀⠀⠀⠀⠀⢀⣴⡿⠛⠉⠀⠀⠀⠀⠀⠹⣧⠀⠀⠀⠀⠀⣼⠏⠀⠀⠀⠀⠀⠈⠙⢿⣦⡀⠀⠀⠀⠀⠀⠀⠀
+         ⠀⠀⠀⠀⠀⠀⣠⡿⠋⠀⢀⣠⠞⠋⠀⠀⠀⢠⡿⠀⠀⠀⠀⠀⢻⡆⠀⠀⠀⠈⠻⣦⡀⠀⠘⢿⣆⠀⠀⠀⠀⠀⠀
+         ⠀⠀⠀⠀⠀⣰⡟⠁⠀⢠⡿⠁⠀⠀⠀⠀⣠⣿⠃⠀⠀⠀⠀⠀⠘⣿⣦⠀⠀⠀⠀⠈⢻⣄⠀⠀⠻⣧⠀⠀⠀⠀⠀
+         ⠀⠀⠀⠀⣴⠏⠀⠀⢠⡟⠀⣠⠀⠀⠀⣼⠟⠁⠀⠀⠀⠀⠀⠀⠀⠈⠻⣷⡀⠀⠀⣄⠀⢻⣆⠀⠀⠹⣧⠀⠀⠀⠀
+         ⠀⠀⠀⣰⠏⠀⠀⢰⣿⣇⣰⠋⠀⠀⠀⢿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡾⠁⠀⠀⠘⣧⣼⣿⣆⠀⠀⠹⣧⠀⠀⠀
+         ⠀⠀⢰⡏⠀⠀⢰⣿⣿⣿⡇⢠⡟⠀⠀⠀⣹⡇⠀⠀⠀⠀⠀⠀⠀⠸⣏⡀⠀⠀⠸⡆⢸⣿⣿⣿⣇⠀⠀⠹⣇⠀⠀
+         ⠀⢠⡟⠀⠀⢰⡾⠈⣿⣿⣧⣿⢀⡶⠀⣼⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣷⡀⢶⡀⢿⣼⣿⣿⠙⢿⡆⠀⠀⢻⡆⠀
+         ⠀⣾⠁⠀⢠⣼⠃⠀⣸⢏⣿⣧⣼⠃⣼⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣧⠈⣧⣼⣿⡿⣏⠀⠘⣧⡄⠀⠈⣷⠀
+         ⢰⡏⠀⠀⢸⡟⠀⢠⡟⠘⠿⢻⣿⣷⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⡿⠟⠃⢹⡄⠀⢹⡇⠀⠀⢹⡇
+         ⢸⡇⠀⠀⣸⡇⠀⣾⠁⢀⡏⠈⢻⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣏⠀⢸⡄⠈⣷⡀⢸⣧⠀⠀⠸⡇
+         ⢸⠀⠀⢀⡟⠻⣾⣿⡀⣸⠃⢠⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣆⠈⣧⠀⣿⣷⡟⢻⡀⠀⠀⡇
+         ⢸⠃⠀⢸⣇⣾⢹⡟⣿⣿⣤⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣤⣿⣿⢹⣇⣿⣼⡏⠀⠀⡇
+         ⢸⠀⠀⢸⣿⠏⣽⢸⣿⣿⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⣿⣿⣇⣿⠽⣿⣧⠀⠀⡇
+         ⢸⡆⠀⣼⠁⠀⡏⠘⢿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡿⠃⢸⠀⠈⣷⠀⢰⡇
+         ⠸⣷⠀⢻⠀⢰⡇⠀⢸⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣇⣀⢸⡇⠀⡟⠀⣾⠇
+         ⠀⢿⡄⢸⠀⣼⡧⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣟⣸⣧⡀⡇⢠⣿⠀
+         ⠀⠸⣇⢸⣾⣿⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⣿⣿⡇⣸⠇⠀
+         ⠀⠀⢻⣼⣿⠿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠷⢾⢧⡿⠀⠀
+         ⠀⠀⠈⢿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡿⠁⠀
+
+            dP""b8  dP"Yb  88""Yb 888888 .dP"Y8 888888  dP""b8 
+           dP   `" dP   Yb 88__dP 88__   `Ybo." 88__   dP   `" 
+           Yb      Yb   dP 88"Yb  88""   o.`Y8b 88""   Yb      
+            YboodP  YbodP  88  Yb 888888 8bodP' 888888  YboodP 
+
+ ────────────────────────────────────────────────────────────────────────
+▓│                     Below is The Coresec Members                     │▓
+▓│──────────────────────────────────────────────────────────────────────│▓
+
+        </pre>
+    </div>
+    <div class="container">
+        <!-- Member list section -->
+        <div class="member-list">
+            <div class="member">
+                <span class="member-name" style="font-size: 16px; margin: 0px 20px 0px 2px; padding-top: 0px; display: inline-block;color: #ff0000; font-weight: bold;background-image: url('hoa/glitter/gold.gif');">Lust</span>
+                <span class="member-role" style="font-size: 16px; margin: 0px 20px 0px 2px; padding-top: 0px; display: inline-block;color: #c5b312; font-weight: bold;background-image: url('hoa/glitter/gold.gif');">[ Owner ]</span>
+                <span class="member-id">ID: 12345</span>
+            </div>
+            <div class="member">
+                <span class="member-name" style="font-size: 16px; margin: 0px 20px 0px 2px; padding-top: 0px; display: inline-block;color: #ff0000; font-weight: bold;background-image: url('hoa/glitter/gold.gif');">valdz</span>
+                <span class="member-role" style="font-size: 16px; margin: 0px 20px 0px 2px; padding-top: 0px; display: inline-block;color: #c5b312; font-weight: bold;background-image: url('hoa/glitter/gold.gif');">[ Owner ]</span>
+                <span class="member-id">ID: 54321</span>
+            </div>
+            <div class="member">
+                <span class="member-name" style="font-size: 16px; margin: 0px 20px 0px 2px; padding-top: 0px; display: inline-block;color: #ff0000; font-weight: bold;background-image: url('hoa/glitter/gold.gif');">tour</span>
+                <span class="member-role" style="font-size: 16px; margin: 0px 20px 0px 2px; padding-top: 0px; display: inline-block;color: #c5b312; font-weight: bold;background-image: url('hoa/glitter/gold.gif');">[ Moderator ]</span>
+                <span class="member-id">ID: 98765</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
