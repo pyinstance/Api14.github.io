@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Display</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative; /* Make the body a positioning context */
+        }
+        .container {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 80%; /* Adjust width as needed */
+            max-width: 1000px; /* Maximum width */
+            height: 80%; /* Adjust height as needed */
+            max-height: 600px; /* Maximum height */
+            overflow: auto; /* Enable scrolling if content exceeds box dimensions */
+            animation: fadeIn 1s ease-in-out; /* Fade in animation */
+        }
+        .container pre {
+            margin: 0;
+            white-space: pre-wrap; /* Preserve formatting and wrap long lines */
+            padding: 10px; /* Padding inside the box */
+            font-size: 14px; /* Adjust font size as needed */
+            line-height: 1.5; /* Adjust line height for readability */
+            animation: slideIn 1s ease-in-out; /* Slide in animation */
+        }
+        .title {
+            position: absolute;
+            top: 20px; /* Adjust vertical position as needed */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%);
+            z-index: 1; /* Ensure it's above the GIF background */
+            color: #ffffff;
+            font-size: 24px; /* Adjust font size as needed */
+        }
+        .gif-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0; /* Behind everything */
+            opacity: 0.5; /* Adjust opacity as needed */
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h5 class="title" style="font-size: 24px; margin: 0px 20px 0px 2px; padding-top: 0px; display: inline-block;color: #9c9a00; font-weight: bold;background-image: url('https://cdn.discordapp.com/attachments/1260612112577859625/1261893052511817738/gold.gif?ex=66949cfc&is=66934b7c&hm=011edf9dcabf9d7acdf089452fb06745d05f7004c6d9e13b47631ed2ca0cdb3a&');">
+        10 Steam Accounts
+    </h5>
+    <div class="container">
+        <pre>
+My Discord Server : <a href="https://discord.gg/QQf46gwkHA" target="_blank">https://discord.gg/QQf46gwkHA</a>
+
+ ────────────────────────────────────────────────────────────────────────
+▓│                ...::[ SCROLL DOWN TO VIEW Accounts ]::...            │▓
+▓│──────────────────────────────────────────────────────────────────────│▓
+──────┘      ░░          DO NOT CHANGE ANY INFO            ░░     └──────
+│                          ON THESE ACCOUNTS                           │
+└──────────────────────────────────────────────────────────────────────┘
+
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣶⠶⠿⠷⣶⣄⠀⠀⠀⠀⠀⠀⠀⣠⡶⠿⠛⠷⢶⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢀⣴⡿⠛⠉⠀⠀⠀⠀⠀⠹⣧⠀⠀⠀⠀⠀⣼⠏⠀⠀⠀⠀⠀⠈⠙⢿⣦⡀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣠⡿⠋⠀⢀⣠⠞⠋⠀⠀⠀⢠⡿⠀⠀⠀⠀⠀⢻⡆⠀⠀⠀⠈⠻⣦⡀⠀⠘⢿⣆⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣰⡟⠁⠀⢠⡿⠁⠀⠀⠀⠀⣠⣿⠃⠀⠀⠀⠀⠀⠘⣿⣦⠀⠀⠀⠀⠈⢻⣄⠀⠀⠻⣧⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣴⠏⠀⠀⢠⡟⠀⣠⠀⠀⠀⣼⠟⠁⠀⠀⠀⠀⠀⠀⠀⠈⠻⣷⡀⠀⠀⣄⠀⢻⣆⠀⠀⠹⣧⠀⠀⠀⠀
+⠀⠀⠀⣰⠏⠀⠀⢰⣿⣇⣰⠋⠀⠀⠀⢿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡾⠁⠀⠀⠘⣧⣼⣿⣆⠀⠀⠹⣧⠀⠀⠀
+⠀⠀⢰⡏⠀⠀⢰⣿⣿⣿⡇⢠⡟⠀⠀⠀⣹⡇⠀⠀⠀⠀⠀⠀⠀⠸⣏⡀⠀⠀⠸⡆⢸⣿⣿⣿⣇⠀⠀⠹⣇⠀⠀
+⠀⢠⡟⠀⠀⢰⡾⠈⣿⣿⣧⣿⢀⡶⠀⣼⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣷⡀⢶⡀⢿⣼⣿⣿⠙⢿⡆⠀⠀⢻⡆⠀
+⠀⣾⠁⠀⢠⣼⠃⠀⣸⢏⣿⣧⣼⠃⣼⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣧⠈⣧⣼⣿⡿⣏⠀⠘⣧⡄⠀⠈⣷⠀
+⢰⡏⠀⠀⢸⡟⠀⢠⡟⠘⠿⢻⣿⣷⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⡿⠟⠃⢹⡄⠀⢹⡇⠀⠀⢹⡇
+⢸⡇⠀⠀⣸⡇⠀⣾⠁⢀⡏⠈⢻⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣏⠀⢸⡄⠈⣷⡀⢸⣧⠀⠀⠸⡇
+⢸⠀⠀⢀⡟⠻⣾⣿⡀⣸⠃⢠⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣆⠈⣧⠀⣿⣷⡟⢻⡀⠀⠀⡇
+⢸⠃⠀⢸⣇⣾⢹⡟⣿⣿⣤⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣤⣿⣿⢹⣇⣿⣼⡏⠀⠀⡇
+⢸⠀⠀⢸⣿⠏⣽⢸⣿⣿⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⣿⣿⣇⣿⠽⣿⣧⠀⠀⡇
+⢸⡆⠀⣼⠁⠀⡏⠘⢿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡿⠃⢸⠀⠈⣷⠀⢰⡇
+⠸⣷⠀⢻⠀⢰⡇⠀⢸⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣇⣀⢸⡇⠀⡟⠀⣾⠇
+⠀⢿⡄⢸⠀⣼⡧⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣟⣸⣧⡀⡇⢠⣿⠀
+⠀⠸⣇⢸⣾⣿⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⣿⣿⡇⣸⠇⠀
+⠀⠀⢻⣼⣿⠿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠷⢾⢧⡿⠀⠀
+⠀⠀⠈⢿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡿⠁
+~ Cracked By Lust ~
+─────────────────────────────────READ ME───────────────────────────────
+PLEASE MAKE SURE YOU DO NOT CHNAGE THE PASSWORD OR ANY INFORMATION ON
+THESE ACCOUNTS AS IT WILL RESULT IN THE ACCOUNT BEING BANNED S-BANNED 
+OR EVEN IP BANNED DO NOT BE A FUCKING RETARD AND RUIN IT FOR EVERYONE
+else
+
+───────────────────────────────────────────────────────────────────────
+
+NOTE : ALL THESE ACCOUNTS HAVE BEEN THROUGH A CHECKER
+
+Accounts Listed Below
+
+───────────────────────────────────────────────────────────────────────
+zerovirus1413@hotmail.com:Zz114770@ — 40
+aliucarrrr@outlook.com:Fusrodah1 — 23
+gabrielcanizaresoto@hotmail.com:Can12ar35.123 — 1
+florent.std974@outlook.com:MaKMIDa.974-NABIL — 18
+diegosal.saldanha@hotmail.com:A72p28d2003@@ — 15
+lupitohernandez14@outlook.com:Pantonote14 — 6
+oguzhanalpyagal@windowslive.com:Oguzhan33. — 67
+Jrenatojunior@Hotmail.Com:Jr280507* — 4
+ismael.alcheikh8@outlook.com:0999757154Is$ — 2
+cool_cat_cali@hotmail.com:Askbob21 — 4
+cesar5775@hotmail.com:Alexander23 — 6
+altivinogabriel@outlook.com:Altgab77 — 12
+roncapitanmorgan@hotmail.com:Manue1970 — 16
+sick_inck@hotmail.com:Aibj160986 — 178
+aboody200011@outlook.com:Pstation6 — 4
+rodrigo_700@hotmail.com:rodrigo1234@ — 9
+dbcb82@hotmail.com:Akbb300715 — 69
+oscaralonso92@hotmail.com:Jasauhi1! — 648
+Dyhan1234@Hotmail.Com:117Dl8341* — 23
+shaunwelling69@hotmail.com:Arsenal10!!! — 15
+el_vi_93@hotmail.it:Godofcazzat1!! — 21
+blackice12009@hotmail.com:Blackend_44 — 2
+thiagopelissaro@hotmail.com:Thiago132 — 1
+lijnbaan@hotmail.com:Adriaan1966 — 1
+cordejonge@hotmail.nl:Mabadejo1943! — 25
+yurijunho@hotmail.com:040692Yuri* — 185
+Windwalkerhunting@Hotmail.Com:264791Jr. — 83
+tangdynasty_wang@hotmail.com:Wangwei19820710 — 1
+shanvictor@hotmail.com:Diaonimahi24 — 43
+moises38@hotmail.com:Timberland5731 — 4
+Rustykorn@Hotmail.Com:Kurasug24!! — 40
+Luancoelhok@Hotmail.Com:lck1234567 — 156
+knight0207@hotmail.com:Clvsc131 — 393
+claudiolucasp@hotmail.com:30830118c — 9
+Nsci304@Hotmail.Com:Placebo13. — 6
+Wht890411@Hotmail.Com:19890411Shmily — 30
+Be90@Hotmail.Com:Bcastelo15. — 21
+pkampp@hotmail.dk:isakisak2 — 20
+imscenee@hotmail.com:Naruto9501!! — 126
+lichunkit@live.hk:Dean6741 — 6
+Jiajieliu2000@Outlook.Com:Qq981941513 — 19
+jonogueirapa2014@outlook.com:21081972jp — 2
+Matthew.Walters82@Hotmail.Com:matthewcruz01 — 3
+benjidjidji@hotmail.fr:Benji7777!! — 37
+nerai_2@hotmail.com:nerai123 — 1
+dogusdogan_gs@hotmail.com:Leningrad1989.. — 7
+meireles000@hotmail.com:spx053mxsa — 53
+mkasabov@hotmail.com:Maxg90mk1981 — 2
+italo.viniciussilva@outlook.com:vini2412 — 7
+withnayandradems9888@hotmail.com:Adriangael1233 — 5
+chernandez91@hotmail.com:angels91 — 812
+kody.rochon@outlook.com:Littlebigbear1!!!! — 16
+guutaberteli@live.com:berteli666 — 1288
+talhatorun1@hotmail.com:asdqwe19 — 46
+dark_series@hotmail.es:Sandia051992 — 6
+carecaaos30@hotmail.com:CeboNoCu2 — 2
+yaseminkalayci70@hotmail.com:ata070904 — 124
+password123jude@outlook.com:Mermaid7969? — 10
+titange25@msn.com:Bouboudje39! — 7
+eduardovogelmann@hotmail.com:Eduardo948948 — 1
+Password123jude@outlook.com:Mermaid7969? — 10
+s535796@hotmail.com:woochunbb123 — 1136
+keskin.340@hotmail.com:05445420065yakup — 7
+eduardo_hip@hotmail.com:Eduardopok24$ — 97
+dudumito03@hotmail.com:Dudu100307 — 1
+trabzonlu1970@live.com:10771077Eren. — 312
+luan_caldas2@hotmail.com:324litros@ — 116
+jpzeus@outlook.fr:Pauline@19 — 1
+suthanee_roopthong@hotmail.com:311204JOom — 8
+falkynsnest@hotmail.com:Magical1! — 155
+v_guilherme182@hotmail.com:F0g1mc89 — 8
+fran363@outlook.com.ar:Apache51 — 1
+Luciana_oliveira1990@hotmail.com:Marvermelho — 5
+jrenatojunior@hotmail.com:Jr280507* — 4
+marcosloidi@hotmail.com:loidi1987 — 6
+imrtartaro@hotmail.com:Amestris1. — 1
+john_lieu@hotmail.com:Porkchops — 23
+Tuvillanofavorito@outlook.com:Vibra2005 — 13
+edinleandro@hotmail.com:6973Leon@ — 2
+garethmcdoo8@hotmail.com:Smallville$ — 4
+ar_chun_a_a@hotmail.com:K29xu67x — 2
+yagmur_80_81@hotmail.com:nisa2020 — 17
+viviancbbraga@hotmail.com:Vivica8a — 3
+eyenier@hotmail.com:Eren1903 — 1
+mark_ellis_3@hotmail.com:turbo2000 — 1
+orlanedemay@hotmail.fr:Orlane2001. — 3
+genesis-elite@live.de:01748928101Wbn90 — 335
+ragdoll.kim@hotmail.com:rud1482@@ — 10
+danirubiano_92@hotmail.com:Citoyens1023. — 12
+meloh54@hotmail.com:M2415897m* — 51
+willianwallace_@hotmail.com:Paxa2803! — 9
+chunchun1234@msn.com:Aa@04163798 — 1
+meu343434@hotmail.com:Arda310023! — 10
+yavuz-aysee@hotmail.com:ahmetselim2 — 11
+sly_wxzuno@hotmail.com:saad2004caca3434. — 8
+kelsiep12@hotmail.com:Bluebell4! — 19
+rapperloi@hotmail.com:Edsonsoares2204 — 187
+bahoturkmen@hotmail.com:Adana0110 — 55
+Sophianedu76@hotmail.com:Sophiane76@ — 5
+leticiamelo22@hotmail.com:Letgeo87 — 1
+rafael_feltrin@hotmail.com:Rafa2522* — 4
+robinbiswas86@hotmail.com:Canada2! — 8
+Chunchun1234@Msn.Com:Aa@04163798 — 1
+msndodent@hotmail.com:hwjqirjf22! — 48
+alex.contreras2010@hotmail.com:1994Cometaco — 1
+reigyoku@hotmail.com:Shurano1! — 10
+dalbosco.psi@outlook.com:Life2055rd$$$ — 18
+manoel_thalyson@hotmail.com:Ma32232433@ — 2
+alancaudillo@hotmail.com:Golfblanco123$ — 25
+maike_dsanta@hotmail.com:mds396061 — 2
+Profissional.Marcos@Outlook.Com:Juju123123@@@ — 16
+Dubuc87@hotmail.com:Dubuc007@ — 8
+Edi.Csantos@Hotmail.Com:Cledire2013@ — 1
+chanchoupoh@hotmail.com:750982bk@ — 1
+tiagosalesdasilva@hotmail.com:ttmm1462 — 1
+───────────────────────────────────────────────────────────────────────
+        </pre>
+    </div>
+</body>
+</html>
