@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members List | #coresec</title>
+    <style>
+        html,
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #050505;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .ascii-logo {
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .ascii-logo {
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #0a0a0a;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 50em;
+            max-width: 1000px;
+            animation: fadeIn 1s ease-in-out, slideInFromTop 1s ease-in-out;
+            margin-bottom: 20px;
+            overflow-y: auto;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .member-list {
+            background-color: #141414;
+            border: 1px solid #444;
+            border-radius: 10px;
+            padding: 20px;
+            width: 100%;
+            text-align: left;
+            margin-top: 20px;
+            overflow: hidden;
+            box-sizing: border-box;
+            animation: fadeIn 1.5s ease-in-out, slideInFromBottom 1.5s ease-in-out;
+        }
+
+        .member-list .member {
+            background-color: #1f1f1f;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+            animation: fadeIn 2s ease-in-out, slideInFromLeft 2s ease-in-out;
+        }
+
+        .member-list .member .member-name {
+            color: #ff0000;
+            font-weight: bold;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+
+        .member-list .member .member-id {
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-style: italic;
+            font-weight: bolder;
+            display: block;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .member-list .member .member-role {
+            color: #4d4d4d;
+            background-image: url(hoa/glitter/black.gif);
+            font-style: italic;
+            font-weight: bold;
+            animation: fadeIn 2.8s ease-in-out;
+        }
+
+        .title {
+            font-size: 24px;
+            color: #e2e2e2;
+            text-shadow: 0px 0px 10px #ffffff;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromTop {
+            from {
+                transform: translateY(-20px);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInFromBottom {
+            from {
+                transform: translateY(20px);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInFromLeft {
+            from {
+                transform: translateX(-20px);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .section-title {
+            color: #e2e2e2;
+            text-shadow: 0px 0px 10px #ffffff;
+            font-size: 20px;
+            margin: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ascii-logo">
+        <pre>
+
+ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣶⠶⠿⠷⣶⣄⠀⠀⠀⠀⠀⠀⠀⣠⡶⠿⠛⠷⢶⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+ ⠀⠀⠀⠀⠀⠀⢀⣴⡿⠛⠉⠀⠀⠀⠀⠀⠹⣧⠀⠀⠀⠀⠀⣼⠏⠀⠀⠀⠀⠀⠈⠙⢿⣦⡀⠀⠀⠀⠀⠀⠀⠀
+ ⠀⠀⠀⠀⠀⣠⡿⠋⠀⢀⣠⠞⠋⠀⠀⠀⢠⡿⠀⠀⠀⠀⠀⢻⡆⠀⠀⠀⠈⠻⣦⡀⠀⠘⢿⣆⠀⠀⠀⠀⠀⠀
+ ⠀⠀⠀⠀⣰⡟⠁⠀⢠⡿⠁⠀⠀⠀⠀⣠⣿⠃⠀⠀⠀⠀⠀⠘⣿⣦⠀⠀⠀⠀⠈⢻⣄⠀⠀⠻⣧⠀⠀⠀⠀⠀
+ ⠀⠀⠀⣴⠏⠀⠀⢠⡟⠀⣠⠀⠀⠀⣼⠟⠁⠀⠀⠀⠀⠀⠀⠀⠈⠻⣷⡀⠀⠀⣄⠀⢻⣆⠀⠀⠹⣧⠀⠀⠀⠀
+ ⠀⠀⣰⠏⠀⠀⢰⣿⣇⣰⠋⠀⠀⠀⢿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡾⠁⠀⠀⠘⣧⣼⣿⣆⠀⠀⠹⣧⠀⠀⠀
+ ⠀⢰⡏⠀⠀⢰⣿⣿⣿⡇⢠⡟⠀⠀⠀⣹⡇⠀⠀⠀⠀⠀⠀⠀⠸⣏⡀⠀⠀⠸⡆⢸⣿⣿⣿⣇⠀⠀⠹⣇⠀⠀
+ ⢠⡟⠀⠀⢰⡾⠈⣿⣿⣧⣿⢀⡶⠀⣼⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣷⡀⢶⡀⢿⣼⣿⣿⠙⢿⡆⠀⠀⢻⡆⠀
+ ⣾⠁⠀⢠⣼⠃⠀⣸⢏⣿⣧⣼⠃⣼⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣧⠈⣧⣼⣿⡿⣏⠀⠘⣧⡄⠀⠈⣷⠀
+⢰⡏⠀⠀⢸⡟⠀⢠⡟⠘⠿⢻⣿⣷⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⡿⠟⠃⢹⡄⠀⢹⡇⠀⠀⢹⡇
+⢸⡇⠀⠀⣸⡇⠀⣾⠁⢀⡏⠈⢻⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣏⠀⢸⡄⠈⣷⡀⢸⣧⠀⠀⠸⡇
+⢸⠀⠀⢀⡟⠻⣾⣿⡀⣸⠃⢠⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣆⠈⣧⠀⣿⣷⡟⢻⡀⠀⠀⡇
+⢸⠃⠀⢸⣇⣾⢹⡟⣿⣿⣤⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣤⣿⣿⢹⣇⣿⣼⡏⠀⠀⡇
+⢸⠀⠀⢸⣿⠏⣽⢸⣿⣿⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⣿⣿⣇⣿⠽⣿⣧⠀⠀⡇
+⢸⡆⠀⣼⠁⠀⡏⠘⢿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡿⠃⢸⠀⠈⣷⠀⢰⡇
+⠸⣷⠀⢻⠀⢰⡇⠀⢸⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣇⣀⢸⡇⠀⡟⠀⣾⠇
+ ⢿⡄⢸⠀⣼⡧⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣟⣸⣧⡀⡇⢠⣿⠀
+ ⠸⣇⢸⣾⣿⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⣿⣿⡇⣸⠇⠀
+ ⠀⢻⣼⣿⠿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠷⢾⢧⡿⠀⠀
+ ⠀⠈⢿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡿⠁⠀
+
+ dP""b8  dP"Yb  88""Yb 888888 .dP"Y8 888888  dP""b8 
+dP   `" dP   Yb 88__dP 88__   `Ybo." 88__   dP   `" 
+Yb      Yb   dP 88"Yb  88""   o.`Y8b 88""   Yb      
+ YboodP  YbodP  88  Yb 888888 8bodP' 888888  YboodP 
+
+ ────────────────────────────────────────────────────────────────────────
+▓│                     Below is The Coresec Members                     │▓
+▓│──────────────────────────────────────────────────────────────────────│▓
+
+        </pre>
+    </div>
+    <div class="container">
+        <div class="title">#coresec Members List</div>
+        <div class="member-list">
+            <div class="section-title">#coresec <a style="color: #ff0000; text-shadow: 0px 0px 10px #ff0000;">Owners</a></div>
+            <div class="member">
+                <span class="member-name"style="background-image: url(hoa/glitter/gold.gif);text-shadow: 0px 0px 10px #ff0000;">Lust</span>
+                <span class="member-id">@pyinstance</span>
+                <span class="member-role">[ Owner ]</span>
+            </div>
+            <div class="member">
+                <span class="member-name"style="background-image: url(hoa/glitter/gold.gif);text-shadow: 0px 0px 10px #ff0000;">Valdz</span>
+                <span class="member-id">@hierarchist</span>
+                <span class="member-role">[ Owner ]</span>
+            </div>
+
+            <div class="section-title">#coresec <a style="color: #0066ff; text-shadow: 0px 0px 10px #0066ff;">Developer</a></div>
+            <div class="member">
+                <span class="member-name"style="color:#0066ff; background-image: url(hoa/glitter/rainbow.gif); text-shadow: 0px 0px 15px #0066ff;">risk</span>
+                <span class="member-id">@jivb</span>
+                <span class="member-role">[ Developer ]</span>
+            </div>
+
+            <div class="section-title">#coresec <a style="color: #a70000; text-shadow: 0px 0px 10px #a70000;">Staff</a></div>
+            <div class="member">
+                <span class="member-name"style="color:#a70000; background-image: url(hoa/glitter/red.gif); text-shadow: 0px 0px 10px #a70000;">FelixFoxxy</span>
+                <span class="member-id">@felixfoxxy</span>
+                <span class="member-role">[ #coresec High Rank ] </span>
+            </div>
+            <div class="member">
+                <span class="member-name"style="color:#a70000; background-image: url(hoa/glitter/red.gif); text-shadow: 0px 0px 10px #a70000;">tour</span>
+                <span class="member-id">@wyguts</span>
+                <span class="member-role">[ Moderator ]</span>
+            </div>
+            <div class="member">
+                <span class="member-name"style="color:#a70000; background-image: url(hoa/glitter/red.gif); text-shadow: 0px 0px 10px #a70000;">fraud</span>
+                <span class="member-id">@sexcrew</span>
+                <span class="member-role">[ Moderator ]</span>
+            </div>
+
+            <div class="section-title">#coresec <a style="color: #ffffff; text-shadow: 0px 0px 10px #e2e2e2;">Members</a></div>
+            <div class="member">
+                <span class="member-name"style="color:#ffffff; background-image: url(hoa/glitter/purple.gif); text-shadow: 0px 0px 10px #ffffff;">un</span>
+                <span class="member-id">@stopdatvehicle.</span>
+                <span class="member-role">[ #coresec ]</span>
+            </div>
+            <div class="member">
+                <span class="member-name"style="color:#ffffff; background-image: url(hoa/glitter/purple.gif); text-shadow: 0px 0px 10px #ffffff;">my lil pow</span>
+                <span class="member-id">@keepaccusingme</span>
+                <span class="member-role">[ #coresec ] </span>
+            </div>
+            <div class="member">
+                <span class="member-name"style="color:#ffffff; background-image: url(hoa/glitter/purple.gif); text-shadow: 0px 0px 10px #ffffff;">blaze</span>
+                <span class="member-id">@randomdude637</span>
+                <span class="member-role">[ #coresec ] </span>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
