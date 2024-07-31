@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="downfall.wiki #1 private biolink | discord.gg/pMXZ6ZzHqk" />
+    <meta name="description" content="coresec #1 private biolink | Dev Lust" />
     <link href="css.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="pfp/icon.png">
     <title>lust</title>
@@ -74,11 +74,7 @@
             height: 20px;
             vertical-align: middle;
         }
-        #viewCount {
-            font-size: 18px;
-            font-weight: bold;
-            vertical-align: middle;
-        }
+
     </style>
 </head>
 <body style="background-image: url('https://i.pinimg.com/originals/1a/48/95/1a48955c2442fada0412b8f27f2e870f.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
@@ -103,11 +99,6 @@
                 </div>
                 <div class="username">
                     <a>lust</a>
-                </div>
-
-                <div class="profile-view-count" id="profileViewCount">
-                    <img class="eye-icon" src="icons/eye.png" alt="Eye">
-                    <span id="viewCount">1,203</span>
                 </div>
 
                 <div class="status">
@@ -246,21 +237,6 @@
     window.onload = function() {
         typeWriter();
     };
-</script>
-
-<script>
-    // Get the count from localStorage or set to 0 if not present
-    let count = localStorage.getItem('profileViews') || 0;
-
-    // Function to update the count
-    function updateCount() {
-        count++; // Increment count
-        document.getElementById('viewCount').textContent = count;
-        localStorage.setItem('profileViews', count); // Update localStorage
-    }
-
-    // Call updateCount() function to update count on page load
-    updateCount();
 </script>
 </body>
 </html>
