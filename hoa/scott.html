@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Given | #coresec</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #050505;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative; /* Make the body a positioning context */
+        }
+        .container {
+            background-color: #0a0a0a;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 80%; /* Adjust width as needed */
+            max-width: 1000px; /* Maximum width */
+            height: 80%; /* Adjust height as needed */
+            max-height: 600px; /* Maximum height */
+            overflow: auto; /* Enable scrolling if content exceeds box dimensions */
+            animation: fadeIn 1s ease-in-out; /* Fade in animation */
+        }
+        .container pre {
+            margin: 0;
+            white-space: pre-wrap; /* Preserve formatting and wrap long lines */
+            padding: 10px; /* Padding inside the box */
+            font-size: 14px; /* Adjust font size as needed */
+            line-height: 1.5; /* Adjust line height for readability */
+            animation: slideIn 1s ease-in-out; /* Slide in animation */
+        }
+        .title {
+            position: absolute;
+            top: 20px; /* Adjust vertical position as needed */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%);
+            z-index: 1; /* Ensure it's above the GIF background */
+            color: #ffffff;
+            font-size: 24px; /* Adjust font size as needed */
+        }
+        .gif-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0; /* Behind everything */
+            opacity: 0.5; /* Adjust opacity as needed */
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h5 class="title" style="font-size: 24px; margin: 0px 20px 0px 2px; padding-top: 0px; display: inline-block;color: #bb71e4; font-weight: bold;background-image: url('./glitter/purple.gif');">
+      Scott Everett Manwarren 
+    </h5>
+    <div class="container">
+        <pre>
+Join #coresec : <a href="https://discord.gg/AwXkT4NDJb" target="_blank">https://discord.gg/corsec</a>
+
+ ────────────────────────────────────────────────────────────────────────
+▓│                ...::[ SCROLL DOWN TO VIEW PASTE ]::...               │▓
+▓│──────────────────────────────────────────────────────────────────────│▓
+──────┘      ░░       ("Scroll down to view paste"):      ░░     └──────
+│                   Contact Info Is On My Profile                      │
+└──────────────────────────────────────────────────────────────────────┘
+
+
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣶⠶⠿⠷⣶⣄⠀⠀⠀⠀⠀⠀⠀⣠⡶⠿⠛⠷⢶⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢀⣴⡿⠛⠉⠀⠀⠀⠀⠀⠹⣧⠀⠀⠀⠀⠀⣼⠏⠀⠀⠀⠀⠀⠈⠙⢿⣦⡀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣠⡿⠋⠀⢀⣠⠞⠋⠀⠀⠀⢠⡿⠀⠀⠀⠀⠀⢻⡆⠀⠀⠀⠈⠻⣦⡀⠀⠘⢿⣆⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣰⡟⠁⠀⢠⡿⠁⠀⠀⠀⠀⣠⣿⠃⠀⠀⠀⠀⠀⠘⣿⣦⠀⠀⠀⠀⠈⢻⣄⠀⠀⠻⣧⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣴⠏⠀⠀⢠⡟⠀⣠⠀⠀⠀⣼⠟⠁⠀⠀⠀⠀⠀⠀⠀⠈⠻⣷⡀⠀⠀⣄⠀⢻⣆⠀⠀⠹⣧⠀⠀⠀⠀
+⠀⠀⠀⣰⠏⠀⠀⢰⣿⣇⣰⠋⠀⠀⠀⢿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡾⠁⠀⠀⠘⣧⣼⣿⣆⠀⠀⠹⣧⠀⠀⠀
+⠀⠀⢰⡏⠀⠀⢰⣿⣿⣿⡇⢠⡟⠀⠀⠀⣹⡇⠀⠀⠀⠀⠀⠀⠀⠸⣏⡀⠀⠀⠸⡆⢸⣿⣿⣿⣇⠀⠀⠹⣇⠀⠀
+⠀⢠⡟⠀⠀⢰⡾⠈⣿⣿⣧⣿⢀⡶⠀⣼⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣷⡀⢶⡀⢿⣼⣿⣿⠙⢿⡆⠀⠀⢻⡆⠀
+⠀⣾⠁⠀⢠⣼⠃⠀⣸⢏⣿⣧⣼⠃⣼⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣧⠈⣧⣼⣿⡿⣏⠀⠘⣧⡄⠀⠈⣷⠀
+⢰⡏⠀⠀⢸⡟⠀⢠⡟⠘⠿⢻⣿⣷⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⡿⠟⠃⢹⡄⠀⢹⡇⠀⠀⢹⡇
+⢸⡇⠀⠀⣸⡇⠀⣾⠁⢀⡏⠈⢻⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣏⠀⢸⡄⠈⣷⡀⢸⣧⠀⠀⠸⡇
+⢸⠀⠀⢀⡟⠻⣾⣿⡀⣸⠃⢠⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣆⠈⣧⠀⣿⣷⡟⢻⡀⠀⠀⡇
+⢸⠃⠀⢸⣇⣾⢹⡟⣿⣿⣤⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣤⣿⣿⢹⣇⣿⣼⡏⠀⠀⡇
+⢸⠀⠀⢸⣿⠏⣽⢸⣿⣿⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⣿⣿⣇⣿⠽⣿⣧⠀⠀⡇
+⢸⡆⠀⣼⠁⠀⡏⠘⢿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡿⠃⢸⠀⠈⣷⠀⢰⡇
+⠸⣷⠀⢻⠀⢰⡇⠀⢸⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣇⣀⢸⡇⠀⡟⠀⣾⠇
+⠀⢿⡄⢸⠀⣼⡧⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣟⣸⣧⡀⡇⢠⣿⠀
+⠀⠸⣇⢸⣾⣿⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⣿⣿⡇⣸⠇⠀
+⠀⠀⢻⣼⣿⠿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠷⢾⢧⡿⠀⠀
+⠀⠀⠈⢿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡿⠁
+
+
+
+ ~ Made By Mmeber of coresec opsecuser ~
+ » xtc                            
+ ⤷ t.me/xtcwrld			        
+ » Many people who spoke up 
+
+ ─────────────────────────────────────────────────────────────────────────────────────────────────
+ REASON
+Scott Everett Manwarren has been put on doxbin for raping his daughter and he should have thought of what he
+Had done but he didn't think so he rapidly raped his daughter 
+
+He thought it would be so funny to rap his own daughter and he thought he would get by with it and if you rape
+A kid or your daughter you cant get by with that  
+
+Wait until his wife finds out about this LOL
+─────────────────────────────────────────────────────────────────────────────────────────────────
+
+╔───────────────────────────────────────────────────────────────────────────────────────────────────────────────╗ 
+█░░░░░░░░░░█                               0x01 Introduction                                         █░░░░░░░░░░█
+╚───────────────────────────────────────────────────────────────────────────────────────────────────────────────╝
+Main Information 
+Full Name: Scott Everett Manwarren
+Race: White
+Gender: Male
+Sexuality: Straight
+D.O.B: August 2nd 1979
+Age: 44
+Phone Number: 931-703-2648
+Address: 119 Meadowview Ln Angleton, Texas, 77515
+Email: vector517@gmail.com
+scott.manwarren@chsinc.com
+smanwarren@netzero.net 
+smanwarren@peoplepc.com
+willi420@hotmail.com
+mulders_fox@hotmail.com
+tidwell_holly@yahoo.com
+Physical Appearance:
+Ethnicity: White
+Eye Color: Brown
+Hair Color: Brown
+Height: 6'2"
+Weight: 175 Lbs
+Phone Numbers: 
+931-703-2648
+931-680-1848
+979-205-3542
+409-798-7415 
+
+Possible Relatives: Holly N. Tidwell, Amy D. Manwarren, Jody Herrera, Patricia Marcus Dickerson, Robyn Sinor, Jack Ednie, Phyllis Tidwell
+
+Previous Addresses:
+119 Meadow View Ln. Angleton, TX 77515 Recorded in 2010.
+╔───────────────────────────────────────────────────────────────────────────────────────────────────────────────╗ 
+█░░░░░░░░░░█                               0x02 Realatives Information                               █░░░░░░░░░░█
+╚───────────────────────────────────────────────────────────────────────────────────────────────────────────────╝
+Main Information 
+
+1st RELATIVE
+
+Full Name: Holly N. Tidwell
+Location: Angleton, TX
+Date of Birth: March 25th, 1986
+Age: 36 
+Gender: Female
+
+Primary Residence:
+119 Meadowview Ln. Angleton, TX 77515+3818 29.192900°, -95.406200°
+
+Previous Addresses:
+119 Meadowview Ln. Angleton, TX 77516 Recorded in 2018.
+119 Meadowview Angleton, TX 77515 Recorded in 2007.
+119 Meadow View Ln. Angleton, TX 77515 Recorded in 2015.
+119 Meadow View Ln. Angleton, TX 77516 Recorded in 2011.
+
+Phone Numbers:
+979-848-1675
+979-984-8481
+979-848-4816
+979-215-0420
+979-417-1143
+979-549-9685
+
+Email Addresses:
+tidwell_holly@yahoo.com
+tidwell_holly@ix.netcom.com
+htidwell@bigfoot.com
+tidwell_holly@hotmail.com
+tidwellholly@yahoo.com
+
+Associates:
+Phyllis Tidwell (58)
+
+IP Addresses:
+69.90.219.119 (Jul 2022)
+63.160.79.183 (Apr 2012)
+198.48.44.79 (Oct 2011)
+64.85.52.176 (Apr 2021)
+12.41.131.188 (Apr 2010)
+208.131.232.152 (Dec 2011)
+6.176.199.1 (Nov 2008)
+165.71.89.79 (Oct 2011)
+51.222.8.177 (Jan 2009)
+192.33.46.27 (Oct 2007)
+69.13.75.190 (Mar 2010)
+212.63.186.92 (Feb 2012)
+72.32.34.1 (Feb 2012)
+24.10.33.177
+24.72.173.206 (Jan 2007)
+207.193.108.126 (Dec 2011)
+66.136.165.129 (Dec 2011)
+6.176.199.128 (Nov 2011)
+63.72.221.177 (Nov 2011)
+129.141.151.211 (Mar 2012)
+192.48.225.71 (Mar 2010)
+66.216.74.234 (Sep 2008)
+207.226.174.136 (Jan 2009)
+216.34.249.144 (Mar 2008)
+216.61.157.65 (Jul 2007)
+72.32.34.155 (May 2007)
+192.4.225.7 (May 2007)
+
+Scores:
+Wealth (48)
+Donor (32)
+Travel (41)
+
+Demographics:
+Ethnicity: Western European
+Language: English
+Religion: Protestant
+
+Family:
+Marital Status: Single
+Children: 1
+
+2ND REALTIVE 
+
+Full Name: Amy D. Manwarren
+Location: Angleton, TX
+Date of Birth: November 30th, 1981
+Age: 41
+Gender: Female
+
+Primary Residence:
+119 Meadowview Ln. Angleton, TX 77515+3818 29.192900°, -95.406200°
+Home Facts:
+
+Year Built: 1967
+Purchased On: September 10th, 2009
+Purchase Price: $138,000
+Home Value: $200,000-224,999
+
+Previous Addresses:
+119 Meadow View Ln. Angleton, TX 77515 Recorded in 2010.
+
+Phone Numbers:
+931-703-2648
+931-680-1848
+979-205-3542
+
+Email Addresses:
+amy.manwarren@yahoo.com
+
+Associates:
+Amy Mamwarren
+
+Scores:
+Wealth (48)
+Donor (32)
+Travel (41)
+
+Demographics:
+Ethnicity: Western European
+Language: English
+Religion: Protestant
+
+Family:
+Marital Status: Married
+Children: 2
+
+Mortgages & Refinances:
+Type: Conventional
+Amount: $111,000,000
+Dated: August 21st, 2009
+LTV: 49%
+
+Type: Conventional
+Amount: $111,000,000
+Dated: August 21st, 2009
+
+3rd RELATIVE
+
+
+Name: Jody Herrera
+Location: Angleton, TX
+Date of Birth: December 31st, 1965
+Age: 57
+Gender: Unknown 
+
+Primary Residence:
+119 Meadowview Ln. Angleton, TX 77515+3818 29.192900°, -95.406200°
+
+Scores:
+Wealth (48)
+Donor (32)
+Travel (41)
+
+Demographics:
+Ethnicity: Hispanic
+Language:  Spanish
+Religion:  Catholic
+
+Family:
+Marital Status: Single
+
+4th RELATIVE
+Full Name: Patricia Marcus Dickerson
+Location: Angleton, TX
+
+Primary Residence:
+119 Meadowview Ln. Angleton, TX 77515
+
+Phone Numbers:
+985-517-1278
+
+5th RELATIVE
+Name: Robyn Sinor
+Location: Angleton, TX
+
+Primary Residence:
+119 Meadowview Ln. Angleton, TX 77515
+
+Previous Addresses:
+119 Meadow View Ln. Angleton, TX 77515 Recorded in 2015.
+
+Email Addresses:
+rsinor@yahoo.com
+
+IP Addresses:
+209.74.174.80 (Feb 2015)
+
+6th RELATIVE 
+Name: Jack Ednie
+Location: Angleton, TX
+
+Primary Residence:
+119 Meadowview Ln. Angleton, TX 77515
+
+Email Addresses:
+aednie@yahoo.com
+
+7th RELATIVE
+Name: Phyllis Tidwell
+Location: Angleton, TX
+Date of Birth: January 18th, 1973 (49 years old)
+
+Primary Residence:
+119 Meadowview Ln. Angleton, TX 77515
+
+Previous Addresses:
+119 Meadowview Ln. Angleton, TX 77516 Recorded in 2018.
+119 Meadow View Ln. Angleton, TX 77515 Recorded in 2011.
+119 Meadow View Ln. Angleton, TX 77516 Recorded in 2012.
+
+Phone Numbers:
+979-215-0420
+979-848-1675
+979-549-9685
+
+Email Addresses:
+phyllisann_tidwell@yahoo.com
+phyllisanntidwell2@yahoo.com
+phyllisann_tidwell@hotmail.com
+phyllisanntidwell1@yahoo.com
+nlynch@mastnet.net
+phyllisanntidwell@yahoo.com
+phyllisanntidwell@att.net
+phyllisann_tidwell@aol.com
+phyllisann_tidwell@onebox.com
+
+IP Addresses:
+12.41.131.188 (Apr 2010)
+208.131.232.152 (Dec 2011)
+6.176.199.1 (Nov 2008)
+165.71.89.79 (Oct 2011)
+51.222.8.177 (Jan 2009)
+192.33.46.27 (Oct 2007)
+69.13.75.190 (Mar 2010)
+212.63.186.92 (Feb 2012)
+72.32.34.1 (Feb 2012)
+24.10.33.177
+207.193.108.126 (Dec 2011)
+6.176.199.128 (Nov 2011)
+129.141.151.211 (Mar 2012)
+66.216.74.234 (Sep 2008)
+207.226.174.136 (Jan 2009)
+216.34.249.144 (Mar 2008)
+216.61.157.65 (Jul 2007)
+72.32.34.155 (May 2007)
+╔───────────────────────────────────────────────────────────────────────────────────────────────────────────────╗ 
+█░░░░░░░░░░█                               0x03 Social Accounts                                      █░░░░░░░░░░█
+╚───────────────────────────────────────────────────────────────────────────────────────────────────────────────╝
+RESIDENTIAL PROPERTY 
+Full Name: Scott Manwarren
+HOME OWNER LIVES IN PROPERTY: Yes
+LAST SALE DATE: 2009-08-21
+ 2009-09-10
+APN: 1670-0008-000
+
+USA MOBILE OWNERS
+Full Name: Scott Manwarren
+╔───────────────────────────────────────────────────────────────────────────────────────────────────────────────╗ 
+█░░░░░░░░░░█                               0x04 Business Profiles                                    █░░░░░░░░░░█
+╚───────────────────────────────────────────────────────────────────────────────────────────────────────────────╝
+Primary Company Names: 
+Scott'S Lawn Care
+Current Address: 
+119 Meadowview Ln, Angleton, TX, 77515
+╔───────────────────────────────────────────────────────────────────────────────────────────────────────────────╗ 
+█░░░░░░░░░░█                               0x04 Employment History                                   █░░░░░░░░░░█
+╚───────────────────────────────────────────────────────────────────────────────────────────────────────────────╝
+SCOTT S LAWN CARE (OCT 1, 2019 - MAR 1, 2021)
+Employment Dates: Oct 1, 2019 - Mar 1, 2021
+Employer's Address: 119 Meadowview Ln, Angleton, TX, 77515
+╔───────────────────────────────────────────────────────────────────────────────────────────────────────────────╗ 
+█░░░░░░░░░░█                               0x05 Car Information                                      █░░░░░░░░░░█
+╚───────────────────────────────────────────────────────────────────────────────────────────────────────────────╝
+US AUTO DATA MASTER
+Full Name: Scott Manwarren
+Auto Year: 2021
+Auto Vin: 3czru5h18mm700464
+Auto Model: Hr-v
+Auto Make: Honda
+╔───────────────────────────────────────────────────────────────────────────────────────────────────────────────╗ 
+█░░░░░░░░░░█                               0x06 Vehicles Owned Or Driven                             █░░░░░░░░░░█
+╚───────────────────────────────────────────────────────────────────────────────────────────────────────────────╝
+Vehicle Make and Model: 
+Ford Focus
+Vehicle Identification Number (VIN): 
+1FAFP34P23W246294
+
+Vehicle Make and Model:
+Honda Hr-V
+Vehicle Identification Number (VIN):
+3CZRU5H18MM700464
+╔───────────────────────────────────────────────────────────────────────────────────────────────────────────────╗ 
+█░░░░░░░░░░█                               0x07 Court Records                                        █░░░░░░░░░░█
+╚───────────────────────────────────────────────────────────────────────────────────────────────────────────────╝
+Possession Of Marijuana < 2oz
+Source: DEPT OF PUBLIC SAFETY
+State: Texas
+
+Personal Details
+First Name: Scott
+Middle Name: Everett
+Last Name: Manwarren
+Gender: Male
+Born: Aug 1979
+
+Physical Appearance
+Ethnicity: White
+Eye Color: Brown
+Hair Color: Brown
+Height: 6'2"
+Weight: 175 Lbs
+
+Sanctions
+Offense Date: Sep 26, 1997
+Crime Location: Brazoria, TX
+Crime Type: Misdemeanor
+Offense Code: 481.121(B)(1)
+Offense Description: Possession Of Marijuana < 2oz
+National Crime Information Center (NCIC) Code: 1609
+Case Type : Misdemeanor - Class B
+Case Number: 5209337
+Arresting Agency: For Ncic 2000 Data Conversion Purposes Only
+Court Name : County Court At Law No 2 Angleton
+Court Costs: $204.00
+Fines: $200.00
+Plea: Guilty
+Probation: 12m
+Disposition: Convicted - Lesser Charge
+Disposition Date: Jan 19, 1999
+
+Source: TEXAS BRAZORIA COUNTY ARRESTS
+State: Texas
+
+Personal Details
+First Name: Scott
+Middle Name: Everett
+Last Name: Manwarren
+Gender: Male
+Address: 2026 Cummings Ln, Lake Jackson, Brazoria, US
+
+Physical Appearance
+Ethnicity: White
+Eye Color: Brown
+Hair Color: Brown
+Height: 6'2"
+Weight: 185 Lbs
+
+Sanctions
+Crime Location: Brazoria, TX
+Crime Type: Not Categorized
+Charge Category: Arrest
+Offense Code: MIP - ALCOHOL
+Offense Description: Mip - Alcohol
+Comments: 
+Arresting Agency: 000007
+Warrant Number: 77001 
+[Fineamount]: 50.00 
+[Bookingdate]: 19990615
+[Inmatenumber]: 97713
+Arresting Agency: Lake Jackson Police Department
+Arrest Date: Jun 15, 1999
+Actual Release Date: May 15, 1999
+Disposition: Conversion
+[Bookingdate] 19990615; 
+[Inmatenumber]: 97713
+Arresting_agencyL: 000007; 
+Warrant_number: 77001 
+[Fineamount]: 50.00
+
+Sanctions
+Crime Location: Brazoria, TX
+Crime Type: Not Categorized
+Charge Category: Arrest
+Offense Code: VPTA
+Offense Description: Vpta
+Comments:
+Arresting Agency: 000007
+Warrant Number: 77008
+[Fineamount]: 265.99 
+[Bookingdate]: 19990615
+[Inmatenumber]: 97713
+Arresting Agency: Lake Jackson Police Department
+Arrest Date: Jun 15, 1999
+Actual Release Date: May 15, 1999
+Disposition: Conversion
+[Bookingdate] 19990615; 
+[Inmatenumber]: 97713
+Arresting_agency: 000007; 
+Warrant_number: 77008 
+[Fineamount]: 265.99
+
+Sanctions
+Offense Date: Jun 15, 1999
+Crime Location: Brazoria, TX
+Crime Type: Not Categorized
+Charge Category: Arrest
+Offense Code: DISPLAY FICT LP
+Offense Description: Display Fict Lp
+Comments
+Arresting Agency: 000005
+Bond Amount: 2,500.00
+Bond Type: Bail Bond
+Warrant Number: 105712s 
+[Bookingdate]: 19990615
+[Inmatenumber]: 97713
+Arresting Agency: Lake Jackson Police Department
+Arrest Date: Jun 15, 1999
+Actual Release Date: May 15, 1999
+Disposition: Conversion
+[Bookingdate] 19990615; 
+[Inmatenumber]: 97713
+Arresting_agency: 000005; 
+Bond_amount: 2,500.00; 
+Bond_type: Bail Bond; 
+Warrant_number: 105712s
+
+Sanctions
+Offense Date: Jun 15, 1999
+Crime Location: Brazoria, TX
+Crime Type: Not Categorized
+Charge Category: Arrest
+Offense Code: DWLS
+Offense Description: Driving While License Suspended
+Comments
+Arresting Agency: 000005
+Bond Amount: 2,500.00
+Bond Type: Bail Bond
+Warrant Number: 104990s 
+[Bookingdate]: 19990615
+[Inmatenumber]: 97713
+Arresting Agency: Lake Jackson Police Department
+Arrest Date: Jun 15, 1999
+Actual Release Date: May 15, 1999
+Disposition: Conversion
+[Bookingdate] 19990615; 
+[Inmatenumber]: 97713
+Arresting_agency: 000005; 
+Bond_amount: 2,500.00; 
+Bond_type:Bail Bond; 
+Warrant_number: 104990s
+
+
+Sanctions
+Offense Date: Jun 15, 1999
+Crime Location: Brazoria, TX
+Crime Type: Not Categorized
+Charge Category: Arrest
+Offense Code: POSS OF MARIJUANA
+Offense Description: Possession Of A Marijuana
+Comments
+Arresting Agency: 000005
+Bond Amount: 3,500.00
+Bond Type: Bail Bond
+Warrant Number: 104989s 
+[Bookingdate]: 19990615
+[Inmatenumber]: 97713
+Arresting Agency: Lake Jackson Police Department
+Arrest Date: Jun 15, 1999
+Actual Release Date: May 15, 1999
+Disposition: Conversion
+[Bookingdate]19990615; 
+[Inmatenumber]: 97713
+Arresting_agency: 000005; 
+Bond_amount: 3,500.00; 
+Bond_type: Bail Bond; 
+Warrant_number: 104989s
+
+Sanctions
+Offense DateL: Dec 26, 1998
+Crime Location: Brazoria, TX
+Crime Type: Not Categorized
+Charge Category: Arrest
+Offense Code: POSS MARIJ < 2OZ
+Offense Description: Possession Of Marijuana < 2oz
+Comments
+Arresting Agency: 000001
+Bond Amount: 5,000.00
+Bond Type: Bail Bond
+Warrant Number: 102279s 
+[Bookingdate]: 19981226
+[Inmatenumber]: 97713
+Arresting Agency: Lake Jackson Police Department
+Arrest Date: Dec 26, 1998
+Actual Release Date: Nov 26, 1998
+Disposition: Surety Bond
+[Bookingdate] 19981226; 
+[Inmatenumber]: 97713
+Arresting_agency: 000001; 
+Bond_amount: 5,000.00; 
+Bond_type: Bail Bond; 
+Warrant_number: 102279s
+
+Sanctions
+Offense Date: Sep 29, 1997
+Crime Location: Brazoria, TX
+Crime Type: Not Categorized
+Charge Category: Arrest
+Offense Code: POSSESSION OF MARIJUANA
+Offense Description: Possession Of Marijuana
+Comments
+Arresting Agency: 000000
+Bond Amount:5,000.00
+Bond Type:Bail Bond
+Warrant Number: 97654g 
+[Bookingdate]: 19970929
+[Inmatenumber]: 97713
+Arresting Agency: Other Agency
+Arrest Date: Sep 29, 1997
+Actual Release Date: Aug 29, 1997
+Disposition: Surety Bond
+[Bookingdate] 19970929; 
+[Inmatenumber]: 97713
+Arresting_agency: 000000; 
+Bond_amount: 5,000.00; 
+Bond_type: Bail Bond; 
+Warrant_number: 97654g
+
+Sanctions
+Offense Date: Jun 14, 1999
+Charge Category: Criminal/Traffic
+Offense DescriptionL: Driving While License Suspendedended
+National Crime Information Center (NCIC) Code: 54050008
+Case Number: 116549
+Arrest Date: Jun 14, 1999
+Court Name: County Court At Law #2
+Fines: $100.00
+Disposition: Judgment With Days Jail
+Disposition Date: Oct 8, 1999
+
+Sanctions
+Offense Date: Jun 14, 1999
+Charge Category: Criminal/Traffic
+Offense Description: 4oz > 2oz
+National Crime Information Center (NCIC) Code: 35620009
+Case Number: 120158
+Arrest Date: Jun 14, 1999
+Court Name: County Court At Law #2
+Fines: $100.00
+Disposition: Order Granting Def Adj
+Disposition Date: Oct 8, 1999
+
+Sanctions
+Offense Date: Jun 14, 1999
+Charge Category: Criminal/Traffic
+Offense Description: Fictitious Lic Plate
+National Crime Information Center (NCIC) Code: 26990077
+Case Number: 63914
+Arrest Date: Jun 14, 1999
+Court Name: County Court At Law #2
+Fines: $200.00
+Disposition: Judgment With Days Jail
+Disposition Date: Oct 8, 1999
+
+Sanctions
+Offense Date: Sep 26, 1997
+Charge Category: Criminal/Traffic
+Offense Description: 4oz
+National Crime Information Center (NCIC) Code: 35620009
+Case Number: 73474
+Arrest Date: Sep 27, 1997
+Court Name: County Court At Law #2
+Fines: $200.00
+Disposition: Judgment
+Disposition Date: Jan 19, 1999
+
+Sanctions
+Offense Date: Dec 25, 1998
+Charge Category: Criminal/Traffic
+Offense Description: Possession Of Marijuana <2oz
+National Crime Information Center (NCIC) Code: 35620008
+Case Number: 77249
+Arrest Date: Dec 25, 1998
+Court Name: County Court At Law #2
+Fines: $500.00
+Disposition: Judgment
+Disposition Date: Mar 12, 1999
+
+POSSIBLE JUDGMENTS
+JUDGMENT:
+Name: Scott Manwarren
+Address: 119 Meadowview Ln, Angleton, TX, 77515
+Filing Location: Brazoria, TX
+Court Case Number: CI048274
+Total Judgment Amount: $10942.76
+Deed Category Type: Placement
+Damar Document Type: Judgment
+Recording Number: 53697
+Recording Date: Nov 26, 2012
+╔───────────────────────────────────────────────────────────────────────────────────────────────────────────────╗ 
+█░░░░░░░░░░█                               0x08 Ucc Filings                                       █░░░░░░░░░░█
+╚───────────────────────────────────────────────────────────────────────────────────────────────────────────────╝
+UCC FILING (FEB 27, 2022)
+Filing Type: Amendment
+Filing Time: 06
+Filing Number: 2200100245
+Cross Reference Filing Number: 200053963694
+Filing Office: SECRETARY OF STATE/UCC DIVISION
+Filing Office Address: 1019 Brazos St # 5, Austin, TX, 78701
+Filing Date: Feb 27, 2022
+Expiration Date: Oct 24, 2025
+Collateral Items (2)
+Type: Unknown Equipment Unknown
+Type: Unknown Vehicles Unknown
+Debtors
+First Name: SCOTT 
+Middle Name: EVERETT 
+Last Name: MANWARREN
+Address: 119 Meadowview Ln Angleton, TX, 77515
+VIEW LOCATION REPORT
+D.O.B: Born Aug 2, 1979 (Age 44)
+Secured Parties
+Name: KUBOTA CREDIT CORPORATION
+Address: Po Box 2046 Grapevine, TX, 76099
+
+UCC FILING (SEP 22, 2021)
+Filing Type: Original
+Filing Time: 08
+Filing Number: 210041570616
+Filing Office: SECRETARY OF STATE/UCC DIVISION
+Filing Office Address: 1019 Brazos St # 5, Austin, TX, 78701
+Filing Date: Sep 22, 2021
+Expiration Date: Sep 22, 2026
+Collateral Items (1)
+Type: Unknown Equipment Unknown
+Debtors
+Full Name: Scott E Manwarren
+Address: 119 Meadowview Ln Angleton, TX, 77515
+D.O.Bl: Born Aug 2, 1979 (Age 44)
+Secured Parties
+Name: SHEFFIELD FINANCIAL A DIVISION OF TRUIST BANK
+Address: Po Box 25127 Winston Salem, NC, 27114
+
+UCC FILING (MAR 30, 2021)
+Filing Type: Original
+Filing Time: 13
+Filing Number: 210012456112
+Filing Office: SECRETARY OF STATE/UCC DIVISION
+Filing Office Address: 1019 Brazos St # 5, Austin, TX, 78701
+Filing Date: Mar 30, 2021
+Expiration Date: Mar 30, 2026
+Collateral Items (1)
+Type: Unknown Equipment Unknown
+Debtors
+Full Name: Scott E Manwarren
+Address: 119 Meadowview Ln Angleton, TX, 77515
+D.O.B: Born Aug 2, 1979 (Age 44)
+Scott's Business
+Business Name: Scott Manwarren Scotts Lawn Care
+Address: 119 Meadowview Ln Angleton, TX, 77515
+Secured Parties
+Name: Sheffield Financial A Division Of Truist Bank 
+Address: Po Box 25127 Winston Salem, NC, 27114
+
+UCC FILING (OCT 24, 2020)
+Filing Type: Original
+Filing Time: 05
+Filing Number: 200053963694
+Filing Office: SECRETARY OF STATE/UCC DIVISION
+Filing Office Address: 1019 Brazos St # 5, Austin, TX, 78701
+Filing Date: Oct 24, 2020
+Expiration Date: Oct 24, 2025
+Collateral Items (2)
+Type: Unknown Equipment Unknown
+Type: Unknown Equipment Unknown
+Debtors
+Full Name: Scott Everett Manwarren
+119 Meadowview LnAngleton, TX, 77515
+D.O.B: Born Aug 2, 1979 (Age 44)
+Secured Parties
+Name: Kubota Credit Corporation
+Address: Po Box 2046 Grapevine, TX, 76099
+
+UCC FILING (AUG 21, 2019)
+Filing Type: Original
+Filing Time: 08
+Filing Number: 190031855214
+Filing Office: SECRETARY OF STATE/UCC DIVISION
+Filing Office Address: 1019 Brazos St # 5, Austin, TX, 78701
+Filing Date: Aug 21, 2019
+Expiration Date: Aug 21, 2024
+Collateral Items (1)
+Type: Unknown Equipment Unknown
+Debtors
+Full Name: Scott E Manwarren
+Address: 119 Meadowview Ln Angleton, TX, 77515
+D.O.B: Born Aug 2, 1979 (Age 44)
+Secured Parties
+Name: Sheffield Financial A Division Of Branch Banking And T 
+Address: Po Box 1704 Clemmons, NC, 27012
+
+UCC FILING (JUN 7, 2019)
+Filing Type: Original
+Filing Time: 06
+Filing Number: 190021318065
+Filing Office: SECRETARY OF STATE/UCC DIVISION
+Filing Office Address: 1019 Brazos St # 5, Austin, TX, 78701
+Filing Date: Jun 7, 2019
+Expiration Date: Jun 7, 2024
+Collateral Items (1)
+Type: Unknown Equipment Unknown
+Debtors
+Full Name: Scott Everett Manwarren 
+Address: 119 Meadowview Ln Angleton, TX, 77515
+D.O.B: Born Aug 2, 1979 (Age 44)
+Secured Parties
+Name: Kubota Credit Corporation 
+Address: Po Box 2046 Grapevine, TX, 76099
+╔───────────────────────────────────────────────────────────────────────────────────────────────────────────────╗ 
+█░░░░░░░░░░█                               0x09 Data Breach                                       █░░░░░░░░░░█
+╚───────────────────────────────────────────────────────────────────────────────────────────────────────────────╝
+{
+"results": {
+"0311_LINKEDIN_COM_228M_SOCIAL_052012": [
+{
+"email": "Scott.Manwarren@chsinc.com",
+"hash": "238d747a9ff3c31ba93792d45a669a308b995840"
+}
+],
+"0823_APOLLO_IO_129M_MARKETING_2018": [
+{
+"city": "Minneapolis",
+"company": "CHS Inc.",
+"country": "United States",
+"email": "scott.manwarren@chsinc.com",
+"name": "Scott Manwarren"
+},
+{
+"city": "Minneapolis",
+"company": "CHS",
+"country": "United States",
+"email": "scott.manwarren@chsinc.com",
+"name": "Scott Manwarren"
+},
+{
+"city": "Minneapolis",
+"company": "CHS Inc",
+"country": "United States",
+"email": "scott.manwarren@chsinc.com",
+"name": "Scott Manwarren",
+"phone": "+16513556000"
+}
+],
+"1632_PEOPLEDATALABS_COM_372M_MARKETING_2019": [
+{
+"address": "minneapolis, minnesota, united states",
+"email": "scott.manwarren@chsinc.com",
+"name": "scott manwarren",
+"phone": "6514877700",
+"username": "scott-manwarren-292aa55"
+}
+],
+"1669_VERIFICATIONS_IO_789M_MARKETING_022019": [
+{
+"email": "scott.manwarren@chsinc.com"
+},
+{
+"email": "SCOTT.MANWARREN@CHSINC.COM"
+}
+]
+},
+"size": 7,
+"took": 156
+}
+
+{
+"databases": 7,
+"elapsed": "23ms",
+"first_seen": "2012-05",
+"found": 11,
+"last_seen": "2020-11",
+"results": [
+{
+"email": "scott.manwarren@chsinc.com",
+"full_name": "",
+"hash": "",
+"ip_address": "",
+"password": "072173",
+"phone_number": "",
+"source": {
+"date": "",
+"name": "Anti Public"
+},
+"username": ""
+},
+{
+"email": "scott.manwarren@chsinc.com",
+"full_name": "",
+"hash": "",
+"ip_address": "",
+"password": "072173",
+"phone_number": "",
+"source": {
+"date": "",
+"name": "Anti Public"
+},
+"username": ""
+},
+{
+"email": "scott.manwarren@chsinc.com",
+"full_name": "Scott Manwarren",
+"hash": "",
+"ip_address": "",
+"password": "",
+"phone_number": "",
+"source": {
+"date": "2018-07",
+"name": "Apollo.io"
+},
+"username": ""
+},
+{
+"email": "scott.manwarren@chsinc.com",
+"full_name": "",
+"hash": "",
+"ip_address": "",
+"password": "7e8c18596f83db117a22221629dfe810",
+"phone_number": "",
+"source": {
+"date": "2020-11",
+"name": "cit0day"
+},
+"username": ""
+},
+{
+"email": "scott.manwarren@chsinc.com",
+"full_name": "",
+"hash": "",
+"ip_address": "",
+"password": "072173",
+"phone_number": "",
+"source": {
+"date": "",
+"name": "Collection 2"
+},
+"username": ""
+},
+{
+"email": "scott.manwarren@chsinc.com",
+"full_name": "",
+"hash": "",
+"ip_address": "",
+"password": "072173",
+"phone_number": "",
+"source": {
+"date": "",
+"name": "Collection 2"
+},
+"username": ""
+},
+{
+"email": "scott.manwarren@chsinc.com",
+"full_name": "",
+"hash": "",
+"ip_address": "",
+"password": "072173",
+"phone_number": "",
+"source": {
+"date": "",
+"name": "exploit.in"
+},
+"username": ""
+},
+{
+"email": "scott.manwarren@chsinc.com",
+"full_name": "",
+"hash": "",
+"ip_address": "",
+"password": "072173",
+"phone_number": "",
+"source": {
+"date": "2012-05",
+"name": "LinkedIn.com"
+},
+"username": ""
+},
+{
+"email": "scott.manwarren@chsinc.com",
+"full_name": "scott manwarren",
+"hash": "",
+"ip_address": "",
+"password": "",
+"phone_number": "",
+"source": {
+"date": "",
+"name": "PeopleDataLabs"
+},
+"username": ""
+}
+]
+}
+
+{
+"found": 1,
+"limits": {
+"checks": 86,
+"keywords": 999999
+},
+"result": [
+{
+"email_only": 0,
+"last_breach": "2012-05",
+"line": "scott.manwarren@chsinc.com:072173",
+"sources": [
+"LinkedIn.com"
+]
+}
+}
+
+{
+"content": [
+{
+"email": "scott.manwarren@chsinc.com",
+"origin": "comb2",
+"password": "072173"
+},
+{
+"email": "scott.manwarren@chsinc.com",
+"origin": "comb3",
+"password": "072173"
+}
+],
+"found": 2,
+"status": "success",
+"took": 76
+}
+
+-----------------------------------------------------------------------------------------
+{
+"results": {
+"1669_VERIFICATIONS_IO_789M_MARKETING_022019": [
+{
+"city": "Amite",
+"email": "smanwarren@netzero.net",
+"lastip": "192.41.40.236",
+"name": "Scott Manwarren",
+"phone": "931-267-5699",
+"state": "LA",
+"zip": "70422"
+}
+]
+},
+"size": 1,
+"took": 158
+}
+
+{
+"databases": 1,
+"elapsed": "21ms",
+"first_seen": "2019-02",
+"found": 1,
+"last_seen": "2019-02",
+"results": [
+{
+"email": "smanwarren@netzero.net",
+"full_name": "scott manwarren",
+"hash": "",
+"ip_address": "192.41.40.236",
+"password": "",
+"phone_number": "9312675699",
+"source": {
+"date": "2019-02",
+"name": "Verifications.io"
+},
+"username": ""
+}
+]
+}
+
+{
+"found": 1,
+"limits": {
+"checks": 86,
+"keywords": 999999
+},
+"result": [
+{
+"email_only": 1,
+"last_breach": "2019-02",
+"line": "smanwarren@netzero.net",
+"sources": [
+"Verifications.io"
+]
+}
+}
+
+-----------------------------------------------------------------------------------
+{
+"results": {
+"0071_JUSTDATE_COM_24M_DATING_2014": [
+{
+"country": "US",
+"dob": "1989-09-27",
+"email": "willi420@hotmail.com",
+"zip": "45403"
+}
+],
+"0641_MYSPACE_COM_357M_SOCIAL_2008": [
+{
+"email": "willi420@hotmail.com",
+"hash": "2C0E8C21553D175AEFDB18C5001DFA17115FA2C4\r",
+"username": "151726990"
+}
+],
+"0643_ADULTFRIENDFINDER_COM_220M_DATING_2016": [
+{
+"email": "willi420@hotmail.com",
+"password": "NZUX6",
+"username": "kingwilli"
+}
+]
+},
+"size": 3,
+"took": 161
+}
+
+{
+"databases": 7,
+"elapsed": "23ms",
+"first_seen": "2008-07",
+"found": 11,
+"last_seen": "2015-05",
+"results": [
+{
+"email": "willi420@hotmail.com",
+"full_name": "",
+"hash": "",
+"ip_address": "",
+"password": "nzux6",
+"phone_number": "",
+"source": {
+"date": "2015-05",
+"name": "AdultFriendFinder.com"
+},
+"username": "kingwilli"
+},
+{
+"email": "willi420@hotmail.com",
+"full_name": "",
+"hash": "",
+"ip_address": "",
+"password": "123456w",
+"phone_number": "",
+"source": {
+"date": "",
+"name": "Anti Public"
+},
+"username": ""
+},
+{
+"email": "willi420@hotmail.com",
+"full_name": "",
+"hash": "",
+"ip_address": "",
+"password": "123456w",
+"phone_number": "",
+"source": {
+"date": "",
+"name": "Collection 1"
+},
+"username": ""
+},
+{
+"email": "willi420@hotmail.com",
+"full_name": "",
+"hash": "",
+"ip_address": "",
+"password": "123456w",
+"phone_number": "",
+"source": {
+"date": "",
+"name": "Collection 2"
+},
+"username": ""
+},
+{
+"email": "willi420@hotmail.com",
+"full_name": "",
+"hash": "",
+"ip_address": "",
+"password": "123456w",
+"phone_number": "",
+"source": {
+"date": "",
+"name": "Collection 4"
+},
+"username": ""
+},
+{
+"email": "willi420@hotmail.com",
+"full_name": "",
+"hash": "",
+"ip_address": "",
+"password": "123456w",
+"phone_number": "",
+"source": {
+"date": "",
+"name": "exploit.in"
+},
+"username": ""
+},
+{
+"email": "willi420@hotmail.com",
+"full_name": "",
+"hash": "",
+"ip_address": "",
+"password": "123456w",
+"phone_number": "",
+"source": {
+"date": "2008-07",
+"name": "Myspace.com"
+},
+"username": ""
+}
+]
+}
+
+{
+"found": 2,
+"limits": {
+"checks": 79,
+"keywords": 999999
+},
+"result": [
+{
+"email_only": 0,
+"last_breach": "2008-07",
+"line": "willi420@hotmail.com:123456w",
+"sources": [
+"MySpace.com"
+]
+},
+{
+"email_only": 1,
+"last_breach": "2016-10",
+"line": "willi420@hotmail.com",
+"sources": [
+"AdultFriendFinder"
+]
+}
+}
+
+{
+"content": [
+{
+"email": "willi420@hotmail.com",
+"origin": "myspace.com",
+"password": "0x2C0E8C21553D175AEFDB18C5001DFA17115FA2C4",
+"username": "151726990"
+},
+{
+"email": "willi420@hotmail.com",
+"origin": "comb2",
+"password": "123456w"
+},
+{
+"email": "willi420@hotmail.com",
+"origin": "collection_1",
+"password": "123456w"
+},
+{
+"email": "willi420@hotmail.com",
+"origin": "comb3",
+"password": "123456w"
+}
+],
+"found": 4,
+"status": "success",
+"took": 64
+}
+╔───────────────────────────────────────────────────────────────────────────────────────────────────────────────╗ 
+█░░░░░░░░░░█                               0x09 Police Department                               █░░░░░░░░░░█
+╚───────────────────────────────────────────────────────────────────────────────────────────────────────────────╝
+Main Information 
+
+Address:  104 Cannan Dr, Angleton, TX 77515, Vereinigte Staaten
+Phone Number: +1 979-849-2383
+
+Please call the police on this guy i wanna see him in police custody.
+For what he has done to his daughter.
+╔───────────────────────────────────────────────────────────────────────────────────────────────────────────────╗ 
+█░░░░░░░░░░█                               0x010 End Of Dox                                       █░░░░░░░░░░█
+╚───────────────────────────────────────────────────────────────────────────────────────────────────────────────╝
+
+.m.                                   ,_
+' ;M;                                ,;m `
+  ;M;.           ,      ,           ;SMM;
+ ;;Mm;         ,;  ____  ;,         ;SMM;
+;;;MM;        ; (.MMMMMM.) ;       ,SSMM;;
+,;;;mMp'        l  ';mmmm;/  j       SSSMM;;
+.;;;;;MM;         .\,.mmSSSm,,/,      ,SSSMM;;;
+;;;;;;mMM;        .;MMmSSSSSSSmMm;     ;MSSMM;;;;
+;;;;;;mMSM;     ,_ ;MMmS;;;;;;mmmM;  -,;MMMMMMm;;;;
+;;;;;;;MMSMM;     \"*;M;( ( '') );m;*"/ ;MMMMMM;;;;;,
+.;;;;;;mMMSMM;      \(@;! _     _ !;@)/ ;MMMMMMMM;;;;;,
+;;;;;;;MMSSSM;       ;,;.*o*> <*o*.;m; ;MMMMMMMMM;;;;;;,
+.;;;;;;;MMSSSMM;     ;Mm;           ;M;,MMMMMMMMMMm;;;;;;.
+;;;;;;;mmMSSSMMMM,   ;Mm;,   '-    ,;M;MMMMMMMSMMMMm;;;;;;;
+;;;;;;;MMMSSSMMMMMMMm;Mm;;,  ___  ,;SmM;MMMMMMSSMMMM;;;;;;;;
+;;'";;;MMMSSSSMMMMMM;MMmS;;,  "  ,;SmMM;MMMMMMSSMMMM;;;;;;;;.
+!   ;;;MMMSSSSSMMMMM;MMMmSS;;._.;;SSmMM;MMMMMMSSMMMM;;;;;;;;;
+;;;;*MSSSSSSMMMP;Mm*"'q;'   `;p*"*M;MMMMMSSSSMMM;;;;;;;;;
+';;;  ;SS*SSM*M;M;'     `-.        ;;MMMMSSSSSMM;;;;;;;;;,
+;;;. ;P  `q; qMM.                 ';MMMMSSSSSMp' ';;;;;;;
+;;;; ',    ; .mm!     \.   `.   /  ;MMM' `qSS'    ';;;;;;
+';;;       ' mmS';     ;     ,  `. ;'M'   `S       ';;;;;
+`;;.        mS;;`;    ;     ;    ;M,!     '  luk   ';;;;
+';;       .mS;;, ;   '. o  ;   oMM;                ;;;;
+';;      MMmS;; `,   ;._.' -_.'MM;                 ;;;
+`;;     MMmS;;; ;   ;      ;  MM;                 ;;;
+  `'.   'MMmS;; `;) ',    .' ,M;'                 ;;;
+     \    '' ''; ;   ;    ;  ;'                   ;;
+      ;        ; `,  ;    ;  ;                   ;;
+               |. ;  ; (. ;  ;      _.-.         ;;
+  .-----..__  /   ;  ;   ;' ;\  _.-" .- `.      ;;
+;' ___      `*;   `; ';  ;  ; ;'  .-'    :      ;
+;     """*-.   `.  ;  ;  ;  ; ' ,'      /       |
+',          `-_    (.--',`--'..'      .'        ',
+  `-_          `*-._'.\\\;||\\)     ,'
+     `"*-._        "*`-ll_ll'l    ,'
+        ,==;*-._           "-.  .'
+     _-'    "*-=`*;-._        ;'
+   ."            ;'  ;"*-.    `
+   ;   ____      ;//'     "-   `,
+   `+   .-/                 ".\\;
+     `*" /
+Dont End up like this nigga
+┌——————————————————————————————————————————————————————————————————————┐
+|                              End Of Dox                              |
+└——————————————————————————————————————————————————————————————————————┘
+
+        </pre>
+    </div>
+</body>
+</html>

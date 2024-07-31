@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Given | #coresec</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #050505;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative; /* Make the body a positioning context */
+        }
+        .container {
+            background-color: #0a0a0a;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 80%; /* Adjust width as needed */
+            max-width: 1000px; /* Maximum width */
+            height: 80%; /* Adjust height as needed */
+            max-height: 600px; /* Maximum height */
+            overflow: auto; /* Enable scrolling if content exceeds box dimensions */
+            animation: fadeIn 1s ease-in-out; /* Fade in animation */
+        }
+        .container pre {
+            margin: 0;
+            white-space: pre-wrap; /* Preserve formatting and wrap long lines */
+            padding: 10px; /* Padding inside the box */
+            font-size: 14px; /* Adjust font size as needed */
+            line-height: 1.5; /* Adjust line height for readability */
+            animation: slideIn 1s ease-in-out; /* Slide in animation */
+        }
+        .title {
+            position: absolute;
+            top: 20px; /* Adjust vertical position as needed */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%);
+            z-index: 1; /* Ensure it's above the GIF background */
+            color: #ffffff;
+            font-size: 24px; /* Adjust font size as needed */
+        }
+        .gif-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0; /* Behind everything */
+            opacity: 0.5; /* Adjust opacity as needed */
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h5 class="title" style="font-size: 24px; margin: 0px 20px 0px 2px; padding-top: 0px; display: inline-block;color: #d8bb18; font-weight: bold;background-image: url('./glitter/gold.gif');">
+      Chace Mackenzie Heffner
+    </h5>
+    <div class="container">
+        <pre>
+Join #coresec : <a href="https://discord.gg/AwXkT4NDJb" target="_blank">https://discord.gg/corsec</a>
+
+ ────────────────────────────────────────────────────────────────────────
+▓│                ...::[ SCROLL DOWN TO VIEW PASTE ]::...               │▓
+▓│──────────────────────────────────────────────────────────────────────│▓
+──────┘      ░░       ("Scroll down to view paste"):      ░░     └──────
+│                   Contact Info Is On My Profile                      │
+└──────────────────────────────────────────────────────────────────────┘
+
+
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣶⠶⠿⠷⣶⣄⠀⠀⠀⠀⠀⠀⠀⣠⡶⠿⠛⠷⢶⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢀⣴⡿⠛⠉⠀⠀⠀⠀⠀⠹⣧⠀⠀⠀⠀⠀⣼⠏⠀⠀⠀⠀⠀⠈⠙⢿⣦⡀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣠⡿⠋⠀⢀⣠⠞⠋⠀⠀⠀⢠⡿⠀⠀⠀⠀⠀⢻⡆⠀⠀⠀⠈⠻⣦⡀⠀⠘⢿⣆⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣰⡟⠁⠀⢠⡿⠁⠀⠀⠀⠀⣠⣿⠃⠀⠀⠀⠀⠀⠘⣿⣦⠀⠀⠀⠀⠈⢻⣄⠀⠀⠻⣧⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣴⠏⠀⠀⢠⡟⠀⣠⠀⠀⠀⣼⠟⠁⠀⠀⠀⠀⠀⠀⠀⠈⠻⣷⡀⠀⠀⣄⠀⢻⣆⠀⠀⠹⣧⠀⠀⠀⠀
+⠀⠀⠀⣰⠏⠀⠀⢰⣿⣇⣰⠋⠀⠀⠀⢿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡾⠁⠀⠀⠘⣧⣼⣿⣆⠀⠀⠹⣧⠀⠀⠀
+⠀⠀⢰⡏⠀⠀⢰⣿⣿⣿⡇⢠⡟⠀⠀⠀⣹⡇⠀⠀⠀⠀⠀⠀⠀⠸⣏⡀⠀⠀⠸⡆⢸⣿⣿⣿⣇⠀⠀⠹⣇⠀⠀
+⠀⢠⡟⠀⠀⢰⡾⠈⣿⣿⣧⣿⢀⡶⠀⣼⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣷⡀⢶⡀⢿⣼⣿⣿⠙⢿⡆⠀⠀⢻⡆⠀
+⠀⣾⠁⠀⢠⣼⠃⠀⣸⢏⣿⣧⣼⠃⣼⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣧⠈⣧⣼⣿⡿⣏⠀⠘⣧⡄⠀⠈⣷⠀
+⢰⡏⠀⠀⢸⡟⠀⢠⡟⠘⠿⢻⣿⣷⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⡿⠟⠃⢹⡄⠀⢹⡇⠀⠀⢹⡇
+⢸⡇⠀⠀⣸⡇⠀⣾⠁⢀⡏⠈⢻⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣏⠀⢸⡄⠈⣷⡀⢸⣧⠀⠀⠸⡇
+⢸⠀⠀⢀⡟⠻⣾⣿⡀⣸⠃⢠⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣆⠈⣧⠀⣿⣷⡟⢻⡀⠀⠀⡇
+⢸⠃⠀⢸⣇⣾⢹⡟⣿⣿⣤⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣤⣿⣿⢹⣇⣿⣼⡏⠀⠀⡇
+⢸⠀⠀⢸⣿⠏⣽⢸⣿⣿⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⣿⣿⣇⣿⠽⣿⣧⠀⠀⡇
+⢸⡆⠀⣼⠁⠀⡏⠘⢿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡿⠃⢸⠀⠈⣷⠀⢰⡇
+⠸⣷⠀⢻⠀⢰⡇⠀⢸⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣇⣀⢸⡇⠀⡟⠀⣾⠇
+⠀⢿⡄⢸⠀⣼⡧⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣟⣸⣧⡀⡇⢠⣿⠀
+⠀⠸⣇⢸⣾⣿⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⣿⣿⡇⣸⠇⠀
+⠀⠀⢻⣼⣿⠿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠷⢾⢧⡿⠀⠀
+⠀⠀⠈⢿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡿⠁
+
+
+
+ ~ Made By Mmeber of coresec opsecuser ~
+ » xtc                            
+ ⤷ t.me/xtcwrld			        
+ » Many people who spoke up 
+
+ +---------------------------------------------------------------+
+ |                      Table of contents                        | 
+ +---------------------------------------------------------------+
+ |      0x01  Introduction.............................          |
+ |      0x02  Personal Information.....................          |
+ |      0x03  Social Media Accounts....................          |         
+ |      0x04  Family Members Information...............          |
+ |      0x05  House Information........................          | 
+ |      0x06  Court Records............................          |        
+ |      0x07  Data Breach..............................          |
+ |      0x08  Credits..................................          |
+ +---------------------------------------------------------------+
+ |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+ +---------------------------------------------------------------+
+ |                      0x01  Introduction                       |
+ +---------------------------------------------------------------+
+ Chace Mackenzie Heffner is a discord packer that likes to talk 
+ shit in a server vc and he claims he steals social media accounts
+ when he skids/larps script codes and he also thinks he harmful
+ but hes not hes harmless and cant do shi on discord.com
+ so if you find him or see him bully him until he runs
+ if he talks shit against you use this against him 
+ then maybe he will learn his lesson not to skid or 
+ larp on discord.com.
+ +---------------------------------------------------------------+
+ |                  0x02  Personal Information                   |
+ +---------------------------------------------------------------+
+ Name.................... Chace Mackenzie Heffner
+ Race.................... White
+ Gender.................. Male
+ Sexuality............... Straight
+ Relationship Status..... Single
+ D.O.B................... Aug 1991
+ Age..................... 32
+ Mobile Phone Number..... (740) 481-6821
+ Emails.................. heffnerchace42@gmail.com
+                          > Vaild Since: Jul 15, 2021
+                          chaceheffner2@gmail.com
+                          > Vaild Since: Jul 8, 2021
+                          chaceheffner91@gmail.com
+                          > Vaild Since: May 3, 2014
+ Aliases................. stopeb
+ ------------------------------------------------
+ Direct Address.......... 425 Mount Vernon Rd Apt 229, Newark, OH, 43055
+ Country................. USA
+ State................... Ohio
+ City.................... Newark 
+ Zip..................... 43055
+ ------------------------------------------------
+ +---------------------------------------------------------------+
+ |                  0x03  Social Media Accounts                  |
+ +---------------------------------------------------------------+
+ Online Alias............ stopeb
+ ```diff
+ - User Information:
+ - Username: stopeb
+ - User ID: 1110375057580118127
+ - Account Creation Time: 2023-05-23 01:14:03
+ - Token Hash: MTExMDM3NTA1NzU4MDExODEyNw==
+ - Badges: None
+ - Mutual Servers: None
+ ```
+ +---------------------------------------------------------------+
+ |               0x04 Family Members Information                |
+ +---------------------------------------------------------------+
+ Possible Relatives:
+ MOM:
+ Full Name: Bessie R Heffner
+ Gender: Female
+ Age: 78
+ DOB: Aug 1945
+ Phone:
+ ⤷ (740) 409-5247 
+   (740) 366-0089 
+   (740) 254-1206 
+   (740) 345-5323
+   (740) 348-0188
+   (740) 274-6040
+   (740) 274-6039
+   (740) 254-9290
+   (740) 344-2271
+   (704) 807-8528
+   (740) 274-2592
+   (740) 405-2398
+   (920) 243-8783
+ Address:
+ ⤷ Aug 1, 2005 - Feb 2, 2024
+   West Main Street: 425 Mount Vernon Rd Apt 229, Newark, OH 43055-5164
+   Description: 1 Office, 51 Apartments
+   117 Moull St, Newark, OH 43055-4633
+   72 High St, Newark, OH 43055-5137
+   61 N 24th St, Newark, OH 43055-2590
+   15 Grant St, Dennison, OH 44621-1297
+   414, Po Box, Gnadenhutten, OH 44629-0414
+   611 Main St, New Matamoras, OH 45767-1126
+   26, Po Box, Pine Grove, WV 26419-0026
+   59, Po Box, Sardis, OH 43946-0059
+   193, Po Box, New Matamoras, OH 45767-0193
+   516 Foundry St, New Martinsville, WV 26155-1807
+   469 S 30th St Apt E, Heath, OH 43056-3100
+   1224 W 4th St, Appleton, WI 54914-5356
+ Emails:
+ ⤷ gingerjim13@gmail.com
+   ragrat2000@yahoo.com
+   hagermanc@aol.com
+   > Vaild Since: Dec 20, 2006
+   hagermanc@angelfire.com
+   > Vaild Since: Aug 28, 2008
+   bheffner1@att.net 
+ Aliases:
+ ⤷ Bessie A Heffner
+   B Heffner
+ 
+ Job:
+ ⤷ Rescued Timber
+   Last Seen: Jun 23, 2022
+   Job Details
+   Employment Duration
+   Apr 27, 2020 - Jun 23, 2022
+ 
+ Voter regristration History:          
+ ⤷ Party Affiliations:                                        
+   Undeclared / No Affiliation   
+   Registration Address:
+   425 Mount Vernon Rd Apt 229, Newark, OH 43055
+ 
+ Socials:
+ MySpace:
+ https://myspace.com/bessie63
+ 
+ Facebook:
+ http://www.facebook.com/people/_/100000721903485
+ http://www.facebook.com/bessie.heffner.7
+ 
+ Flixster:
+ Name: Bessie Heffner
+ Usernames: ragrat2000
+ Friends
+ Stephany Francis
+ Timothy Somerville
+ Danielle Chaney
+ Shelby Beegle
+ Charlene H
+ Cris Erlewine
+ 
+ TRUE.COM
+ Usernames: ragrat2000
+ 
+ Business Contacts
+ Current Job: at Rescued Timber
+ 
+ Business Profiles:
+ JO TO GO OF APPLETON LLC
+ DUNS Number: 072874150
+ Primary Company Names: Jo To Go Of Appleton LLC
+ Current Address: 1224 W 4th St, Appleton, WI, 54914
+ EMPLOYMENT HISTORY
+ JO TO GO OF APPLETON LLC (DEC 31, 2023 - DEC 31, 2023)
+ Employment Dates: Dec 31, 2023 - Dec 31, 2023
+ 
+ Assets:
+ Dupont Add
+ 1224 W 4th St
+ Appleton, Wisconsin, 54914
+ 2 beds | 1 baths | 1356 sq/ft
+ Current Owner:
+ Michael G Heffner
+ Elizabeth Heffner
+ Date: Jan 1, 2022 - Dec 31, 2022
+ Assessed Value:
+ Price $92,900.00
+ Year: 2022
+ Mortgage Amount:
+ Price: $45,750.00
+ Date: Mar 29, 2016
+ Tax Amount
+ Price: $1,773.61
+ Year: 2022
+ Social Security Information:
+ SSN Issued: 
+ Issued Location; North Carolina And West Virgina
+ Relatives: 
+ ⤷ Charlene Rae Hagerman
+   Chace Heffner
+   Betsy Ann Brock
+   Martha Elizabeth Heffner
+   Charles R Heffner
+   Gary J Heffner
+   Charles R Heffner
+   Jonathan Lloyd Heffner
+   Elizabeth A Heffner
+   Karen S Heffner
+   Elizabeth A Heffner
+   Michael G Heffner
+ Associates:
+ ⤷ Johnny Willard Hagerman
+   Harold Eugene Beagle
+ 
+ Criminal & Traffic Records
+ ⤷ Name:
+   Elizabeth A Heffner
+   Offense Date: Jun 5, 2018
+   Source: WISCONSIN ADMINISTRATOR OF THE COURTS TRAFFIC (Wisconsin)
+   Unsafe Lane Deviation
+   Source:
+   WISCONSIN ADMINISTRATOR OF THE COURTS TRAFFIC
+   State: Wisconsin
+   Personal Details
+   First Name: 
+   Elizabeth
+   Middle Initial: A
+   Last Name: Heffner
+   Gender:
+   Female
+   Born: Dec 1, 1970 - Dec 31, 1970
+   Address
+   1224 W 4th St, Appleton, Outagamie, US
+   Sanctions
+   Offense Date:
+   Jun 5, 2018
+   Charges Filed Date:
+   Jun 18, 2018
+   Age At Time Of Charge Or Offense:
+   47
+   Crime Type:
+   Not Categorized
+   Crime Classification:
+   Forfeiture U
+   Offense Code:
+   346.13(1)
+   Offense Description:
+   Unsafe Lane Deviation:
+   Counts: 1
+   Case Number: 
+   2018TR005604
+   Plea: 
+   No Contest
+   Disposition: 
+   Guilty Due To No Contest Plea
+   Disposition Date: 
+   Aug 8, 2018
+   Total Financial Assessment: 
+   $175.30; Citation Number: Bb3734780; Bond Amount: $175.30
+ ------------------------------------------------
+ Full Name:Kathy Lynn Heffner Gump
+ Gender: Female
+ Age: 53
+ DOB: Feb 1970
+ Address:
+ Emails:
+ ⤷ kathygump1970@gmail.com
+   > Valid Since: Dec 20, 2012
+   bob_smith@prodigy.net
+   > Vaild Since: Jun 3, 2020
+   cgump2@neo.rr.com 
+   kamryngump@icloud.com 
+  Aliases:
+ ⤷ Kathy L Heffnergump
+   Kathy Lynn Heffner
+   Kathy Lynn Gump
+   Charles E Gump
+   Kathy H Gump
+   Kathy L Gump
+   Kathy Heffner Gump
+   Gump Kathy Heffner
+   K Gump
+   K Heffner
+   Kathy L Heffner
+   Ka G Heffner
+ Relatives:
+ ⤷ Chace Heffner
+   Nicholas Charles Gump
+   Kelsey Easterday
+   Gabriel P Gump
+   Charles Elmer Gump
+   Martha A Gump
+   Kamryn Izabella Gump
+   Henry H Gump
+   Betsy Ann Brock
+   Melissa Ann Gump
+   Charlene Rae Hagerman
+   Brandy Ann Hadley
+   Charles E Gump
+ 
+ Finances:
+ ⤷ UCC FILING (JAN 9, 2023)
+   Filing Type:
+   ⤷ Original
+   Filing Time:
+   ⤷ 10
+   Filing Number:
+   ⤷ OH00269832339
+   Filing Office:
+   ⤷ SECRETARY OF STATE/UCC DIVISION
+   Filing Office Address
+   ⤷ 180 E Broad St Fl 16, Columbus, OH, 43215
+   Filing Date:
+   ⤷ Jan 9, 2023
+   Expiration Date:
+   ⤷ Jan 9, 2028
+   Collateral Items (1)
+   Type:
+   ⤷ Unknown Equipment And Proceeds
+   Debtors:
+   CHARLES GUMPVIEW 
+   2607 Yorkview Rd Sw
+   New Philadelphia, OH, 44663
+   Born Feb 26, 1970 (Age 53)
+   Secured Parties:
+   SNAP-ON CREDIT LLC
+   950 Technology Way Ste 301
+   Libertyville, IL, 60048
+ 
+ Licenses:
+ Name:
+ ⤷ Kathy Lynn Heffner-Gump
+ Address:
+ ⤷ 1131 Bowers Ave Nw, New Philadelphia, OH, 44663
+ Phone Number:
+ ⤷ (614) 280-1600
+ License Type:
+ ⤷ R
+ License Status:
+ ⤷ Cancelled
+ License State:
+ ⤷ ME
+ Trade Type:
+ ⤷ Insurance
+ Insurance Agents:
+ Name:
+ ⤷ Kathy Lynn Heffner-Gump
+ Address:
+ ⤷ 4846 Davis St, Mineral City, OH, 44656
+ License Type:
+ ⤷ Insurance Agents
+ License Number:
+ ⤷ 818060
+ License State:
+ ⤷ TN
+ Trade Type:
+ ⤷ Healthcare
+ 
+ Hunting Permit
+ Name:
+ ⤷ Charles Gump
+ Location:
+ ⤷ 4846 Davis St, Mineral City, OH, 44656
+ Hunting Permit:
+ Name:
+ ⤷ Charles Gump
+ Location: 
+ ⤷ 4846 Davis St, Mineral City, OH, 44656
+ 
+ Assets:
+ Davis Addition
+ 4846 Davis St
+ Mineral City, Ohio, 44656
+ 3 beds | 1 baths | 912 sq/ft
+ Property Value:
+ Land Value:
+ Price: $8,500.00
+ Improvement Value:
+ Price: $0.00
+ Assessed Value (2022):
+ Price: $2,975.00
+ Tax Amount (2022):
+ Price: $6.00
+ Assessed Value:
+ Price: $2,975.00
+ Year: 2022
+ Sale Amount:
+ Price: $6,000.00
+ Date: Jun 29, 2017
+ Tax Amount:
+ Price: $6.00
+ Year: 2022
+ Ownership Details:
+ Document Number:
+ ⤷ 2017.7498
+ Sale Date:
+ ⤷ Jul 31, 2017
+ Recording Date:
+ ⤷ Jun 29, 2017
+ Deed Securities Category:
+ ⤷ NON-ARMS LENGTH TRANSACTIONS WITH VALID TITLE COMPANY NAME (NO ACCOMODATIONS)
+ Deed Information:
+ Document Type:
+ ⤷ QUIT CLAIM DEED
+ Transaction Type:
+ ⤷ NON-ARMS LENGTH TRANSACTIONS WITH VALID TITLE COMPANY NAME (NO ACCOMODATIONS)
+ +---------------------------------------------------------------+
+ |                    0x05 House Information                    |
+ +---------------------------------------------------------------+
+ Direct Address.......... 425 Mount Vernon Rd Apt 229, Newark, OH 43055-5164
+ Country................. US
+ County.................. Licking
+ State................... Ohio 
+ City.................... Newark
+ Zip..................... 43055
+ Description............. 1 Office, 51 Apartments 
+ County FIPS............. 39089 
+ Congressional District.. 12
+ Is Deliverable.......... Yes
+ Is Receiving Mail....... Yes
+ Zip Type................ Standard
+ UTC Offset.............. -5
+ Sub Division Name....... Moores
+ Location Type........... Hight-Rise
+ Location Use............ Residential
+ Longitude............... -82.41018
+ Latitude................ 40.06912
+ +---------------------------------------------------------------+
+ |                        0x06  Court Records                    |
+ +---------------------------------------------------------------+
+ Chace's Court Records:
+ 
+ Name: Chace M Heffner
+ Offense Date: Feb 7, 2023
+ 
+ Charges/Offenses:
+ Failure To Reinstate | 
+ Speeding | Violate Protection Order 
+ | Violate Protection Order 
+ | Criminal Trespass | 
+ License Forfeiture/Child Support Suspension | 
+ Failure To Stop Or Yield At Sign
+ 
+ Personal Details:
+ First Name: Chace
+ Middle Initial: M
+ Last Name: Heffner
+ 
+ Sanctions
+ Offense Date: Feb 7, 2023
+ Charges Filed Date: :Feb 8, 2023
+ Charge Category: Criminal/Traffic
+ Offense Description: Failure To Reinstate
+ Case Type: Unm
+ Case Number: 23TRD00981-A
+ Disposition: Guilty
+ Disposition Date: Feb 15, 2023
+ 
+ Sanctions
+ Offense Date: Feb 7, 2023
+ Charges Filed Date: Feb 8, 2023
+ Charge Category: Criminal/Traffic
+ Offense Description: Speeding
+ Case Type: Minor Misdemeanor
+ Case Number: 23TRD00981-B
+ Disposition: Guilty
+ Disposition Date: Feb 15, 2023
+ 
+ Sanctions
+ Offense Date: Jul 10, 2022
+ Charges Filed Date: Jul 11, 2022
+ Charge Category: Criminal/Traffic
+ Offense Description: Violate Protection Order
+ Case Type: First Degree Misdemeanor
+ Case Number: 22CRB01043-A
+ Disposition: Guilty Judge-Appeal Filed
+ Disposition Date: Aug 2, 2022
+ 
+ Sanctions
+ Offense Date: Jul 9, 2022
+ Charges Filed Date: Jul 11, 2022
+ Charge Category: Criminal/Traffic
+ Offense Description: Violate Protection Order
+ Case Type: First Degree Misdemeanor
+ Case Number: 22CRB01044-A
+ Disposition: Guilty Judge-Appeal Filed
+ Disposition Date: Aug 2, 2022
+ 
+ Sanctions
+ Offense Date: Jul 4, 2022
+ Charges Filed Date: Jul 5, 2022
+ Charge Category: Criminal/Traffic
+ Offense Description: Criminal Trespass
+ Case Type: Fourth Degree Misdemeanor
+ Case Number: 22CRB01000-A
+ Disposition: Guilty
+ Disposition Date: Jul 5, 2022
+ 
+ Sanctions
+ Offense Date: May 27, 2022
+ Charges Filed Date: May 31, 2022
+ Charge Category: Criminal/Traffic
+ Offense Description: License Forfeiture/Child Support Suspension
+ Case Type: Unm
+ Case Number: 22TRD04271-A
+ Disposition: Guilty
+ Disposition Date: Jun 15, 2022
+ 
+ Sanctions
+ Offense Date: May 27, 2022
+ Charges Filed Date: May 31, 2022
+ Charge Category: Criminal/Traffic
+ Offense Description: Failure To Stop Or Yield At Sign
+ Case Type: Minor Misdemeanor
+ Case Number: 22TRD04271-B
+ Disposition: Guilty
+ Disposition Date: Jun 15, 2022
+ 
+ 
+ Name: Chase Heffner
+ Offense Date: Apr 27, 2022
+ Charges/Offenses: License Forfeiture/Child Support Suspension | Speeding
+ 
+ Personal Details
+ First Name: Chase
+ Last Name: Heffner
+ 
+ Sanctions
+ Offense Date: Apr 27, 2022
+ Charges Filed Date: Apr 28, 2022
+ Charge Category: Criminal/Traffic
+ Offense Description: License Forfeiture/Child Support Suspension
+ Case Type: Unm
+ Case Number: 22TRD03287-A
+ Disposition: Guilty
+ Disposition Date: May 4, 2022
+ 
+ Sanctions
+ Offense Date: Apr 27, 2022
+ Charges Filed Date: Apr 28, 2022
+ Charge Category: Criminal/Traffic
+ Offense Description: Speeding
+ Case Type: Minor Misdemeanor
+ Case Number: 22TRD03287-B
+ Disposition: Guilty
+ Disposition Date: May 4, 2022
+ 
+ 
+ Name: Chace Mackenzie Heffner
+ Charges Filed Date: Oct 27, 2016
+ 
+ Personal Details
+ First Name: Chace
+ Middle Name: Mackenzie
+ Last Name: Heffner
+ Gender: Male
+ 
+ Sanctions
+ Charges Filed Date: Oct 27, 2016
+ Crime Location: Stark, OH
+ Charge Category: Criminal
+ Offense Description: Obstructing Official Business
+ Counts: 1
+ National Crime Information Center (NCIC) Code: 2921.31
+ Case Type: Second Degree Misdemeanor
+ Case Number: 2016CRB05065
+ Court Name: Common Pleas
+ Plea: No Contest
+ Disposition: Guilty
+ 
+ Sanctions
+ Charges Filed Date: Dec 23, 2014
+ Crime Location: Stark, OH
+ Charge Category: Traffic
+ Offense Description: Speeding
+ Counts: 1
+ National Crime Information Center (NCIC) Code: 4511.21
+ Case Type: Misdemeanor
+ Case Number: 2014TRD08977
+ Court Name: Common Pleas
+ Plea: No Contest
+ Disposition: Guilty
+ Name: Chace M Heffner
+ Offense Date: Jan 6, 2011: Personal Details
+ 
+ First Name: Chace
+ Middle Initial: M
+ Last Name: Heffner
+ Born: Aug 1991
+ 
+ Sanctions
+ Offense Date: Jan 6, 2011
+ Charges Filed Date: Sep 15, 2011
+ Age At Time Of Charge Or Offense: 20
+ Crime Location: Tuscarawas, OH
+ Charge Category: Criminal/Traffic
+ Crime Classification: F
+ Offense Description: Criminal Trespass
+ Grade Of Offense: FELONY
+ Counts: 5
+ National Crime Information Center (NCIC) Code: 2911.21(A)(1) -
+ Case Type: Fourth Degree Misdemeanor
+ Case Number; 2011 CR 09 0225
+ Court Name; Oh Tuscarawas Common Pleas
+ Court Costs: $116.69
+ Disposition: Guilty As Charged
+ Disposition Date: Feb 15, 2012
+ 
+ Sanctions
+ Offense Date: May 26, 2011
+ Charges Filed Date: Jun 9, 2011
+ Age At Time Of Charge Or Offense: 19
+ Crime Location: Tuscarawas, OH
+ Charge Category: Criminal
+ Crime Classification: F
+ Offense Description: 2903.12 Aggravated Assault
+ Comments: Additional Information: Guilty As Charged
+ Grade Of Offense: FELONY
+ Counts: 1
+ National Crime Information Center (NCIC) Code; 2903.12
+ Case Type: Fourth Degree Felony
+ Case Number: 2011 CR 06 0161
+ Court Name: Oh Tuscarawas Common Pleas
+ Court Costs: $67.86
+ Sentence: 001 Years, 00 Months, 180 Days
+ Probation: 003 Years, 00 Months, 002 Days
+ Disposition: Guilty As Charged
+ Disposition Date: Feb 22, 2012
+ +---------------------------------------------------------------+
+ |                        0x07  Data Breach                     |
+ +---------------------------------------------------------------+
+ {
+   "databases": 3,
+   "elapsed": "48ms",
+   "first_seen": "2020-01",
+   "found": 3,
+   "last_seen": "2021-08",
+   "results": [
+     {
+       "email": "KATHYGUMP1970@GMAIL.COM",
+       "full_name": "KC GUMP",
+       "hash": "",
+       "ip_address": "",
+       "password": "",
+       "phone_number": "3306051752",
+       "source": {
+         "date": "2021-08",
+         "name": "ATT.com (2021)"
+       },
+       "username": ""
+     },
+     {
+       "email": "kathygump1970@gmail.com",
+       "full_name": "",
+       "hash": "",
+       "ip_address": "",
+       "password": "indiana1970",
+       "phone_number": "",
+       "source": {
+         "date": "2020-01",
+         "name": "Avvo.com"
+       },
+       "username": ""
+     },
+     {
+       "email": "kathygump1970@gmail.com",
+       "full_name": "Ann Gump",
+       "hash": "",
+       "ip_address": "70.194.1.205",
+       "password": "\"\"",
+       "phone_number": "",
+       "source": {
+         "date": "2015",
+         "name": "ClearVoiceSurveys.com"
+       },
+       "username": ""
+     }
+   ]
+ }
+ 
+ ----------------------------------------------------------------------------------------
+ {
+   "results": {
+     "0313_ADOBE_COM_151M_SOFTWARE_102013": [
+       {
+         "email": "bob_smith@prodigy.net",
+         "hash": "5aITt2x4LYo="
+       }
+     ],
+     "0645_ZYNGA_COM_202M_GAMING_092019": [
+       {
+         "created": "2012-01-13 22:52:27",
+         "email": "bob_smith@prodigy.net",
+         "salt": "b2f21b3bc0bb36f342ec4e9dc656639761f8c9a6",
+         "username": "Oddjob54321"
+       }
+     ],
+     "1248_GEMINI_COM_5536K_CRYPTO_2022": [
+       {
+         "email": "bob_smith@prodigy.net",
+         "phone": "847-XXX-4957",
+         "uid": "340364905"
+       }
+     ],
+     "1669_VERIFICATIONS_IO_789M_MARKETING_022019": [
+       {
+         "email": "bob_smith@prodigy.net"
+       },
+       {
+         "email": "BOB_SMITH@PRODIGY.NET"
+       }
+     ]
+   }
+ 
+ }
+ 
+ {
+   "databases": 1,
+   "elapsed": "22ms",
+   "first_seen": "",
+   "found": 1,
+   "last_seen": "",
+   "results": [
+     {
+       "email": "bob_smith@prodigy.net",
+       "full_name": "kathy l smith",
+       "hash": "",
+       "ip_address": "63.250.188.137",
+       "password": "",
+       "phone_number": "8472535449",
+       "source": {
+         "date": "",
+         "name": "LiveRamp.com"
+       },
+       "username": ""
+     }
+   ]
+ }
+ 
+ {
+   "content": [
+     {
+       "email": "bob_smith@prodigy.net",
+       "origin": "zynga.com",
+       "password": "b0f3f7ced3730011768b165cf05bfa1e2eed665b",
+       "phone": "NULL",
+       "username": "Oddjob54321"
+     }
+   ],
+   "found": 1,
+   "status": "success",
+   "took": 69
+ }
+ 
+ ----------------------------------------------------------------------------------------------
+ {
+   "results": {
+     "0433_IMESH_COM_51M_MUSIC_2013": [
+       {
+         "email": "cgump2@neo.rr.com",
+         "hash": "f62915b7e9c2cae66371b93d615a959f18308281",
+         "lastip": "71.79.129.95",
+         "username": "ckcngk"
+       }
+     ],
+     "0641_MYSPACE_COM_357M_SOCIAL_2008": [
+       {
+         "email": "CGUMP2@NEO.RR.COM",
+         "hash": "56AEE0AAF8FFB6CFAFE6D7666D8C8CF1A0489ACD\r",
+         "username": "136688950"
+       }
+     ]
+   },
+   "size": 2,
+   "took": 166
+ }
+ 
+ {
+   "databases": 4,
+   "elapsed": "23ms",
+   "first_seen": "2008-07",
+   "found": 5,
+   "last_seen": "2013-09",
+   "results": [
+     {
+       "email": "cgump2@neo.rr.com",
+       "full_name": "",
+       "hash": "",
+       "ip_address": "",
+       "password": "dirtbike1",
+       "phone_number": "",
+       "source": {
+         "date": "",
+         "name": "Anti Public"
+       },
+       "username": ""
+     },
+ 
+     {
+       "email": "cgump2@neo.rr.com",
+       "full_name": "",
+       "hash": "",
+       "ip_address": "",
+       "password": "dirtbike1",
+       "phone_number": "",
+       "source": {
+         "date": "",
+         "name": "Collection 2"
+       },
+       "username": ""
+     },
+ 
+     {
+       "email": "cgump2@neo.rr.com",
+       "full_name": "",
+       "hash": "",
+       "ip_address": "",
+       "password": "ckcngk",
+       "phone_number": "",
+       "source": {
+         "date": "2013-09",
+         "name": "iMesh.com"
+       },
+       "username": ""
+     },
+ 
+     {
+       "email": "cgump2@neo.rr.com",
+       "full_name": "",
+       "hash": "",
+       "ip_address": "",
+       "password": "dirtbike1",
+       "phone_number": "",
+       "source": {
+         "date": "2008-07",
+         "name": "Myspace.com"
+       },
+       "username": ""
+     }
+   ]
+ }
+ 
+ {
+   "found": 2,
+   "limits": {
+     "checks": 259,
+     "keywords": 999999
+   },
+   "result": [
+     {
+       "email_only": 0,
+       "last_breach": "2008-07",
+       "line": "cgump2@neo.rr.com:dirtbike1",
+       "sources": [
+         "MySpace.com"
+       ]
+     },
+     {
+       "email_only": 0,
+       "last_breach": "2013-09",
+       "line": "cgump2@neo.rr.com:ckcngk",
+       "sources": [
+         "iMesh.com"
+       ]
+     }
+ 
+ {
+   "content": [
+     {
+       "email": "cgump2@neo.rr.com",
+       "origin": "comb3",
+       "password": "dirtbike1"
+     },
+     {
+       "email": "cgump2@neo.rr.com",
+       "origin": "comb1",
+       "password": "dirtbike1"
+     }
+   ],
+   "found": 2,
+   "status": "success",
+   "took": 84
+ }
+ 
+ -----------------------------------------------------------------------------------------------------
+ {
+   "results": {
+     "1754_INSTAGRAM_COM_17M_SOCIAL_20XX": [
+       {
+         "email": "kamryngump@icloud.com",
+         "id": "6073464107",
+         "name": "Kam",
+         "phone": "+13306910187",
+         "username": "shawnsxnetflix"
+       }
+     ]
+   },
+   "size": 1,
+   "took": 159
+ }
+ 
+ ------------------------------------------------------------------------------------------------------
+ {
+   "results": {
+     "0313_ADOBE_COM_151M_SOFTWARE_102013": [
+       {
+         "email": "gingerjim13@gmail.com",
+         "hash": "wX5ytW+Z/0zioxG6CatHBw=="
+       }
+     ],
+     "0683_MODBSOLUTIONS_COM_58M_B2B_2016": [
+       {
+         "email": "gingerjim13@gmail.com",
+         "gender": "M",
+         "name": "JAMES BRACKLEY II",
+         "zip": "85016"
+       }
+     ]
+   },
+   "size": 2,
+   "took": 165
+ }
+ 
+ {
+   "databases": 5,
+   "elapsed": "30ms",
+   "first_seen": "2013-10",
+   "found": 5,
+   "last_seen": "2018-06",
+   "results": [
+     {
+       "email": "gingerjim13@gmail.com",
+       "full_name": "",
+       "hash": "",
+       "ip_address": "",
+       "password": "1404783726",
+       "phone_number": "",
+       "source": {
+         "date": "2013-10",
+         "name": "Adobe.com"
+       },
+       "username": ""
+     },
+     {
+       "email": "gingerjim13@gmail.com",
+       "full_name": "",
+       "hash": "",
+       "ip_address": "",
+       "password": "1404783726",
+       "phone_number": "",
+       "source": {
+         "date": "",
+         "name": "Collection 2"
+       },
+       "username": ""
+     },
+     {
+       "email": "gingerjim13@gmail.com",
+       "full_name": "james a brackley",
+       "hash": "",
+       "ip_address": "68.3.39.178",
+       "password": "",
+       "phone_number": "",
+       "source": {
+         "date": "2018-06",
+         "name": "Exactis.com"
+       },
+       "username": ""
+     },
+     {
+       "email": "gingerjim13@gmail.com",
+       "full_name": "james brackley ii",
+       "hash": "",
+       "ip_address": "",
+       "password": "",
+       "phone_number": "2818574850",
+       "source": {
+         "date": "2016-10",
+         "name": "ModBSolutions.com"
+       },
+       "username": ""
+     },
+     {
+       "email": "gingerjim13@gmail.com",
+       "full_name": "",
+       "hash": "",
+       "ip_address": "",
+       "password": "1leojim3",
+       "phone_number": "",
+       "source": {
+         "date": "2017-12",
+         "name": "Petflow.com"
+       },
+       "username": ""
+     }
+   ]
+ }
+ 
+ {
+   "found": 3,
+   "limits": {
+     "checks": 259,
+     "keywords": 999999
+   },
+   "result": [
+     {
+       "email_only": 0,
+       "last_breach": "2017-12",
+       "line": "gingerjim13@gmail.com:1leojim3",
+       "sources": [
+         "Petflow.com"
+       ]
+     },
+     {
+       "email_only": 0,
+       "last_breach": "2018-05",
+       "line": "gingerjim13@gmail.com:leojim",
+       "sources": [
+         "Houzz.com"
+       ]
+     },
+     {
+       "email_only": 0,
+       "last_breach": "",
+       "line": "gingerjim13@gmail.com:1404783726",
+       "sources": []
+     }
+   ],
+ }
+ 
+ {
+   "content": [
+     {
+       "email": "gingerjim13@gmail.com",
+       "origin": "comb3",
+       "password": "1404783726"
+     },
+     {
+       "email": "gingerjim13@gmail.com",
+       "origin": "comb1",
+       "password": "1404783726"
+     }
+   ],
+   "found": 2,
+   "status": "success",
+   "took": 110
+ }
+ 
+ ----------------------------------------------------------------------------------------------
+ {
+   "results": {
+     "0641_MYSPACE_COM_357M_SOCIAL_2008": [
+       {
+         "email": "ragrat2000@yahoo.com",
+         "hash": "CBC7A198525FD76253C77A851E4A378881872FF0",
+         "username": "bessie63"
+       }
+     ]
+   },
+   "size": 1,
+   "took": 150
+ }
+ 
+ {
+   "databases": 6,
+   "elapsed": "22ms",
+   "first_seen": "2008-07",
+   "found": 8,
+   "last_seen": "2012-07",
+   "results": [
+     {
+       "email": "ragrat2000@yahoo.com",
+       "full_name": "",
+       "hash": "",
+       "ip_address": "",
+       "password": "frogger",
+       "phone_number": "",
+       "source": {
+         "date": "",
+         "name": "Anti Public"
+       },
+       "username": ""
+     },
+     {
+       "email": "ragrat2000@yahoo.com",
+       "full_name": "",
+       "hash": "",
+       "ip_address": "",
+       "password": "frogger",
+       "phone_number": "",
+       "source": {
+         "date": "",
+         "name": "Collection 1"
+       },
+       "username": ""
+     },
+     {
+       "email": "ragrat2000@yahoo.com",
+       "full_name": "",
+       "hash": "",
+       "ip_address": "",
+       "password": "frogger",
+       "phone_number": "",
+       "source": {
+         "date": "",
+         "name": "Collection 2"
+       },
+       "username": ""
+     },
+     {
+       "email": "ragrat2000@yahoo.com",
+       "full_name": "michael l white",
+       "hash": "",
+       "ip_address": "198.180.123.161",
+       "password": "",
+       "phone_number": "",
+       "source": {
+         "date": "",
+         "name": "LiveRamp.com"
+       },
+       "username": ""
+     },
+     {
+       "email": "ragrat2000@yahoo.com",
+       "full_name": "",
+       "hash": "",
+       "ip_address": "",
+       "password": "frogger",
+       "phone_number": "",
+       "source": {
+         "date": "2008-07",
+         "name": "Myspace.com"
+       },
+       "username": "bessie63"
+     },
+     {
+       "email": "ragrat2000@yahoo.com",
+       "full_name": "",
+       "hash": "",
+       "ip_address": "",
+       "password": "frogger",
+       "phone_number": "",
+       "source": {
+         "date": "2012-07",
+         "name": "Yahoo.com"
+       },
+       "username": ""
+     }
+   ]
+ }
+ 
+ {
+   "found": 1,
+   "limits": {
+     "checks": 259,
+     "keywords": 999999
+   },
+   "result": [
+     {
+       "email_only": 0,
+       "last_breach": "2012-07",
+       "line": "ragrat2000@yahoo.com:frogger",
+       "sources": [
+         "Yahoo.com",
+         "MySpace.com"
+       ]
+     }
+   ],
+ }
+ 
+ {
+   "content": [
+     {
+       "email": "ragrat2000@yahoo.com",
+       "origin": "comb3",
+       "password": "frogger"
+     },
+     {
+       "email": "ragrat2000@yahoo.com",
+       "origin": "myspace.com",
+       "password": "0xCBC7A198525FD76253C77A851E4A378881872FF0",
+       "username": "bessie63"
+     },
+     {
+       "email": "ragrat2000@yahoo.com",
+       "origin": "comb1",
+       "password": "frogger"
+     },
+     {
+       "email": "ragrat2000@yahoo.com",
+       "origin": "collection_1",
+       "password": "frogger"
+     }
+   ],
+   "found": 4,
+   "status": "success",
+   "took": 151
+ }
+
+.m.                                   ,_
+' ;M;                                ,;m `
+  ;M;.           ,      ,           ;SMM;
+ ;;Mm;         ,;  ____  ;,         ;SMM;
+;;;MM;        ; (.MMMMMM.) ;       ,SSMM;;
+,;;;mMp'        l  ';mmmm;/  j       SSSMM;;
+.;;;;;MM;         .\,.mmSSSm,,/,      ,SSSMM;;;
+;;;;;;mMM;        .;MMmSSSSSSSmMm;     ;MSSMM;;;;
+;;;;;;mMSM;     ,_ ;MMmS;;;;;;mmmM;  -,;MMMMMMm;;;;
+;;;;;;;MMSMM;     \"*;M;( ( '') );m;*"/ ;MMMMMM;;;;;,
+.;;;;;;mMMSMM;      \(@;! _     _ !;@)/ ;MMMMMMMM;;;;;,
+;;;;;;;MMSSSM;       ;,;.*o*> <*o*.;m; ;MMMMMMMMM;;;;;;,
+.;;;;;;;MMSSSMM;     ;Mm;           ;M;,MMMMMMMMMMm;;;;;;.
+;;;;;;;mmMSSSMMMM,   ;Mm;,   '-    ,;M;MMMMMMMSMMMMm;;;;;;;
+;;;;;;;MMMSSSMMMMMMMm;Mm;;,  ___  ,;SmM;MMMMMMSSMMMM;;;;;;;;
+;;'";;;MMMSSSSMMMMMM;MMmS;;,  "  ,;SmMM;MMMMMMSSMMMM;;;;;;;;.
+!   ;;;MMMSSSSSMMMMM;MMMmSS;;._.;;SSmMM;MMMMMMSSMMMM;;;;;;;;;
+;;;;*MSSSSSSMMMP;Mm*"'q;'   `;p*"*M;MMMMMSSSSMMM;;;;;;;;;
+';;;  ;SS*SSM*M;M;'     `-.        ;;MMMMSSSSSMM;;;;;;;;;,
+;;;. ;P  `q; qMM.                 ';MMMMSSSSSMp' ';;;;;;;
+;;;; ',    ; .mm!     \.   `.   /  ;MMM' `qSS'    ';;;;;;
+';;;       ' mmS';     ;     ,  `. ;'M'   `S       ';;;;;
+`;;.        mS;;`;    ;     ;    ;M,!     '  luk   ';;;;
+';;       .mS;;, ;   '. o  ;   oMM;                ;;;;
+';;      MMmS;; `,   ;._.' -_.'MM;                 ;;;
+`;;     MMmS;;; ;   ;      ;  MM;                 ;;;
+  `'.   'MMmS;; `;) ',    .' ,M;'                 ;;;
+     \    '' ''; ;   ;    ;  ;'                   ;;
+      ;        ; `,  ;    ;  ;                   ;;
+               |. ;  ; (. ;  ;      _.-.         ;;
+  .-----..__  /   ;  ;   ;' ;\  _.-" .- `.      ;;
+;' ___      `*;   `; ';  ;  ; ;'  .-'    :      ;
+;     """*-.   `.  ;  ;  ;  ; ' ,'      /       |
+',          `-_    (.--',`--'..'      .'        ',
+  `-_          `*-._'.\\\;||\\)     ,'
+     `"*-._        "*`-ll_ll'l    ,'
+        ,==;*-._           "-.  .'
+     _-'    "*-=`*;-._        ;'
+   ."            ;'  ;"*-.    `
+   ;   ____      ;//'     "-   `,
+   `+   .-/                 ".\\;
+     `*" /
+Dont End up like this nigga
+┌——————————————————————————————————————————————————————————————————————┐
+|                              End Of Dox                              |
+└——————————————————————————————————————————————————————————————————————┘
+
+        </pre>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Given | #coresec</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #050505;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative; /* Make the body a positioning context */
+        }
+        .container {
+            background-color: #0a0a0a;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 80%; /* Adjust width as needed */
+            max-width: 1000px; /* Maximum width */
+            height: 80%; /* Adjust height as needed */
+            max-height: 600px; /* Maximum height */
+            overflow: auto; /* Enable scrolling if content exceeds box dimensions */
+            animation: fadeIn 1s ease-in-out; /* Fade in animation */
+        }
+        .container pre {
+            margin: 0;
+            white-space: pre-wrap; /* Preserve formatting and wrap long lines */
+            padding: 10px; /* Padding inside the box */
+            font-size: 14px; /* Adjust font size as needed */
+            line-height: 1.5; /* Adjust line height for readability */
+            animation: slideIn 1s ease-in-out; /* Slide in animation */
+        }
+        .title {
+            position: absolute;
+            top: 20px; /* Adjust vertical position as needed */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%);
+            z-index: 1; /* Ensure it's above the GIF background */
+            color: #ffffff;
+            font-size: 24px; /* Adjust font size as needed */
+        }
+        .gif-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0; /* Behind everything */
+            opacity: 0.5; /* Adjust opacity as needed */
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h5 class="title" style="font-size: 24px; margin: 0px 20px 0px 2px; padding-top: 0px; display: inline-block;color: #bb71e4; font-weight: bold;background-image: url('./glitter/purple.gif');">
+        Dasan Ashford 
+    </h5>
+    <div class="container">
+        <pre>
+Join #coresec : <a href="https://discord.gg/AwXkT4NDJb" target="_blank">https://discord.gg/corsec</a>
+
+ ────────────────────────────────────────────────────────────────────────
+▓│                ...::[ SCROLL DOWN TO VIEW PASTE ]::...               │▓
+▓│──────────────────────────────────────────────────────────────────────│▓
+──────┘      ░░       ("Scroll down to view paste"):      ░░     └──────
+│                   Contact Info Is On My Profile                      │
+└──────────────────────────────────────────────────────────────────────┘
+
+
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣶⠶⠿⠷⣶⣄⠀⠀⠀⠀⠀⠀⠀⣠⡶⠿⠛⠷⢶⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢀⣴⡿⠛⠉⠀⠀⠀⠀⠀⠹⣧⠀⠀⠀⠀⠀⣼⠏⠀⠀⠀⠀⠀⠈⠙⢿⣦⡀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣠⡿⠋⠀⢀⣠⠞⠋⠀⠀⠀⢠⡿⠀⠀⠀⠀⠀⢻⡆⠀⠀⠀⠈⠻⣦⡀⠀⠘⢿⣆⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣰⡟⠁⠀⢠⡿⠁⠀⠀⠀⠀⣠⣿⠃⠀⠀⠀⠀⠀⠘⣿⣦⠀⠀⠀⠀⠈⢻⣄⠀⠀⠻⣧⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣴⠏⠀⠀⢠⡟⠀⣠⠀⠀⠀⣼⠟⠁⠀⠀⠀⠀⠀⠀⠀⠈⠻⣷⡀⠀⠀⣄⠀⢻⣆⠀⠀⠹⣧⠀⠀⠀⠀
+⠀⠀⠀⣰⠏⠀⠀⢰⣿⣇⣰⠋⠀⠀⠀⢿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡾⠁⠀⠀⠘⣧⣼⣿⣆⠀⠀⠹⣧⠀⠀⠀
+⠀⠀⢰⡏⠀⠀⢰⣿⣿⣿⡇⢠⡟⠀⠀⠀⣹⡇⠀⠀⠀⠀⠀⠀⠀⠸⣏⡀⠀⠀⠸⡆⢸⣿⣿⣿⣇⠀⠀⠹⣇⠀⠀
+⠀⢠⡟⠀⠀⢰⡾⠈⣿⣿⣧⣿⢀⡶⠀⣼⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣷⡀⢶⡀⢿⣼⣿⣿⠙⢿⡆⠀⠀⢻⡆⠀
+⠀⣾⠁⠀⢠⣼⠃⠀⣸⢏⣿⣧⣼⠃⣼⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣧⠈⣧⣼⣿⡿⣏⠀⠘⣧⡄⠀⠈⣷⠀
+⢰⡏⠀⠀⢸⡟⠀⢠⡟⠘⠿⢻⣿⣷⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⡿⠟⠃⢹⡄⠀⢹⡇⠀⠀⢹⡇
+⢸⡇⠀⠀⣸⡇⠀⣾⠁⢀⡏⠈⢻⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣏⠀⢸⡄⠈⣷⡀⢸⣧⠀⠀⠸⡇
+⢸⠀⠀⢀⡟⠻⣾⣿⡀⣸⠃⢠⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣆⠈⣧⠀⣿⣷⡟⢻⡀⠀⠀⡇
+⢸⠃⠀⢸⣇⣾⢹⡟⣿⣿⣤⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣤⣿⣿⢹⣇⣿⣼⡏⠀⠀⡇
+⢸⠀⠀⢸⣿⠏⣽⢸⣿⣿⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⣿⣿⣇⣿⠽⣿⣧⠀⠀⡇
+⢸⡆⠀⣼⠁⠀⡏⠘⢿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡿⠃⢸⠀⠈⣷⠀⢰⡇
+⠸⣷⠀⢻⠀⢰⡇⠀⢸⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣇⣀⢸⡇⠀⡟⠀⣾⠇
+⠀⢿⡄⢸⠀⣼⡧⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣟⣸⣧⡀⡇⢠⣿⠀
+⠀⠸⣇⢸⣾⣿⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⣿⣿⡇⣸⠇⠀
+⠀⠀⢻⣼⣿⠿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠷⢾⢧⡿⠀⠀
+⠀⠀⠈⢿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡿⠁
+
+
+
+ ~ Made By Mmeber of coresec opsecuser ~
+ » xtc                            
+ ⤷ t.me/xtcwrld			        
+ » Many people who spoke up 
+
+ +---------------------------------------------------------------+
+ |                      Table of contents                        | 
+ +---------------------------------------------------------------+
+ |      0x01  Introduction.............................          |
+ |      0x02  Personal Information.....................          |
+ |      0x03  Social Media Accounts....................          |         
+ |      0x04  Family Members Information...............          |
+ |      0x05  House Information........................          |                                                                  
+ |      0x06  Data Breach..............................          |
+ |      0x07  Credits..................................          |
+ +---------------------------------------------------------------+
+ |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+ +---------------------------------------------------------------+
+ |                      0x01  Introduction                       |
+ +---------------------------------------------------------------+
+ Dasan Ashford has been doxed cause he claimed he claim to swat
+ and he was also claiming to dox people people for fun on 
+ discord.com he is pronounced as a skid/larp on discord.com 
+ he cant dox or swat hes harmless so dont let him harm you 
+ 
+ if he tries to dox or swat you contact me automatically he is 
+ a harmless / larp on discord.com 
+ 
+ Dasan Ashford made fun of his self for tryna dox and swat people
+ on the platform discord.com
+ 
+ and court records will be coming soon on his family.
+ +---------------------------------------------------------------+
+ |                  0x02  Personal Information                   |
+ +---------------------------------------------------------------+
+ Name.................... Dasan Ashford
+ Race.................... Black
+ Gender.................. Male
+ Sexuality............... Straight
+ Relationship Status..... Single
+ D.O.B................... N/A
+ Age..................... 18
+ Mobile Phone Number..... (334) 540-1135
+ Aliases................. D Ashford
+ Emails.................. zay195161@gmail.com
+                          > Last Updated: 2024/07/08 12:14:17 (UTC)
+ Phone Numbers...........(334) 855-9088
+                         (334) 540-1135
+ Aliases................. xanz1666
+ ------------------------------------------------
+ Direct Address.......... 6 Waverly Dr, Fort Mitchell, AL, 36856
+ Country................. United States
+ State................... Alabama
+ City.................... Fort Mitchell 
+ Zip..................... 36856
+ ------------------------------------------------
+ +---------------------------------------------------------------+
+ |                  0x03  Social Media Accounts                  |
+ +---------------------------------------------------------------+
+ Online Alias............ 
+ ```diff
+ - User Information:
+ - Username: xanz1666
+ - User ID: 1227284783655157872
+ - Account Creation Time: Tue, 09 Apr 2024 15:51:34 UTC
+ - Token Hash: MTIyNzI4NDc4MzY1NTE1Nzg3Mg
+ - Badges: None
+ - Mutual Servers: 
+ ```
+ ```diff
+ - User Information: 
+ - Username: ace_2geeked > faded.m
+ - User ID: 1265399904109592586
+ - Account Creation Time: Tue, 23 Jul 2024 20:07:27 UTC
+ - Token Hash: MTI2NTM5OTkwNDEwOTU5MjU4Ng==
+ - Badges: None
+ - Mutual Servers: killed by
+ ```
+ +---------------------------------------------------------------+
+ |               0x04 Family Members Information                |
+ +---------------------------------------------------------------+
+ Possible Relatives:
+        
+            1st Relatives
+  
+ » Full Name: Graciana Jaihan Ashford
+ » Gender: Female
+ » Age: 24
+ » DOB: Apr 2000
+ 
+ » Aliases: 
+ ⤷ Graciana J Ashford
+ 
+ » Phone Numbers:
+ ⤷ (334) 855-9088
+ 
+ » Address: 
+ ⤷ 6 Waverly Dr, Fort Mitchell, AL, 36856
+ 
+ » Relatives:
+ ⤷ Lauren Ashford
+ ⤷ Aiyana Ashford
+ ⤷ Umbra Lee Ashford
+ ⤷ Deja Umbria Ashford
+ ⤷ Labertha Marie Hooker
+ ⤷ Dasan Ashford
+ 
+        2nd Relatives       
+          
+ » Full Name: Umbra Lee Ashford
+ » Gender: Female
+ » Age: 27
+ » DOB: Feb 1997
+ 
+ » Phone Numbers: 
+ ⤷ (334) 855-9088
+ ⤷ (706) 221-3345
+ 
+ » Emails: 
+ ⤷ umbraashford08@gmail.com
+ ⤷ marie.ashford70@gmail.com
+ ⤷ umbrajr@gmail.com
+ ⤷ umbraashford@msn.com
+ ⤷ vlsmith7@netscape.net
+ 
+ » Aliases: Umbra L Ashford
+ 
+ » Relatives: 
+ ⤷ Lauren Ashford
+ ⤷ Graciana Jaihan Ashford
+ ⤷ Dasan Ashford
+ ⤷ Aiyana Ashford
+ ⤷ Deja Umbria Ashford
+ ⤷ Labertha Marie Hooker
+ 
+ » Relationship:
+ » Full Name: Labertha  Marie  Ashford
+ » Gender: Female
+ » Age: 45
+ » DOB: Jul 1979
+ 
+ » Aliases:
+ ⤷ Labertha  Marie  Ashford
+ ⤷ L  Stallworth
+ ⤷ Labertha Marie Stallworth
+ ⤷ Labertha Hooker Stallworth
+ ⤷ Marie Stallworth
+ ⤷ Marie Ashford
+ ⤷ Maria Ashford
+ ⤷ Labertha M  Hooker
+ 
+ » Address: 
+ ⤷ 6 Waverly Dr, Fort Mitchell, AL, 36856
+ 
+ » Jobs:
+ ⤷ Name: Lee Kennedy
+ 
+ » Socials:
+ ⤷ https://myspace.com/stillo3
+ ⤷ http://www.facebook.com/people/_/100000093117546
+ 
+ » Social Security Information: 
+ ⤷ SSN Issued: 1980-1981
+ ⤷ Issued Location: ILLINOIS
+ 
+ 
+ » Associates:
+ » Keon Kendall Calbert
+ » Age: 28
+ » DOB: Feb 1996
+ 
+ » Emails:
+ ⤷ izayuh09@gmail.com
+ ⤷ keon.calbert2@gmail.com
+ ⤷ calbertkierra@gmail.com
+ ⤷ keon.calbert5@gmail.com
+ ⤷ keon.calbert1@gmail.com 
+ 
+ » Picture 
+ https://ibb.co/60z0zRC
+ 
+ » Voter Registration History:
+ » Party  Affiliation: 
+ ⤷ Democratic Party
+ » Registration Address: 
+ ⤷ 1000 S Fairfield Dr Lot 16, Pensacola, FL 32506-5956
+ » Party  Affiliation: 
+ ⤷ Democratic Party 
+ » Registration  Address: 
+ ⤷ 4609 State St, Pensacola, FL 32506
+ 
+ »Socials: 
+ ⤷ https://www.instagram.com/__iamkendall/
+ 
+ Relatvies: 
+ ⤷ Donna Calbert
+ ⤷ Keith Calbert
+ ⤷ Kierra Denice Calbert
+ ⤷ Ashley Semonne Calbert
+ 
+ 
+ » Finances
+ ⤷ BANKRUPTCY
+ ⤷ Court Code: ALM
+ ⤷ Court Location: AL
+ ⤷ Judge Name: DWIGHT H. WILLIAMS JR.
+ ⤷ Case Number: 1580410
+ ⤷ Chapter: 7
+ ⤷ Filing Status: DISCHARGE
+ ⤷ File Date: Mar 31, 2015
+ ⤷ Discharge Date: Jul 21, 2015
+ » Debtors
+ ⤷ Full Name: Umbra Lee Ashford
+ ⤷ Address: 
+ 6 Waverly  Dr Fort Mitchell, AL, 36856
+ 
+ » Full Name: Labertha Marie Ashford
+ » Address: 6 Waverly Dr Fort Mitchell, AL, 36856
+ 
+ » Attorney:
+ ⤷ Name: America Cross
+ ⤷ Address: 4800 Armour Rd
+ ⤷ Columbus, GA, 31904
+ ⤷ Phone: (706) 596-6745
+ 
+ » Trustee:
+ ⤷ Name: Cecil Tipton
+ ⤷ Phone: (334) 742-9400
+ 
+ » Socials
+ » Instagram: 
+ ⤷ Name: Umbra Ashford
+ ⤷ Usernames: kingtree01
+ ⤷ User's ID: 3668443944@instagram
+ ⤷ Followers: 310
+ ⤷ Following: 678
+ 
+ » Pinterest:
+ ⤷ Name: Umbra Ashford
+ ⤷ Usernames: umbraashford
+ 
+ » VK
+ ⤷ Name: Umbra Ashford
+ ⤷ User's ID: 387988415@vk
+ ⤷ Link: https://vk.com/id387988415/
+ 
+ » Residential Property
+ » Name: 
+ ⤷ Umbra Ashford
+ » Friends: 
+ ⤷ Labertha  M  Ashford
+ » Last Sale Date:
+ ⤷ 2010-06-08
+ ⤷ 2010-05-28
+ » APN: 
+ ⤷ 08-08-33-00-000-006.013
+ 
+ » Usa Mobile Owners
+ ⤷ Name: Umbra Ashford
+ 
+ » Business Profile:
+ ⤷ Job Name: GRACE HOLINESS CHURCH GOD INC
+ ⤷ DUNS Number: 835169756
+ ⤷ Primary Company Names:
+ ⤷ Grace Holiness Church God Inc
+ ⤷ Grace Holiness Church Of God
+ ⤷ Grace Holiness Church Of God Inc.
+ » Current Address: 
+ ⤷ 5101 12th Ave, Columbus, GA, 31904
+ 
+ » Corporate Filings: 
+ ⤷ Business Names: Grace Holiness Church Of God, Inc.
+ ⤷ Corporation Type: Non-Profit
+ ⤷ Standard Industrial Classification Code: 00000000
+ ⤷ Address: 5101 12th Ave, Columbus, GA, 31904
+ ⤷ Address Type: Business
+ ⤷ State: Ga
+ ⤷ Incorporation State: GA
+ ⤷ Filing Number: #K719335
+ ⤷ Filing Office DUNS Number: #194169017
+ ⤷ Filing Date: May 2, 1997
+ ⤷ Filing Office Name: Secretary Of State/Business Services And Regulations/Corporate Division
+ ⤷ Filing Office Address: 315 W Tower, Atlanta, GA, 30334
+ ⤷ Data Universal Numbering System (DUNS) Number: #835169756
+ ⤷ Perpetual Indicator: Y
+ ⤷ Registration Type: Domestic Corporation
+ ⤷ Securities And Exchange Commission Status: Active/Compliance
+ ⤷ Verification Date: Jan 19, 2024
+ ⤷ Recieved Date: Jan 23, 2024
+ ⤷ File Date: Jan 25, 2024
+ ⤷ Miscellaneous Details:
+ ⤷ Good Standing: True
+ 
+                   3rd Relatives
+ 
+ » Full Name: Lauren Ashford
+ » Gender: Female
+ » Age: 52 
+ » DOB: Jan 1972
+ 
+ » Emails
+ ⤷ umbraashford08@gmail.com
+ ⤷ marie.ashford70@gmail.com
+ ⤷ umbrajr@gmail.com
+ ⤷ umbraashford@msn.com
+ ⤷ allisonashford@msn.com
+ ⤷ vlsmith7@netscape.net
+ 
+ » Aliases
+ ⤷ Umbra Lee Ashford
+ ⤷ Umbra J Ashford
+ ⤷ Umbra L Asford
+ 
+ » Address 
+ ⤷ 6 Waverly Dr, Fort Mitchell, AL, 36856
+ 
+ » Relatives
+ ⤷ Aiyana Ashford
+ ⤷ Dasan Ashford
+ ⤷ Graciana Jaihan Ashford
+ ⤷ Umbra Lee Ashford 
+ ⤷ Deja Umbria Ashford 
+ ⤷ Umbra Lee Ashford
+ ⤷ Labertha Marie Hooker
+ 
+ » Phone Number: (334) 855-9088
+ ⤷ "Line Type": "Voip",
+ ⤷ "Carrier Location": "Phenix City-Ft Mitchell, AL 36851".
+ ⤷ "Prepaid": "No",
+ ⤷ "Connected": "No",
+ 
+ » Jobs
+ » Job Name:
+ ⤷ Afni, Inc
+ » Last Seen: 
+  ⤷ Mar 27, 2024
+ 
+ » Job Details
+ » Employment Duration:
+ ⤷ Mar 27, 2024 - Mar 27, 2024
+ 
+ » Socials:
+ ⤷ https://www.linkedin.com/in/umbra-ashford-32644a157
+ 
+                      4th Relatives
+ » Full Name: Aiyana Ashford
+ » Gender: Female
+ » Age: N/A
+ » DOB: N/A
+ 
+ » Relatives
+ ⤷ Graciana Jaihan Ashford
+ ⤷ Dasan Ashford
+ ⤷ Umbra Lee Ashford
+ ⤷ Lauren Ashford
+ ⤷ Deja Umbria Ashford
+ ⤷ Labertha Marie Hooker
+ 
+                   5th Relatives
+ 
+ » Full Name: Deja Umbria Ashford
+ » Gender: Female
+ » Age: 25 
+ » DOB: Jan 1999
+ 
+ » Address
+ ⤷ 195 Turquoise Trl, Atlanta, GA, 30349
+ 
+ » Emails:
+ dejaashford1999@gmail.com
+ umbraashford08@gmail.com 
+ umbrajr@gmail.com
+ 
+ » Relatives
+ ⤷ Lauren  Ashford   Age: 21
+ ⤷ Lauren Ashford   Age: 45
+ ⤷ Aiyana Ashford
+ ⤷ Dasan Ashford
+ ⤷ Graciana Jaihan Ashford
+ ⤷ Umbra Lee Ashford      Age: 27
+ ⤷ Umbra Lee Ashford      Age: 52
+ ⤷ Allison Colleen Brady
+ ⤷ Labertha Marie Hooker
+ 
+ » Associates
+ ⤷ Patrice Desnita Johnson
+ ⤷ Delania Michelle Johnson
+ ⤷ Tyshawn J Ferrell
+ 
+ » Relationship Status
+ » Name: Kelly Hinton
+ 
+ » Jobs
+ » Work Place
+ ⤷ Papa Johns
+ » Sales Associate
+ ⤷ Last Seen: Sep 27, 2023
+ 
+ » Job Details
+ » Job Title
+ ⤷ Sales Associate
+ » Employment Duration
+ ⤷ Apr 14, 2019 - Sep 27, 2023
+ 
+ » Social Security Information
+ » SSN Issued
+ ⤷ 1999
+ » Issued Location
+ ⤷ Alabama
+ 
+                      6th Relatives
+ » Full Name: Umbra Lee Ashford
+ » Gender: Male
+ » Age: 52
+ » DOB: Jan 1972
+ 
+ » Address
+ ⤷ 6 Waverly Dr, Fort Mitchell, AL, 36856
+ 
+ » Phone Numbers
+ ⤷ (334) 855-9088
+ ⤷ (706) 576-4788
+ ⤷ (706) 596-5006
+ ⤷ (706) 323-1966
+ ⤷ (706) 405-8736
+ ⤷ (334) 323-1966
+ ⤷ (706) 221-3345
+ ⤷ (706) 405-8149
+ 
+ » Emails
+ umbraashford08@gmail.com
+ marie.ashford70@gmail.com
+ umbrajr@gmail.com
+ umbraashford@msn.com
+ allisonashford@msn.com
+ vlsmith7@netscape.net
+ 
+ » Aliases
+ ⤷ Umbra L Asford
+ ⤷ U Ashford
+ ⤷ Umbra J Ashford
+ ⤷ Umbia Lee Ashford
+ ⤷ Lauren Ashford
+ 
+ » Relatives
+ ⤷ Leola Williams 
+ ⤷ Lauren Ashford  Age: 21
+ ⤷ Norbert Ferrell
+ ⤷ Marjorie Witherspoon
+ ⤷ Jimmy Hooker
+ ⤷ Tyrone Hooker
+ ⤷ Jeffrey Hooker
+ ⤷ Loretta Hooker
+ ⤷ Dasan Ashford
+ ⤷ Lauren Ashford  Age: 45
+ ⤷ Aiyana Ashford
+ ⤷ Graciana Jaihan Ashford
+ ⤷ Umbra Lee Ashford
+ ⤷ Grace Lee Berry
+ ⤷ Deja Umbria Ashford
+ ⤷ Allison Colleen Brady
+ ⤷ Labertha Marie Hooker
+ 
+ » Associates
+ ⤷ Curt Russell Ellis
+ ⤷ Grace Lee Berry
+ ⤷ Michael B Peak
+ 
+ » Socials
+ ⤷ https://www.linkedin.com/in/umbra-ashford-32644a157
+ 
+ » Jobs
+ »Job Name: Afni, Inc
+ » Last Seen:  Mar 27, 2024
+ 
+ » Job Details
+ » Employment Duration: Mar 27, 2024 - Mar 27, 2024
+ 
+ » Social Security Information
+ » SSN Issued
+ ⤷ 1973-1974
+ » Issued Location
+ ⤷ GEORGIA
+ 
+ » Hunting Permit
+ » Name: 
+ ⤷ Umbra Ashford
+ » Location
+ ⤷ 5478 Glenview Dr, Columbus, GA, 31907
+ » Date of Birth
+ ⤷ Jan 1, 1972 - Dec 31, 1972
+ » Age
+ ⤷ 52 
+ » Permit Number
+ ⤷ 101440991
+ » Issue Date
+ ⤷ Apr 15, 2011
+ 
+ » Hunting Permit
+ » Name
+ ⤷ Umbra Ashford
+ » Location
+ ⤷ 5478 Glenview Dr, Columbus, GA, 31907
+ » Date of Birth
+ ⤷ Jan 1, 1972 - Dec 31, 1972
+ » Age
+ ⤷ 52 
+ » Permit Number
+ ⤷ 101440991
+ » Issue Date
+ ⤷ Apr 16, 2010
+ » Gender
+ ⤷ Male
+ 
+ » Hunting Permit
+ » Name
+ ⤷ Umbra Ashford
+ » Location
+ ⤷ 5478 Glenview Dr, Columbus, GA, 31907
+ » Date of Birth
+ ⤷ Jan 1, 1972 - Dec 31, 1972
+ » Age
+ ⤷ 52 
+ » Permit Number
+ ⤷ 101440991
+ » Issue Date
+ ⤷ Apr 16, 2010
+ » Gender
+ ⤷ Male
+ +---------------------------------------------------------------+
+ |                    0x05 House Information                    |
+ +---------------------------------------------------------------+
+ Direct Address.......... 6 Waverly Dr, Fort Mitchell, AL, 36856
+ Country................. US
+ County.................. Russell
+ State................... Alabama
+ City.................... Fort Mitchell
+ Street.................. 6 Waverly Dr
+ Zip..................... 36856 
+ County FIPS............. 01113
+ Congressional District.. 03
+ Is Deliverable.......... yes
+ Is Receiving Mail....... yes
+ Zip Type............. ... Standard
+ UTC Offset.............. -6
+ Sub Division Name....... Riverside Estate
+ Location Type........... Street
+ Location Use............ Residential
+ Longitude............... -85.02304
+ Latitude................ 32.33105
+ +---------------------------------------------------------------+
+ |                        0x06  Data Breach                      |
+ +---------------------------------------------------------------+
+ {
+   "results": {
+     "0601_CHEGG_COM_38M_EDUCATION_2018": [
+       {
+         "email": "umbraashford08@gmail.com",
+         "hash": "149671c4c9aafd4b3e6386840b0c77ca"
+       }
+     ],
+     "0645_ZYNGA_COM_202M_GAMING_092019": [
+       {
+         "created": "2012-07-01 18:21:52",
+         "email": "umbraashford08@gmail.com",
+         "salt": "48185bd4866634fa6114e835591937bb6bb81746",
+         "username": "noles6"
+       }
+     ],
+     "1642_ZEEROQ_COM_226M_COMBOLIST_2019": [
+       {
+         "email": "umbraashford08@gmail.com",
+         "password": "Udglad06!"
+       }
+     ],
+     "1669_VERIFICATIONS_IO_789M_MARKETING_022019": [
+       {
+         "email": "umbraashford08@gmail.com"
+       },
+       {
+         "email": "UMBRAASHFORD08@GMAIL.COM"
+       }
+     ]
+   },
+   "size": 5,
+   "took": 152
+ }
+ 
+ {
+   "databases": 4,
+   "elapsed": "23ms",
+   "first_seen": "2018-04",
+   "found": 4,
+   "last_seen": "2021-08",
+   "results": [
+     {
+       "email": "UMBRAASHFORD08@GMAIL.COM",
+       "full_name": "UMBRA ASHFORD",
+       "hash": "",
+       "ip_address": "",
+       "password": "",
+       "phone_number": "3348559088",
+       "source": {
+         "date": "2021-08",
+         "name": "ATT.com (2021)"
+       },
+       "username": ""
+     },
+     {
+       "email": "umbraashford08@gmail.com",
+       "full_name": "",
+       "hash": "",
+       "ip_address": "",
+       "password": "Udglad06!",
+       "phone_number": "",
+       "source": {
+         "date": "2018-04",
+         "name": "Chegg.com"
+       },
+       "username": ""
+     },
+     {
+       "email": "umbraashford08@gmail.com",
+       "full_name": "umbra l ashford",
+       "hash": "",
+       "ip_address": "108.219.240.86",
+       "password": "",
+       "phone_number": "3348559088",
+       "source": {
+         "date": "",
+         "name": "LiveRamp.com"
+       },
+       "username": ""
+     },
+     {
+       "email": "umbraashford08@gmail.com",
+       "full_name": "",
+       "hash": "",
+       "ip_address": "",
+       "password": "Udglad06!",
+       "phone_number": "",
+       "source": {
+         "date": "",
+         "name": "Unknown"
+       },
+       "username": ""
+     }
+   ]
+ }
+ 
+ {
+   "found": 3,
+   "limits": {
+     "checks": 330,
+     "keywords": 999999
+   },
+   "result": [
+     {
+       "email_only": 1,
+       "last_breach": "2021-01",
+       "line": "umbraashford08@gmail.com",
+       "sources": [
+         "AT&T"
+       ]
+     },
+     {
+       "email_only": 0,
+       "last_breach": "2018-03",
+       "line": "umbraashford08@gmail.com:Udglad06!",
+       "sources": [
+         "Chegg.com"
+       ]
+     },
+     {
+       "email_only": 0,
+       "last_breach": "2019-09",
+       "line": "umbraashford08@gmail.com:289FdC",
+       "sources": [
+         "Zynga.com"
+       ]
+     }
+ 
+ {
+   "content": [
+     {
+       "email": "umbraashford08@gmail.com",
+       "origin": "zynga.com",
+       "password": "1942a511ca2dc6e131ed30930abf997b00c19f16",
+       "phone": "NULL",
+       "username": "noles6"
+     }
+   ],
+   "found": 1,
+   "status": "success",
+   "took": 165
+ }
+ ...............................................................................
+ {
+   "results": {
+     "0601_CHEGG_COM_38M_EDUCATION_2018": [
+       {
+         "email": "marie.ashford70@gmail.com",
+         "hash": "9c642ad61b44ad2a83b07d0745324a48"
+       }
+     ],
+     "0645_ZYNGA_COM_202M_GAMING_092019": [
+       {
+         "created": "2011-03-18 20:52:25",
+         "email": "marie.ashford70@gmail.com",
+         "salt": "be1b61aa5ba3eb83b418c6310769648a670f5d43",
+         "username": "Umbra796"
+       }
+     ],
+     "0683_MODBSOLUTIONS_COM_58M_B2B_2016": [
+       {
+         "email": "marie.ashford70@gmail.com",
+         "name": "L Ash",
+         "state": "GA",
+         "zip": "36867"
+       }
+     ],
+     "0798_MYFITNESSPAL_COM_144M_FITNESS_022018": [
+       {
+         "email": "marie.ashford70@gmail.com",
+         "lastip": "108.219.240.86",
+         "username": "marieashford70"
+       }
+     ],
+     "0887_MATHWAY_COM_24M_EDU_012020": [
+       {
+         "email": "marie.ashford70@gmail.com",
+         "hash": "QXW1sx+vWBNxS5dEV0TanQ=="
+       }
+     ],
+     "1101_POSHMARK_COM_34M_MARKETPLACE_2018": [
+       {
+         "email": "marie.ashford70@gmail.com",
+         "hash": "$2a$10$s./HwGSDJXl9rUNWckBZT.6hztBI6c.q.k3HjiDBGB4vB.u5mYAGK",
+         "name": "Labertha Ashford",
+         "username": "lmarie1979"
+       },
+       {
+         "email": "marie.ashford70@gmail.com",
+         "hash": "$2a$10$H.1NU8HAFGueVVoWkrkOk.1LMncaTNKD2dRQGRWAWNVPh9/QifU4y",
+         "unparsed": ":\r",
+         "username": "lmarie1979"
+       }
+     ],
+     "1269_TWITTER_COM_227M_SOCIAL_012023": [
+       {
+         "created": "Mon Aug 12 18:06:56 +0000 2013\r",
+         "email": "marie.ashford70@gmail.com",
+         "followers": "0",
+         "name": "Marie Ashford",
+         "username": "4ever_marie"
+       }
+     ],
+     "1642_ZEEROQ_COM_226M_COMBOLIST_2019": [
+       {
+         "email": "marie.ashford70@gmail.com",
+         "password": "UDGlad0+6!!"
+       }
+     ],
+     "1669_VERIFICATIONS_IO_789M_MARKETING_022019": [
+       {
+         "email": "marie.ashford70@gmail.com"
+       },
+       {
+         "email": "MARIE.ASHFORD70@GMAIL.COM"
+       }
+     ],
+     "1730_ZACKS_COM_8M_FINANCE_052020": [
+       {
+         "email": "marie.ashford70@gmail.com",
+         "hash": "CFD2C61E70ADE9F6FB06C048B695611D92CF845F9F4B5402FDD67558514A2BEA",
+         "username": "marie.ashford70@gmail.com"
+       }
+     ]
+   },
+   "size": 12,
+   "took": 152
+ }
+ 
+ {
+   "databases": 7,
+   "elapsed": "21ms",
+   "first_seen": "2016-10",
+   "found": 7,
+   "last_seen": "2022-12",
+   "results": [
+     {
+       "email": "marie.ashford70@gmail.com",
+       "full_name": "",
+       "hash": "",
+       "ip_address": "",
+       "password": "UDGlad0+6!!",
+       "phone_number": "",
+       "source": {
+         "date": "2018-04",
+         "name": "Chegg.com"
+       },
+       "username": ""
+     },
+     {
+       "email": "marie.ashford70@gmail.com",
+       "full_name": "labertha m ashford",
+       "hash": "",
+       "ip_address": "174.223.9.161",
+       "password": "",
+       "phone_number": "3348559088",
+       "source": {
+         "date": "",
+         "name": "LiveRamp.com"
+       },
+       "username": ""
+     },
+     {
+       "email": "marie.ashford70@gmail.com",
+       "full_name": "",
+       "hash": "",
+       "ip_address": "",
+       "password": "udglad06",
+       "phone_number": "",
+       "source": {
+         "date": "2020-01",
+         "name": "Mathway.com"
+       },
+       "username": ""
+     },
+     {
+       "email": "marie.ashford70@gmail.com",
+       "full_name": "l ash",
+       "hash": "",
+       "ip_address": "",
+       "password": "",
+       "phone_number": "6093308257",
+       "source": {
+         "date": "2016-10",
+         "name": "ModBSolutions.com"
+       },
+       "username": ""
+     },
+     {
+       "email": "marie.ashford70@gmail.com",
+       "full_name": "",
+       "hash": "",
+       "ip_address": "",
+       "password": "",
+       "phone_number": "",
+       "source": {
+         "date": "2018-05",
+         "name": "Poshmark.com"
+       },
+       "username": "lmarie1979"
+     },
+     {
+       "email": "marie.ashford70@gmail.com",
+       "full_name": "Marie Ashford",
+       "hash": "",
+       "ip_address": "",
+       "password": "",
+       "phone_number": "",
+       "source": {
+         "date": "2021",
+         "name": "Twitter Scraped"
+       },
+       "username": "4ever_marie"
+     },
+     {
+       "email": "marie.ashford70@gmail.com",
+       "full_name": "",
+       "hash": "CFD2C61E70ADE9F6FB06C048B695611D92CF845F9F4B5402FDD67558514A2BEA",
+       "ip_address": "",
+       "password": "",
+       "phone_number": "",
+       "source": {
+         "date": "2022-12",
+         "name": "Zacks.com"
+       },
+       "username": ""
+     }
+   ]
+ }
+ 
+ {
+   "found": 7,
+   "limits": {
+     "checks": 329,
+     "keywords": 999999
+   },
+   "result": [
+     {
+       "email_only": 1,
+       "last_breach": "2022-01",
+       "line": "marie.ashford70@gmail.com",
+       "sources": [
+         "Twitter.com (scraping data)",
+         "MyFitnessPal.com"
+       ]
+     },
+     {
+       "email_only": 0,
+       "last_breach": "2020-05",
+       "line": "marie.ashford70@gmail.com:Decavane4ss$",
+       "sources": [
+         "Zacks.com"
+       ]
+     },
+     {
+       "email_only": 0,
+       "last_breach": "2018-05",
+       "line": "marie.ashford70@gmail.com:lauren21",
+       "sources": [
+         "Poshmark.com"
+       ]
+     },
+     {
+       "email_only": 0,
+       "last_breach": "2020-01",
+       "line": "marie.ashford70@gmail.com:udglad06",
+       "sources": [
+         "Houzz.com",
+         "Mathway.com"
+       ]
+     },
+     {
+       "email_only": 0,
+       "last_breach": "2018-03",
+       "line": "marie.ashford70@gmail.com:UDGlad0+6!!",
+       "sources": [
+         "Chegg.com"
+       ]
+     },
+     {
+       "email_only": 0,
+       "last_breach": "2018-03",
+       "line": "marie.ashford70@gmail.com:UDGlad0!!",
+       "sources": [
+         "Chegg.com"
+       ]
+     },
+     {
+       "email_only": 0,
+       "last_breach": "2019-09",
+       "line": "marie.ashford70@gmail.com:UDGlad0",
+       "sources": [
+         "Zynga.com",
+         "Poshmark.com"
+       ]
+     }
+ 
+ {
+   "content": [
+     {
+       "email": "marie.ashford70@gmail.com",
+       "origin": "zynga.com",
+       "password": "82fd23c158607a95fdd370701a6ef789e3948127",
+       "phone": "NULL",
+       "username": "Umbra796"
+     },
+     {
+       "email": "marie.ashford70@gmail.com",
+       "name": "Marie Ashford",
+       "origin": "twitter_scrape",
+       "username": "4ever_marie"
+     },
+     {
+       "email": "marie.ashford70@gmail.com",
+       "ip": "108.219.240.86",
+       "origin": "myfitnesspal.com",
+       "password": "NULL",
+       "username": "marieashford70"
+     }
+   ],
+   "found": 3,
+   "status": "success",
+   "took": 346
+ }
+ ...........................................................................................
+ {
+   "results": {
+     "0601_CHEGG_COM_38M_EDUCATION_2018": [
+       {
+         "email": "umbrajr@gmail.com",
+         "hash": "a3c58529041c45e0b97bc0680b7a2437"
+       }
+     ],
+     "0686_WATTPAD_COM_275M_SOCIAL_062020": [
+       {
+         "email": "umbrajr@gmail.com",
+         "name": "Umbra Ashford",
+         "username": "UmbraAshford"
+       }
+     ],
+     "1101_POSHMARK_COM_34M_MARKETPLACE_2018": [
+       {
+         "email": "umbrajr@gmail.com",
+         "hash": "$2a$10$OIw9wYeFonb1wd.eUDp.iujEuuIxPbqJAD0em5V6ZFuxEltZWzzii",
+         "unparsed": ":::nspam:act:::::::::::::::::::\r",
+         "username": "umbrajr"
+       }
+     ],
+     "1260_DEEZER_COM_240M_MUSIC_092019": [
+       {
+         "country": "US",
+         "email": "umbrajr@gmail.com",
+         "gender": "M",
+         "name": "Umbra Ashford Jr.",
+         "username": "Umbra.Ashford.Jr."
+       }
+     ],
+     "1669_VERIFICATIONS_IO_789M_MARKETING_022019": [
+       {
+         "email": "UMBRAJR@GMAIL.COM"
+       }
+     ]
+   },
+   "size": 5,
+   "took": 150
+ }
+ 
+ {
+   "databases": 4,
+   "elapsed": "50ms",
+   "first_seen": "2018-05",
+   "found": 5,
+   "last_seen": "2020-06",
+   "results": [
+     {
+       "email": "umbrajr@gmail.com",
+       "full_name": "umbra ashford",
+       "hash": "",
+       "ip_address": "",
+       "password": "",
+       "phone_number": "",
+       "source": {
+         "date": "2020-06",
+         "name": "Dave.com"
+       },
+       "username": ""
+     },
+     {
+       "email": "umbrajr@gmail.com",
+       "full_name": "umbra ashford",
+       "hash": "",
+       "ip_address": "",
+       "password": "",
+       "phone_number": "3345402860",
+       "source": {
+         "date": "2020-06",
+         "name": "Dave.com"
+       },
+       "username": ""
+     },
+     {
+       "email": "umbrajr@gmail.com",
+       "full_name": "umbra l ashford",
+       "hash": "",
+       "ip_address": "98.66.179.239",
+       "password": "",
+       "phone_number": "3348559088",
+       "source": {
+         "date": "2018-06",
+         "name": "Exactis.com"
+       },
+       "username": ""
+     },
+     {
+       "email": "umbrajr@gmail.com",
+       "full_name": "",
+       "hash": "",
+       "ip_address": "",
+       "password": "",
+       "phone_number": "",
+       "source": {
+         "date": "2018-05",
+         "name": "Poshmark.com"
+       },
+       "username": "umbrajr"
+     },
+     {
+       "email": "umbrajr@gmail.com",
+       "full_name": "",
+       "hash": "",
+       "ip_address": "",
+       "password": "",
+       "phone_number": "",
+       "source": {
+         "date": "2020-05",
+         "name": "Wattpad.com"
+       },
+       "username": "UmbraAshford"
+     }
+   ]
+ }
+ 
+ {
+   "found": 1,
+   "limits": {
+     "checks": 329,
+     "keywords": 999999
+   },
+   "result": [
+     {
+       "email_only": 1,
+       "last_breach": "2020-05",
+       "line": "umbrajr@gmail.com",
+       "sources": [
+         "Chegg.com",
+         "Wattpad.com",
+         "Poshmark.com",
+         "Deezer.com"
+       ]
+     }
+ .....................................................................................
+ {
+   "results": {
+     "0601_CHEGG_COM_38M_EDUCATION_2018": [
+       {
+         "email": "umbraashford@msn.com",
+         "hash": "149671c4c9aafd4b3e6386840b0c77ca"
+       }
+     ]
+   },
+   "size": 1,
+   "took": 152
+ }
+ 
+ {
+   "found": 1,
+   "limits": {
+     "checks": 327,
+     "keywords": 999999
+   },
+   "result": [
+     {
+       "email_only": 0,
+       "last_breach": "2018-03",
+       "line": "umbraashford@msn.com:Udglad06!",
+       "sources": [
+         "Chegg.com"
+       ]
+     }
+ ...........................................................................................
+ {
+   "results": {
+     "0071_JUSTDATE_COM_24M_DATING_2014": [
+       {
+         "country": "US",
+         "dob": "1987-01-03",
+         "email": "izayuh09@gmail.com",
+         "zip": "32507"
+       }
+     ]
+   },
+   "size": 1,
+   "took": 153
+ }
+ ........................................................................................................
+ {
+   "results": {
+     "0683_MODBSOLUTIONS_COM_58M_B2B_2016": [
+       {
+         "email": "calbertkierra@gmail.com",
+         "gender": "F",
+         "name": "erica smith"
+       }
+     ],
+     "1669_VERIFICATIONS_IO_789M_MARKETING_022019": [
+       {
+         "city": "PENSACOLA",
+         "email": "calbertkierra@gmail.com",
+         "lastip": "72.216.21.91",
+         "state": "FL",
+         "zip": "32506"
+       }
+     ]
+   },
+   "size": 2,
+   "took": 156
+ }
+ 
+ {
+   "found": 1,
+   "limits": {
+     "checks": 325,
+     "keywords": 999999
+   },
+   "result": [
+     {
+       "email_only": 1,
+       "last_breach": "2019-02",
+       "line": "calbertkierra@gmail.com",
+       "sources": [
+         "Verifications.io"
+       ]
+     }
+ .....................................................................................
+ {
+   "results": {
+     "0594_WANELO_COM_22M_SHOPPING_122018": [
+       {
+         "email": "keon.calbert5@gmail.com",
+         "hash": "$2a$10$vPtLw0NxaL0nlL7NiXtUMOTX678rA/lC8PsPM7SGLD3Y92CIr25NO"
+       }
+     ],
+     "1754_INSTAGRAM_COM_17M_SOCIAL_20XX": [
+       {
+         "address": "30301 Atlanta, Georgia US",
+         "email": "keon.calbert5@gmail.com",
+         "id": "1785497812",
+         "name": "The Original Kc",
+         "phone": "+18504858445",
+         "username": "theoriginal_kc"
+       }
+     ]
+   },
+   "size": 2,
+   "took": 152
+ }
+ 
+ {
+   "databases": 1,
+   "elapsed": "27ms",
+   "first_seen": "2020-06",
+   "found": 1,
+   "last_seen": "2020-06",
+   "results": [
+     {
+       "email": "keon.calbert5@gmail.com",
+       "full_name": "keon calbert",
+       "hash": "",
+       "ip_address": "",
+       "password": "",
+       "phone_number": "8502210380",
+       "source": {
+         "date": "2020-06",
+         "name": "Dave.com"
+       },
+       "username": ""
+     }
+   ]
+ }
+ .....................................................................................
+ {
+   "results": {
+     "0069_EDMODO_COM_77M_EDUCATION_2017": [
+       {
+         "email": "keon.calbert1@gmail.com ",
+         "hash": "$826y4$31226$dYbW2Yf4eY32bJel4N0WcNcj2O4T1c847O7DfZ6laY2uc/9D0Sbe1.1BB9FpZszrb02.tnIm9KGSEnO",
+         "username": "Keon_Calbert"
+       }
+     ],
+     "0462_CASHCRATE_COM_7M_SURVEY_2017": [
+       {
+         "city": "Phenix,city",
+         "date": "2013-10-07",
+         "email": "keon.calbert1@gmail.com",
+         "id": "4969726",
+         "name": "Keon Calbert",
+         "password": "dc2e980c68493c50db4605dad96a47e4",
+         "state": "AL",
+         "zip": "36867"
+       }
+     ],
+     "0564_TUMBLR_COM_73M_SOCIAL_2013": [
+       {
+         "email": "Keon.calbert1@Gmail.com",
+         "hash": "40e451def1179e625e8b8fe1da27b78cd647b950"
+       }
+     ],
+     "0642_DUBSMASH_COM_123M_SOCIAL_122018": [
+       {
+         "email": "keon.calbert1@gmail.com",
+         "hash": "pbkdf2_sha256$15000$0hkyuNFGWL4h$TCWdTBPdKXVRL7r/F0Bbox5mcfHA1Lo343/xV78x6hA=",
+         "username": "keon.calbert1"
+       }
+     ]
+   },
+   "size": 4,
+   "took": 152
+ }
+ 
+ {
+   "databases": 2,
+   "elapsed": "20ms",
+   "first_seen": "2016-11",
+   "found": 2,
+   "last_seen": "2017-05",
+   "results": [
+     {
+       "email": "keon.calbert1@gmail.com",
+       "full_name": "",
+       "hash": "",
+       "ip_address": "",
+       "password": "nickiminaj1996",
+       "phone_number": "",
+       "source": {
+         "date": "2016-11",
+         "name": "CashCrate.com"
+       },
+       "username": ""
+     },
+     {
+       "email": "keon.calbert1@gmail.com",
+       "full_name": "",
+       "hash": "",
+       "ip_address": "",
+       "password": "",
+       "phone_number": "",
+       "source": {
+         "date": "2017-05",
+         "name": "Edmodo.com"
+       },
+       "username": "Keon_Calbert"
+     }
+   ]
+ }
+ 
+ {
+   "found": 2,
+   "limits": {
+     "checks": 325,
+     "keywords": 999999
+   },
+   "result": [
+     {
+       "email_only": 0,
+       "last_breach": "2016-11",
+       "line": "keon.calbert1@gmail.com:nickiminaj1996",
+       "sources": [
+         "CashCrate.com"
+       ]
+     },
+     {
+       "email_only": 1,
+       "last_breach": "2017-05",
+       "line": "keon.calbert1@gmail.com",
+       "sources": [
+         "Edmodo"
+       ]
+
+.m.                                   ,_
+' ;M;                                ,;m `
+  ;M;.           ,      ,           ;SMM;
+ ;;Mm;         ,;  ____  ;,         ;SMM;
+;;;MM;        ; (.MMMMMM.) ;       ,SSMM;;
+,;;;mMp'        l  ';mmmm;/  j       SSSMM;;
+.;;;;;MM;         .\,.mmSSSm,,/,      ,SSSMM;;;
+;;;;;;mMM;        .;MMmSSSSSSSmMm;     ;MSSMM;;;;
+;;;;;;mMSM;     ,_ ;MMmS;;;;;;mmmM;  -,;MMMMMMm;;;;
+;;;;;;;MMSMM;     \"*;M;( ( '') );m;*"/ ;MMMMMM;;;;;,
+.;;;;;;mMMSMM;      \(@;! _     _ !;@)/ ;MMMMMMMM;;;;;,
+;;;;;;;MMSSSM;       ;,;.*o*> <*o*.;m; ;MMMMMMMMM;;;;;;,
+.;;;;;;;MMSSSMM;     ;Mm;           ;M;,MMMMMMMMMMm;;;;;;.
+;;;;;;;mmMSSSMMMM,   ;Mm;,   '-    ,;M;MMMMMMMSMMMMm;;;;;;;
+;;;;;;;MMMSSSMMMMMMMm;Mm;;,  ___  ,;SmM;MMMMMMSSMMMM;;;;;;;;
+;;'";;;MMMSSSSMMMMMM;MMmS;;,  "  ,;SmMM;MMMMMMSSMMMM;;;;;;;;.
+!   ;;;MMMSSSSSMMMMM;MMMmSS;;._.;;SSmMM;MMMMMMSSMMMM;;;;;;;;;
+;;;;*MSSSSSSMMMP;Mm*"'q;'   `;p*"*M;MMMMMSSSSMMM;;;;;;;;;
+';;;  ;SS*SSM*M;M;'     `-.        ;;MMMMSSSSSMM;;;;;;;;;,
+;;;. ;P  `q; qMM.                 ';MMMMSSSSSMp' ';;;;;;;
+;;;; ',    ; .mm!     \.   `.   /  ;MMM' `qSS'    ';;;;;;
+';;;       ' mmS';     ;     ,  `. ;'M'   `S       ';;;;;
+`;;.        mS;;`;    ;     ;    ;M,!     '  luk   ';;;;
+';;       .mS;;, ;   '. o  ;   oMM;                ;;;;
+';;      MMmS;; `,   ;._.' -_.'MM;                 ;;;
+`;;     MMmS;;; ;   ;      ;  MM;                 ;;;
+  `'.   'MMmS;; `;) ',    .' ,M;'                 ;;;
+     \    '' ''; ;   ;    ;  ;'                   ;;
+      ;        ; `,  ;    ;  ;                   ;;
+               |. ;  ; (. ;  ;      _.-.         ;;
+  .-----..__  /   ;  ;   ;' ;\  _.-" .- `.      ;;
+;' ___      `*;   `; ';  ;  ; ;'  .-'    :      ;
+;     """*-.   `.  ;  ;  ;  ; ' ,'      /       |
+',          `-_    (.--',`--'..'      .'        ',
+  `-_          `*-._'.\\\;||\\)     ,'
+     `"*-._        "*`-ll_ll'l    ,'
+        ,==;*-._           "-.  .'
+     _-'    "*-=`*;-._        ;'
+   ."            ;'  ;"*-.    `
+   ;   ____      ;//'     "-   `,
+   `+   .-/                 ".\\;
+     `*" /
+Dont End up like this nigga
+┌——————————————————————————————————————————————————————————————————————┐
+|                              End Of Dox                              |
+└——————————————————————————————————————————————————————————————————————┘
+
+        </pre>
+    </div>
+</body>
+</html>
