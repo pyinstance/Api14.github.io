@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222121; /* Light grey background */
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            text-align: left;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .profile-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-info img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #222121; /* White background */
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* White glowing border */
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .text-files {
+            margin-top: 20px;
+        }
+
+        .text-file {
+            padding: 10px;
+            border-bottom: 1px solid #cccccc;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .text-file:hover {
+            background-color: #f0f0f0;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .file-button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .file-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="profile-info">
+            <img src="pfp/pfp.png" alt="Profile Picture">
+            <span>lust</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Uploaded Doxes / Information</h1>
+        <div class="text-files" id="textFiles">
+            <!-- This is where the list of uploaded text files will be dynamically added -->
+            <div class="text-file" onclick="navigateToFile('harryfrench.html')">Harry French Dox</div>
+            <div class="text-file" onclick="navigateToFile('jasonrenslow.html')">Jason Renzlow Dox</div>
+        </div>
+        
+    <script>
+        // Function to navigate to different HTML pages
+        function navigateToFile(fileName) {
+            window.location.href = fileName;
+        }
+    </script>
+</body>
+</html>
